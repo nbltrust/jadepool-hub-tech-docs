@@ -1,6 +1,6 @@
 #### Seed Hotfix Release Note : R1.2.1.190121
 
-#####@2019-01-21
+##### @2019-01-21
 
 - Bug Fixs
 
