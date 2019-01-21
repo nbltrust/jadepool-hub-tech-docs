@@ -1,4 +1,4 @@
-#### adePool Release Note : V0.12.0
+#### JadePool Release Note : V0.12.0
 - Features
   - [JAD-651] - [BN]分离中间件修改ledger
   - [JAD-538] - 保护设置回调地址API(admin only)
