@@ -1,0 +1,445 @@
+{
+	"info": {
+		"_postman_id": "45588aa4-e7c1-4451-8a77-0474c2b8aa10",
+		"name": "JadePool API DEMO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addressCreate",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ca4914e9-8808-464c-8bdb-d3b85450d3a2",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": {\n    \"type\": \"BTC\",\n    \"callback\": \"{{callback}}\"\n  }\n}"
+				},
+				"url": {
+					"raw": "{{ip}}:{{port}}/api/v1/addresses/new",
+					"host": [
+						"{{ip}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"v1",
+						"addresses",
+						"new"
+					]
+				},
+				"description": "172.16.202.103:7001/api/v1/addresses/new"
+			},
+			"response": []
+		},
+		{
+			"name": "adreesVerify",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8a65b397-683a-4c00-9bb7-9e8d67578624",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"if(pm.response.to.have.status(200))",
+							"{",
+							"    var jsonData = pm.response.json();",
+							"",
+							"    pm.test(\"Test response.status should be 0\", function () {",
+							"        pm.expect(jsonData.status).to.eql(0);",
+							"    });",
+							"    ",
+							"    pm.test(\"Test response.message should be OK\", function () {",
+							"        pm.expect(jsonData.message).to.eql('OK');",
+							"    });",
+							"    ",
+							"    var schema = {",
+							"      \"$id\": \"http://example.com/example.json\",",
+							"      \"type\": \"object\",",
+							"      \"definitions\": {},",
+							"      \"$schema\": \"http://json-schema.org/draft-07/schema#\",",
+							"      \"properties\": {",
+							"        \"status\": {",
+							"          \"$id\": \"/properties/status\",",
+							"          \"type\": \"integer\",",
+							"          \"title\": \"The Status Schema \",",
+							"          \"default\": 0,",
+							"          \"examples\": [",
+							"            0",
+							"          ]",
+							"        },",
+							"        \"message\": {",
+							"          \"$id\": \"/properties/message\",",
+							"          \"type\": \"string\",",
+							"          \"title\": \"The Message Schema \",",
+							"          \"default\": \"\",",
+							"          \"examples\": [",
+							"            \"OK\"",
+							"          ]",
+							"        },",
+							"        \"result\": {",
+							"          \"$id\": \"/properties/result\",",
+							"          \"type\": \"object\",",
+							"          \"properties\": {",
+							"            \"address\": {",
+							"              \"$id\": \"/properties/result/properties/address\",",
+							"              \"type\": \"string\",",
+							"              \"title\": \"The Address Schema \",",
+							"              \"default\": \"\",",
+							"              \"examples\": [",
+							"                \"0x6b63546985a999059d6d277a9888073bda3f7b64\"",
+							"              ]",
+							"            },",
+							"            \"valid\": {",
+							"              \"$id\": \"/properties/result/properties/valid\",",
+							"              \"type\": \"boolean\",",
+							"              \"title\": \"The Valid Schema \",",
+							"              \"default\": false,",
+							"              \"examples\": [",
+							"                true",
+							"              ]",
+							"            }",
+							"          }",
+							"        }",
+							"      }",
+							"    }",
+							"",
+							"    pm.test('Schema is valid', function() {",
+							"        pm.expect(tv4.validate(pm.response.json(), schema)).to.be.true;",
+							"    });",
+							"    ",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": {\n    \"type\": \"BTC\"\n  }\n}"
+				},
+				"url": {
+					"raw": "{{ip}}:{{port}}/api/v1/addresses/mhvHiW77xUFRbzSwBdXwybo7G4zmgzFc8f/verify",
+					"host": [
+						"{{ip}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"v1",
+						"addresses",
+						"mhvHiW77xUFRbzSwBdXwybo7G4zmgzFc8f",
+						"verify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "withdraw",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "373f22d5-3e77-4265-8846-c203d221fb8c",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "9917d208-a53c-4523-af82-cd4add27beb2",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": {\n    \"type\": \"BTC\",\n    \"to\": \"mhvHiW77xUFRbzSwBdXwybo7G4zmgzFc8f\",\n    \"value\": \"0.0001\",\n    \"callback\": \"http://127.0.0.1:9008/callback\"\n  }\n}"
+				},
+				"url": {
+					"raw": "{{ip}}:{{port}}/api/v1/transactions/",
+					"host": [
+						"{{ip}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"v1",
+						"transactions",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "txInfo",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0bdc3915-4a36-441d-92c8-cba28a08d401",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{ip}}:{{port}}/api/v1/transactions/{{orderID}}",
+					"host": [
+						"{{ip}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"v1",
+						"transactions",
+						"{{orderID}}"
+					]
+				},
+				"description": "172.16.202.103:7001/api/v1/addresses/new"
+			},
+			"response": []
+		},
+		{
+			"name": "walletStatus",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "01c7acf8-b6a2-4ac4-ac51-514882ed545b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"if(pm.response.to.have.status(200))",
+							"{",
+							"    ",
+							"    var jsonData = pm.response.json();",
+							"    ",
+							"    pm.test(\"Test response.status should be 0\", function () {",
+							"        pm.expect(jsonData.status).to.eql(0);",
+							"    });",
+							"    ",
+							"    pm.test(\"Test response.message should be OK\", function () {",
+							"        pm.expect(jsonData.message).to.eql('OK');",
+							"    });",
+							"    ",
+							"    var schema = {",
+							"  \"definitions\": {},",
+							"  \"$schema\": \"http://json-schema.org/draft-07/schema#\",",
+							"  \"$id\": \"http://example.com/root.json\",",
+							"  \"type\": \"object\",",
+							"  \"title\": \"The Root Schema\",",
+							"  \"required\": [",
+							"    \"result\"",
+							"  ],",
+							"  \"properties\": {",
+							"    \"result\": {",
+							"      \"$id\": \"#/properties/result\",",
+							"      \"type\": \"object\",",
+							"      \"title\": \"The Result Schema\",",
+							"      \"required\": [",
+							"        \"balance\",",
+							"        \"balanceAvailable\",",
+							"        \"balanceUnavailable\",",
+							"        \"update_at\",",
+							"        \"namespace\",",
+							"        \"sid\"",
+							"      ],",
+							"      \"properties\": {",
+							"        \"balance\": {",
+							"          \"$id\": \"#/properties/result/properties/balance\",",
+							"          \"type\": \"string\",",
+							"          \"title\": \"The Balance Schema\",",
+							"          \"default\": \"\",",
+							"          \"examples\": [",
+							"            \"0.00432501\"",
+							"          ],",
+							"          \"pattern\": \"^(.*)$\"",
+							"        },",
+							"        \"balanceAvailable\": {",
+							"          \"$id\": \"#/properties/result/properties/balanceAvailable\",",
+							"          \"type\": \"string\",",
+							"          \"title\": \"The Balanceavailable Schema\",",
+							"          \"default\": \"\",",
+							"          \"examples\": [",
+							"            \"0.00432501\"",
+							"          ],",
+							"          \"pattern\": \"^(.*)$\"",
+							"        },",
+							"        \"balanceUnavailable\": {",
+							"          \"$id\": \"#/properties/result/properties/balanceUnavailable\",",
+							"          \"type\": \"string\",",
+							"          \"title\": \"The Balanceunavailable Schema\",",
+							"          \"default\": \"\",",
+							"          \"examples\": [",
+							"            \"0\"",
+							"          ],",
+							"          \"pattern\": \"^(.*)$\"",
+							"        },",
+							"        \"update_at\": {",
+							"          \"$id\": \"#/properties/result/properties/update_at\",",
+							"          \"type\": \"integer\",",
+							"          \"title\": \"The Update_at Schema\",",
+							"          \"default\": 0,",
+							"          \"examples\": [",
+							"            1545993196922",
+							"          ]",
+							"        },",
+							"        \"namespace\": {",
+							"          \"$id\": \"#/properties/result/properties/namespace\",",
+							"          \"type\": \"string\",",
+							"          \"title\": \"The Namespace Schema\",",
+							"          \"default\": \"\",",
+							"          \"examples\": [",
+							"            \"BTC\"",
+							"          ],",
+							"          \"pattern\": \"^(.*)$\"",
+							"        },",
+							"        \"sid\": {",
+							"          \"$id\": \"#/properties/result/properties/sid\",",
+							"          \"type\": \"string\",",
+							"          \"title\": \"The Sid Schema\",",
+							"          \"default\": \"\",",
+							"          \"examples\": [",
+							"            \"QCJCp4y0uZkahq9uAAAD\"",
+							"          ],",
+							"          \"pattern\": \"^(.*)$\"",
+							"        }",
+							"      }",
+							"    }",
+							"  }",
+							"}",
+							"    pm.test('Schema is valid', function() {",
+							"        pm.expect(tv4.validate(pm.response.json(), schema)).to.be.true;",
+							"    });",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{ip}}:{{port}}/api/v1/wallet/BTC/status",
+					"host": [
+						"{{ip}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"v1",
+						"wallet",
+						"BTC",
+						"status"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "bd0912a8-5f55-47eb-bd85-4cd529f3b875",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "e573363c-5b52-410f-8468-c571c56dd0b7",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
