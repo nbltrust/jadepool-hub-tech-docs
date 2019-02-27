@@ -53,7 +53,7 @@
 			"response": []
 		},
 		{
-			"name": "adreesVerify",
+			"name": "addressVerify",
 			"event": [
 				{
 					"listen": "test",
