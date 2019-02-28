@@ -6,7 +6,7 @@
 #### API相关
 - [API文档](https://github.com/nbltrust/jadepool-doc/blob/master/Jadepool_API.md)
 - [API快速上手使用手册](https://github.com/nbltrust/jadepool-doc/blob/master/Chinese/API%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C.pdf)
-- [调用瑶池服务接口的postman文件](https://github.com/nbltrust/jadepool-doc/tree/master/Jadepool_API_DEMO)
+- [瑶池服务接口调用的Postman Collection](https://github.com/nbltrust/jadepool-doc/tree/master/Jadepool_API_DEMO)
 
 #### 瑶池组件及流程图
 - [瑶池组件图](https://github.com/nbltrust/jadepool-doc/blob/master/Chinese/%E7%91%B6%E6%B1%A0%E7%BB%84%E4%BB%B6%E5%9B%BE.png)
