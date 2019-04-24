@@ -3,7 +3,7 @@ import { BigNumber } from "bignumber.js";
 /** 地址对象返回 */
 interface Address {
   type: string,
-  subType?: string,
+  subType: string,
   address: string,
   state: string
 }
@@ -29,9 +29,13 @@ interface TxData {
 /** 订单对象 */
 interface Order {
   id: number
+  from: string
   to: string
   value: string
-  auth: string
+  action?: string
+  actionArgs?: string[]
+  actionMemo?: string
+  auth?: string
 }
 interface ScanTask {
   id: number
@@ -49,6 +53,10 @@ interface IncomingRecord {
   toAddress: string
   value: string
   n: number
+  // 额外action参数
+  action?: string
+  actionMemo?: string
+  actionResults?: string[]
   // state判定
   isUnexpected: boolean
   isSpecial: boolean
@@ -88,14 +96,15 @@ interface BlockResult {
   timestamp: number,
   txns: TxResult[]
 }
-/** 提现结果 */
+/** 订单更新结果 */
 interface OrdersUpdateResult extends TxResult {
   rollback?: boolean
   orderIds: number[]
+  actionMemo?: string
   actionResults?: string[]
 }
-/** 热转冷结果 */
-interface OrderCreateResult extends TxResult {
+/** Sweep订单更新结果 */
+interface SweepOrderResult extends OrdersUpdateResult {
   to?: string
   value?: string
 }
@@ -110,17 +119,15 @@ interface OrderCreateResult extends TxResult {
  * 该interface涵盖已实现的Default内容
  */
 declare class LedgerClientDefault extends LedgerHandler {
-  /**
-   * chainKey
-   */
   public CHAIN_KEY: string
-  public opts: object
+  public CHAIN_NAME: string
+  public CHAIN_INDEX: number
+  public CORE_TYPE: string
   /**
    * 构造LedgerClient
    * @param chainKey
-   * @param opts 初始化参数
    */
-  constructor(chainKey: string, opts?: object)
+  constructor(chainKey: string)
   // -------- Default实现 - 不建议覆盖 --------
   /**
    * 返回全部暴露给do模式运行的方法
@@ -138,10 +145,10 @@ declare class LedgerClientDefault extends LedgerHandler {
    * 创建充值地址对象
    * @param callback 回调地址
    * @param coinName 币种类型
-   * @param appid 启动
-   * @param acceptMode 接受充值的模式
+   * @param appid 归属的appid
+   * @param bizMode 默认为auto, auto|deposit|deposit_memo|delegate|delegate_memo|normal
    */
-  createAddress (callback: string, coinName: string, appid: string, acceptMode: 'token' | 'chain' ): Promise<Address>
+  createAddress (callback: string, coinName: string, appid: string, bizMode?: string): Promise<Address>
   /**
    * 标准化地址结构
    * @param address 
@@ -152,9 +159,10 @@ declare class LedgerClientDefault extends LedgerHandler {
    * @param path 衍生路径
    * @param index 地址index序号, 当index为undefined时即认为是热主地址
    * @param coinName 币种简称
-   * @parma addressType 地址类型
+   * @param addressType 地址类型
+   * @param bizMode 地址业务类型
    */
-  genAddress (path: string, index?: number|undefined, coinName?: string, addressType?: number): Promise<string>
+  genAddress (path: string, index?: number|undefined, coinName?: string, addressType?: number, bizMode?: string): Promise<string>
   /**
    * 获取存储于密码机或seed中的系统数据
    * @param coinName 币种简称
@@ -214,6 +222,19 @@ declare class LedgerClientDefault extends LedgerHandler {
    */
   notiAfterHook (order: Order): Promise<any>
   /**
+   * closer预处理
+   * @param rulerData 标尺数据
+   * @param taskRound 执行回合数
+   */
+  closerPreHook (rulerData: object, taskRound: number): Promise<void>
+  /**
+   * closer后处理
+   * @param rulerData 标尺数据
+   * @param taskRound 执行回合数
+   * @returns 返回改动后的ruler data
+   */
+  closerPostHook (rulerData: object, taskRound: number): Promise<object>
+  /**
    * 获取订单相关的TxData
    * 通用Default的方法内该方法将调用 getTransactionState
    * @param order 订单对象
@@ -247,12 +268,6 @@ declare class LedgerClientDefault extends LedgerHandler {
    */
   initializePostHook (): Promise<void>
   /**
-   * 地址创建后处理
-   * @param coinName 币种类型
-   * @param address 地址
-   */
-  createAddressPostHook (coinName: string, address: string): Promise<void>
-  /**
    * txAndSweep预处理
    * @param taskRound 执行回合数
    */
@@ -263,18 +278,12 @@ declare class LedgerClientDefault extends LedgerHandler {
    */
   txAndSweepPostHook (taskRound: number): Promise<void>
   /**
-   * closer预处理
-   * @param rulerData 标尺数据
-   * @param taskRound 执行回合数
-   */
-  closerPreHook (rulerData: object, taskRound: number): Promise<void>
-  /**
-   * closer后处理
+   * doCloserPostHook实际执行的函数
    * @param rulerData 标尺数据
    * @param taskRound 执行回合数
    * @returns 返回改动后的ruler data
    */
-  closerPostHook (rulerData: object, taskRound: number): Promise<object>
+  doCloserPostHook (rulerData: object, taskRound: number): Promise<object>
 }
 
 /**
@@ -301,14 +310,23 @@ declare class LedgerClient extends LedgerClientDefault {
   //  ___| | | |___   / /  | | | | \  | | | \  | | |___  | | \ \  
   // /_____/ \_____| /_/   |_| |_|  \_| |_|  \_| |_____| |_|  \_\ 
   /**
-   * 根据ECC私钥生成地址
+   * 根据ECC私钥生成地址，二选一实现
    * @param privKey 私钥
    * @param index 衍生序号
    * @param coinName 币种简称
    * @param addressType 地址类型
+   * @param bizMode 地址业务类型
    */
-  genAddressByPrivKey (privKey: string | Buffer, index: number, coinName: string, addressType: number): Promise<string>
-  
+  genAddressByPrivKey (privKey: string, index: number, coinName: string, addressType: number, bizMode: string): Promise<string>
+  /**
+   * 根据ECC公钥生成地址，二选一实现
+   * @param pubKey 私钥
+   * @param index 衍生序号
+   * @param coinName 币种简称
+   * @param addressType 地址类型
+   * @param bizMode 地址业务类型
+   */
+  genAddressByPubKey (pubKey: string, index: number, coinName: string, addressType: number, bizMode: string): Promise<string>
   /**
    * 检测地址是否有效
    * @param address 被检测地址
@@ -380,6 +398,22 @@ declare class LedgerHandler {
    */
   getBalanceNoDecimal (address: string, coinName?: string): Promise<string>
   /**
+   * 获取批量发送时的数量
+   * (存在有Default实现)
+   * @param coinName 币种类型
+   */
+  getSendOrdersBatchCount (coinName: string): Promise<number>
+  /**
+   * 预估fee的函数
+   * (存在有Default实现)
+   * @param coinName 币种类型
+   * @param bizType 交易类型
+   * @param fromAddress 来源地址
+   * @param maxOrderAmt 最大order数
+   * @returns 仅返回coinName对应的fee amount，若消耗的fee不是该类型应该为'0'。当返回null或者undefined时，表示fee不够。
+   */
+  estimateAndCheckFee (coinName: string, bizType: string, fromAddress: string, maxOrderAmt: number): Promise<string|null>
+  /**
    * 获取交易状态信息
    * @param info 订单情况
    * @param bn 当前区块号
@@ -401,22 +435,32 @@ declare class LedgerHandler {
   /**
    * 提现
    * @param coinName
-   * @param outputs
+   * @param outputs 订单信息
    */
   withdraw (coinName: string, outputs: Order[]): Promise<OrdersUpdateResult[]>
   /**
    * 汇总
    * @param coinName
-   * @param fromAddress
+   * @param fromAddress 来源地址
    * @param cap 真实金额
+   * @param output 订单信息
    */
-  sweepToHot (coinName: string, fromAddress: string, cap: string): Promise<OrderCreateResult>
+  sweepToHot (coinName: string, fromAddress: string, cap: string, output: Order): Promise<SweepOrderResult>
   /**
    * 热转冷
    * @param coinName
    * @param cap 真实金额
+   * @param output 订单信息
    */
-  sweepToCold (coinName: string, cap: string): Promise<OrderCreateResult>
+  sweepToCold (coinName: string, cap: string, output: Order): Promise<SweepOrderResult>
+  /**
+   * 可选实现，零钱打散(通常为UTXO)
+   * @param coinName 代币简称
+   * @param total 打散总额
+   * @param targets 打散的目标地址格式为 address,n
+   * @param output 订单信息
+   */
+  scatter (coinName: string, fromAddress: string, total: string, targets: string[], output: Order): Promise<OrdersUpdateResult>
 }
 
 // ███████╗████████╗ █████╗ ██╗  ██╗███████╗
@@ -452,6 +496,7 @@ interface DelegationInfo {
   /** 基本信息 */
   delegator: string
   validator: string
+  height?: string
   /** 真实显示的数量 */
   amount: string
   /** 在区块链中的数量 */
@@ -519,20 +564,23 @@ declare class StakeHandler {
    * @param srcValidatorAddress 转出：被代理的见证人地址
    * @param dstValidatorAddress 转入：被代理的见证人地址
    * @param shareAmount 转移的代理量
+   * @param output 订单信息
    */
-  submitReDelegation (delegatorAddress: string, srcValidatorAddress: string, dstValidatorAddress: string, shareAmount: string): Promise<OrdersUpdateResult>
+  submitReDelegation (delegatorAddress: string, srcValidatorAddress: string, dstValidatorAddress: string, shareAmount: string, output: Order): Promise<OrdersUpdateResult>
   /**
    * 领取代理收益
    * @param delegatorAddress 代理人地址
    * @param validatorAddress 可选，被代理的见证人地址
+   * @param output 订单信息
    */
-  claimReward (delegatorAddress: string, validatorAddress?: string): Promise<OrdersUpdateResult>
+  claimReward (delegatorAddress: string, validatorAddress?: string, output: Order): Promise<OrdersUpdateResult>
   /**
    * 设置收益地址
    * @param delegatorAddress 代理人地址
    * @param rewardAddress 领取收益的地址
+   * @param output 订单信息
    */
-  setRewardAddress (delegatorAddress: string, rewardAddress: string): Promise<OrdersUpdateResult>
+  setRewardAddress (delegatorAddress: string, rewardAddress: string, output: Order): Promise<OrdersUpdateResult>
   // ---------- GET 状态查询 ----------
   /**
    * 查询Validators信息
