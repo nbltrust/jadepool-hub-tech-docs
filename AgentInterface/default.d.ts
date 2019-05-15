@@ -65,8 +65,6 @@ interface IncomingRecord {
 /** 状态结果 */
 interface StateResult {
   state: string,
-  /** 是否跳过保存订单 */
-  continue: boolean,
   /** 是否订单需要再次发送 */
   sendAgain: boolean
 }
@@ -102,6 +100,8 @@ interface OrdersUpdateResult extends TxResult {
   orderIds: number[]
   actionMemo?: string
   actionResults?: string[]
+  /** 需要等待的AsyncPlan, 仅在rollback时有效 */
+  awaitPlan?: any
 }
 /** Sweep订单更新结果 */
 interface SweepOrderResult extends OrdersUpdateResult {
@@ -134,10 +134,6 @@ declare class LedgerClientDefault extends LedgerHandler {
    */
   exportMethods (): { [key: string]: Function }
   /**
-   * 补丁函数，目前默认ethereum为true,其他皆为false
-   */
-  isSimpleModeForCoreType (): boolean
-  /**
    * 该币种的初始化函数，在初始化过程中调用
    */
   initFromSeed (): Promise<void>
@@ -151,7 +147,9 @@ declare class LedgerClientDefault extends LedgerHandler {
   createAddress (callback: string, coinName: string, appid: string, bizMode?: string): Promise<Address>
   /**
    * 标准化地址结构
-   * @param address 
+   * @param address
+   * @param coinName 币种简称
+   * @parma addressType 地址类型
    */
   normalizeAddress (address: string, coinName?: string, addressType?: number): Promise<string>
   /**
@@ -199,10 +197,16 @@ declare class LedgerClientDefault extends LedgerHandler {
   getWalletStatus (coinName?: string): Promise<WalletStatus>
   // -------- Order相关 - 酌情处理 --------
   /**
-   * 在默认notiStateHook中调用，返回是否需要发送重发请求
-   * @param info 
+   * 在默认notiStateHook中调用，查找相关的覆盖订单
+   * @param info
    */
-  updateFailedState (order: Order, currState: StateResult): Promise<StateResult>
+  findOverridedOrder (info: Order): Promise<Order>
+  /**
+   * 判断是否为严重错误，若返回true将创建‘合约异常’记录。
+   * 该类型的订单交易将暂停。
+   * @param info
+   */
+  isOrderFailedCritical (info: Order): Promise<boolean>
   /**
    * 订单通知处理 确定state
    * @param order 订单对象
@@ -265,8 +269,9 @@ declare class LedgerClientDefault extends LedgerHandler {
   // -------- Hook函数 - 可选覆盖 --------
   /**
    * 初始化后处理
+   * @param coinName 核心币种类型
    */
-  initializePostHook (): Promise<void>
+  initializePostHook (coinName: string): Promise<void>
   /**
    * txAndSweep预处理
    * @param taskRound 执行回合数
@@ -337,11 +342,6 @@ declare class LedgerClient extends LedgerClientDefault {
    * 获取最新区块高度
    */
   getBlockNumber (): Promise<number>
-  /**
-   * 获取区块信息
-   * @param indexOrHash 区块高度
-   */
-  getBlock (indexOrHash: number | string): Promise<any>
   /**
    * 通用doScan中实现，获取区块中交易信息等，用于保存到系统Block
    * @param indexOrHash 高度或哈希
@@ -434,13 +434,13 @@ declare class LedgerHandler {
   filterTransactions (txns: TxResult[] | string[], bn?: number, hasScanTask?: boolean): Promise<IncomingRecord[]>
   /**
    * 提现
-   * @param coinName
+   * @param coinName 代币简称
    * @param outputs 订单信息
    */
   withdraw (coinName: string, outputs: Order[]): Promise<OrdersUpdateResult[]>
   /**
    * 汇总
-   * @param coinName
+   * @param coinName 代币简称
    * @param fromAddress 来源地址
    * @param cap 真实金额
    * @param output 订单信息
@@ -448,11 +448,20 @@ declare class LedgerHandler {
   sweepToHot (coinName: string, fromAddress: string, cap: string, output: Order): Promise<SweepOrderResult>
   /**
    * 热转冷
-   * @param coinName
+   * @param coinName 代币简称
    * @param cap 真实金额
    * @param output 订单信息
    */
   sweepToCold (coinName: string, cap: string, output: Order): Promise<SweepOrderResult>
+  /**
+   * 常规区块链调用
+   * @param coinName 代币简称
+   * @param abiMethod 合约函数名
+   * @param abiMethodDef 合约函数定义
+   * @param abiParams 合约参数
+   * @param order 订单信息
+   */
+  invokeGeneral (coinName: string, abiMethod: string, abiMethodDef: string, abiParams: string[], order: Order): Promise<OrdersUpdateResult>
   /**
    * 可选实现，零钱打散(通常为UTXO)
    * @param coinName 代币简称
@@ -573,7 +582,7 @@ declare class StakeHandler {
    * @param validatorAddress 可选，被代理的见证人地址
    * @param output 订单信息
    */
-  claimReward (delegatorAddress: string, validatorAddress?: string, output: Order): Promise<OrdersUpdateResult>
+  claimReward (delegatorAddress: string, validatorAddress: string, output: Order): Promise<OrdersUpdateResult>
   /**
    * 设置收益地址
    * @param delegatorAddress 代理人地址

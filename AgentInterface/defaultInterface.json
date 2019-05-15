@@ -1,0 +1,1167 @@
+[
+  {
+    "method": "ensureConnected",
+    "params": [],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  {
+    "method": "initializePostHook",
+    "params": [
+      {
+        "name": "coinName",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "void"
+    }
+  },
+  {
+    "method": "txAndSweepPreHook",
+    "params": [
+      {
+        "name": "taskRound",
+        "type": "number"
+      }
+    ],
+    "return": {
+      "type": "void"
+    }
+  },
+  {
+    "method": "txAndSweepPostHook",
+    "params": [
+      {
+        "name": "taskRound",
+        "type": "number"
+      }
+    ],
+    "return": {
+      "type": "void"
+    }
+  },
+  {
+    "method": "genAddress",
+    "params": [
+      {
+        "name": "path",
+        "type": "string"
+      },
+      {
+        "name": "index",
+        "type": "number"
+      },
+      {
+        "name": "coinName",
+        "type": "string"
+      },
+      {
+        "name": "addressType",
+        "type": "number"
+      },
+      {
+        "name": "bizMode",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "string"
+    }
+  },
+  {
+    "method": "genAddressByPrivKey",
+    "params": [
+      {
+        "name": "privKey",
+        "type": "string"
+      },
+      {
+        "name": "index",
+        "type": "number"
+      },
+      {
+        "name": "coinName",
+        "type": "string"
+      },
+      {
+        "name": "addressType",
+        "type": "number"
+      },
+      {
+        "name": "bizMode",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "string"
+    }
+  },
+  {
+    "method": "genAddressByPubKey",
+    "params": [
+      {
+        "name": "pubKey",
+        "type": "string"
+      },
+      {
+        "name": "index",
+        "type": "number"
+      },
+      {
+        "name": "coinName",
+        "type": "string"
+      },
+      {
+        "name": "addressType",
+        "type": "number"
+      },
+      {
+        "name": "bizMode",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "string"
+    }
+  },
+  {
+    "method": "normalizeAddress",
+    "params": [
+      {
+        "name": "address",
+        "type": "string"
+      },
+      {
+        "name": "coinName",
+        "type": "string"
+      },
+      {
+        "name": "addressType",
+        "type": "number"
+      }
+    ],
+    "return": {
+      "type": "string"
+    }
+  },
+  {
+    "method": "validateAddress",
+    "params": [
+      {
+        "name": "address",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  {
+    "method": "getBlockNumber",
+    "params": [],
+    "return": {
+      "type": "number"
+    }
+  },
+  {
+    "method": "getBalance",
+    "params": [
+      {
+        "name": "address",
+        "type": "string"
+      },
+      {
+        "name": "coinName",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "string"
+    }
+  },
+  {
+    "method": "withdraw",
+    "params": [
+      {
+        "name": "coinName",
+        "type": "string"
+      },
+      {
+        "name": "outputs",
+        "type": "array",
+        "element": {
+          "type": "object",
+          "fields": [
+            {
+              "name": "id",
+              "type": "number"
+            },
+            {
+              "name": "from",
+              "type": "string"
+            },
+            {
+              "name": "to",
+              "type": "string"
+            },
+            {
+              "name": "value",
+              "type": "string"
+            },
+            {
+              "name": "action",
+              "type": "string"
+            },
+            {
+              "name": "actionArgs",
+              "type": "array",
+              "element": {
+                "type": "string"
+              },
+              "required": false
+            }
+          ]
+        }
+      }
+    ],
+    "return": {
+      "type": "array",
+      "element": {
+        "type": "object",
+        "fields": [
+          {
+            "name": "txid",
+            "type": "string"
+          },
+          {
+            "name": "meta",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "orderIds",
+            "type": "array",
+            "element": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "rollback",
+            "type": "boolean",
+            "required": false
+          },
+          {
+            "name": "actionMemo",
+            "type": "string",
+            "required": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "method": "sweepToHot",
+    "params": [
+      {
+        "name": "coinName",
+        "type": "string"
+      },
+      {
+        "name": "fromAddress",
+        "type": "string"
+      },
+      {
+        "name": "cap",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "object",
+      "fields": [
+        {
+          "name": "txid",
+          "type": "string"
+        },
+        {
+          "name": "meta",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "to",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "rollback",
+          "type": "boolean",
+          "required": false
+        },
+        {
+          "name": "actionMemo",
+          "type": "string",
+          "required": false
+        }
+      ]
+    }
+  },
+  {
+    "method": "sweepToCold",
+    "params": [
+      {
+        "name": "coinName",
+        "type": "string"
+      },
+      {
+        "name": "cap",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "object",
+      "fields": [
+        {
+          "name": "txid",
+          "type": "string"
+        },
+        {
+          "name": "meta",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "to",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "rollback",
+          "type": "boolean",
+          "required": false
+        },
+        {
+          "name": "actionMemo",
+          "type": "string",
+          "required": false
+        }
+      ]
+    }
+  },
+  {
+    "method": "submitDelegation",
+    "params": [
+      {
+        "name": "delegatorAddress",
+        "type": "string"
+      },
+      {
+        "name": "validatorAddress",
+        "type": "string"
+      },
+      {
+        "name": "shareAmount",
+        "type": "string"
+      },
+      {
+        "name": "outputs",
+        "type": "array",
+        "element": {
+          "type": "object"
+        }
+      }
+    ],
+    "return": {
+      "type": "object",
+      "fields": [
+        {
+          "name": "txid",
+          "type": "string"
+        },
+        {
+          "name": "meta",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "orderIds",
+          "type": "array",
+          "element": {
+            "type": "number"
+          }
+        },
+        {
+          "name": "rollback",
+          "type": "boolean",
+          "required": false
+        },
+        {
+          "name": "actionMemo",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "actionResults",
+          "type": "array",
+          "element": {
+            "type": "string"
+          },
+          "required": false
+        }
+      ]
+    }
+  },
+  {
+    "method": "submitUnDelegation",
+    "params": [
+      {
+        "name": "delegatorAddress",
+        "type": "string"
+      },
+      {
+        "name": "validatorAddress",
+        "type": "string"
+      },
+      {
+        "name": "shareAmount",
+        "type": "string"
+      },
+      {
+        "name": "outputs",
+        "type": "array",
+        "element": {
+          "type": "object"
+        }
+      }
+    ],
+    "return": {
+      "type": "object",
+      "fields": [
+        {
+          "name": "txid",
+          "type": "string"
+        },
+        {
+          "name": "meta",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "orderIds",
+          "type": "array",
+          "element": {
+            "type": "number"
+          }
+        },
+        {
+          "name": "rollback",
+          "type": "boolean",
+          "required": false
+        },
+        {
+          "name": "actionMemo",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "actionResults",
+          "type": "array",
+          "element": {
+            "type": "string"
+          },
+          "required": false
+        }
+      ]
+    }
+  },
+  {
+    "method": "submitReDelegation",
+    "params": [
+      {
+        "name": "delegatorAddress",
+        "type": "string"
+      },
+      {
+        "name": "srcValidatorAddress",
+        "type": "string"
+      },
+      {
+        "name": "dstValidatorAddress",
+        "type": "string"
+      },
+      {
+        "name": "shareAmount",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "object",
+      "fields": [
+        {
+          "name": "txid",
+          "type": "string"
+        },
+        {
+          "name": "meta",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "rollback",
+          "type": "boolean",
+          "required": false
+        },
+        {
+          "name": "actionMemo",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "actionResults",
+          "type": "array",
+          "element": {
+            "type": "string"
+          },
+          "required": false
+        }
+      ]
+    }
+  },
+  {
+    "method": "claimReward",
+    "params": [
+      {
+        "name": "delegatorAddress",
+        "type": "string"
+      },
+      {
+        "name": "validatorAddress",
+        "type": "string",
+        "required": false
+      }
+    ],
+    "return": {
+      "type": "object",
+      "fields": [
+        {
+          "name": "txid",
+          "type": "string"
+        },
+        {
+          "name": "meta",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "rollback",
+          "type": "boolean",
+          "required": false
+        },
+        {
+          "name": "actionMemo",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "actionResults",
+          "type": "array",
+          "element": {
+            "type": "string"
+          },
+          "required": false
+        }
+      ]
+    }
+  },
+  {
+    "method": "setRewardAddress",
+    "params": [
+      {
+        "name": "delegatorAddress",
+        "type": "string"
+      },
+      {
+        "name": "rewardAddress",
+        "type": "string",
+        "required": false
+      }
+    ],
+    "return": {
+      "type": "object",
+      "fields": [
+        {
+          "name": "txid",
+          "type": "string"
+        },
+        {
+          "name": "meta",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "rollback",
+          "type": "boolean",
+          "required": false
+        },
+        {
+          "name": "actionMemo",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "actionResults",
+          "type": "array",
+          "element": {
+            "type": "string"
+          },
+          "required": false
+        }
+      ]
+    }
+  },
+  {
+    "method": "getValidators",
+    "params": [
+      {
+        "name": "delegatorAddress",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "object",
+      "fields": []
+    }
+  },
+  {
+    "method": "getValidator",
+    "params": [
+      {
+        "name": "validatorAddress",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "object",
+      "fields": []
+    }
+  },
+  {
+    "method": "getValidatorOutstandingRewards",
+    "params": [
+      {
+        "name": "validatorAddress",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "object",
+      "fields": []
+    }
+  },
+  {
+    "method": "getDelegations",
+    "params": [
+      {
+        "name": "delegatorAddress",
+        "type": "string"
+      },
+      {
+        "name": "validatorAddress",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "object",
+      "fields": []
+    }
+  },
+  {
+    "method": "getUnstakingDelegations",
+    "params": [
+      {
+        "name": "delegatorAddress",
+        "type": "string"
+      },
+      {
+        "name": "validatorAddress",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "object",
+      "fields": []
+    }
+  },
+  {
+    "method": "getRewardAddress",
+    "params": [
+      {
+        "name": "delegatorAddress",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "object",
+      "fields": []
+    }
+  },
+  {
+    "method": "getDelegationRewards",
+    "params": [
+      {
+        "name": "delegatorAddress",
+        "type": "string"
+      },
+      {
+        "name": "validatorAddress",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "object",
+      "fields": []
+    }
+  },
+  {
+    "method": "getBlockResult",
+    "params": [
+      {
+        "name": "indexOrHash",
+        "type": "number|string"
+      }
+    ],
+    "return": {
+      "type": "object",
+      "fields": [
+        {
+          "name": "hash",
+          "type": "string"
+        },
+        {
+          "name": "timestamp",
+          "type": "number"
+        },
+        {
+          "name": "txns",
+          "type": "array",
+          "element": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "txid",
+                "type": "string"
+              },
+              {
+                "name": "meta",
+                "type": "string",
+                "required": false
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "method": "getTransactionHistory",
+    "params": [
+      {
+        "name": "address",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "array",
+      "element": {
+        "type": "object",
+        "fields": [
+          {
+            "name": "txid",
+            "type": "string"
+          },
+          {
+            "name": "meta",
+            "type": "string",
+            "required": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "method": "getOrderState",
+    "params": [
+      {
+        "name": "info",
+        "type": "object",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "name": "txid",
+            "type": "string"
+          },
+          {
+            "name": "coinName",
+            "type": "string"
+          },
+          {
+            "name": "n",
+            "type": "number"
+          },
+          {
+            "name": "from",
+            "type": "string"
+          },
+          {
+            "name": "to",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "string"
+          },
+          {
+            "name": "state",
+            "type": "string"
+          },
+          {
+            "name": "bizType",
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "type": "string"
+          },
+          {
+            "name": "sequence",
+            "type": "number",
+            "required": false
+          },
+          {
+            "name": "meta",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "block",
+            "type": "number",
+            "required": false
+          },
+          {
+            "name": "action",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "actionArgs",
+            "type": "array",
+            "element": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "actionResults",
+            "type": "array",
+            "element": {
+              "type": "string"
+            },
+            "required": false
+          }
+        ]
+      },
+      {
+        "name": "bn",
+        "type": "number",
+        "required": false
+      }
+    ],
+    "return": {
+      "type": "object",
+      "fields": [
+        {
+          "name": "found",
+          "type": "boolean"
+        },
+        {
+          "name": "block",
+          "type": "number",
+          "required": false
+        },
+        {
+          "name": "fee",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "state",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "required": false
+        }
+      ]
+    }
+  },
+  {
+    "method": "getTransactionState",
+    "params": [
+      {
+        "name": "info",
+        "type": "object",
+        "fields": [
+          {
+            "name": "txid",
+            "type": "string"
+          },
+          {
+            "name": "coinName",
+            "type": "string"
+          },
+          {
+            "name": "meta",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "block",
+            "type": "number",
+            "required": false
+          }
+        ]
+      },
+      {
+        "name": "bn",
+        "type": "number",
+        "required": false
+      }
+    ],
+    "return": {
+      "type": "object",
+      "fields": [
+        {
+          "name": "type",
+          "type": "string"
+        },
+        {
+          "name": "hash",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "blockHash",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "blockNumber",
+          "type": "number",
+          "required": false
+        },
+        {
+          "name": "fee",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "confirmations",
+          "type": "number",
+          "required": false
+        },
+        {
+          "name": "from",
+          "type": "array",
+          "element": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "address",
+                "type": "string"
+              },
+              {
+                "name": "value",
+                "type": "string"
+              },
+              {
+                "name": "txid",
+                "type": "string",
+                "required": false
+              },
+              {
+                "name": "n",
+                "type": "number",
+                "required": false
+              },
+              {
+                "name": "asset",
+                "type": "string",
+                "required": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "to",
+          "type": "array",
+          "element": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "address",
+                "type": "string"
+              },
+              {
+                "name": "value",
+                "type": "string"
+              },
+              {
+                "name": "txid",
+                "type": "string",
+                "required": false
+              },
+              {
+                "name": "n",
+                "type": "number",
+                "required": false
+              },
+              {
+                "name": "asset",
+                "type": "string",
+                "required": false
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "method": "filterTransactions",
+    "params": [
+      {
+        "name": "txns",
+        "type": "array",
+        "element": {
+          "type": "string|object",
+          "fields": [
+            {
+              "name": "txid",
+              "type": "string"
+            },
+            {
+              "name": "meta",
+              "type": "string",
+              "required": false
+            }
+          ]
+        }
+      },
+      {
+        "name": "bn",
+        "type": "number",
+        "required": false
+      },
+      {
+        "name": "hasScanTask",
+        "type": "boolean",
+        "required": false
+      }
+    ],
+    "return": {
+      "type": "array",
+      "element": {
+        "type": "object",
+        "fields": [
+          {
+            "name": "txid",
+            "type": "string"
+          },
+          {
+            "name": "meta",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "bn",
+            "type": "number"
+          },
+          {
+            "name": "coreType",
+            "type": "string"
+          },
+          {
+            "name": "coinName",
+            "type": "string"
+          },
+          {
+            "name": "fromAddress",
+            "type": "string"
+          },
+          {
+            "name": "toAddress",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "string"
+          },
+          {
+            "name": "n",
+            "type": "number",
+            "required": false
+          },
+          {
+            "name": "action",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "actionMemo",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "actionResults",
+            "type": "array",
+            "element": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "isUnexpected",
+            "type": "boolean",
+            "required": false
+          },
+          {
+            "name": "isSpecial",
+            "type": "boolean",
+            "required": false
+          },
+          {
+            "name": "isInternal",
+            "type": "boolean",
+            "required": false
+          }
+        ]
+      }
+    }
+  }
+]
