@@ -828,12 +828,16 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>&#x4E3A;&#x4FDD;&#x8BC1;SEED&#x7A0B;&#x5E8F;&#x5B89;&#x5168;&#x5E76;&#x6709;&#x4E00;&#x5B9A;&#x7684;&#x62D3;&#x5C55;&#x6027;&#xFF0C;&#x7A0B;&#x5E8F;&#x5FC5;&#x987B;&#x8BBE;&#x7F6E;&#x6709;&#x6743;&#x9650;&#x8BBF;&#x95EE;&#x7684;IP&#x5730;&#x5740;&#xFF0C;&#x4F46;&#x540C;&#x65F6;SEED&#x7A0B;&#x5E8F;&#x7684;&#x7BA1;&#x7406;&#x5458;&#x6709;&#x6743;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x4FEE;&#x6539;&#x88AB;&#x5141;&#x8BB8;&#x8BBF;&#x95EE;SEED&#x7A0B;&#x5E8F;&#x7684;IP&#x5730;&#x5740;&#x3002;SEED&#x7A0B;&#x5E8F;&#x521D;&#x59CB;&#x5316;&#x540E;&#x9ED8;&#x8BA4;&#x53EA;&#x6709;&#x672C;&#x673A;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#xFF0C;&#x5982;&#x679C;&#x7BA1;&#x7406;&#x5458;&#x9009;&#x62E9;&#x4FEE;&#x6539;&#x5219;&#x539F;IP&#x5730;&#x5740;&#x88AB;&#x65B0;IP&#x5730;&#x5740;&#x8986;&#x76D6;&#x3002;SEED&#x7A0B;&#x5E8F;&#x88AB;&#x521D;&#x59CB;&#x5316;&#x540E;&#x4F1A;&#x5728;&#x540C;&#x76EE;&#x5F55;&#x4E0B;&#x751F;&#x6210;&#x4E00;&#x4E2A;config.json&#x6587;&#x4EF6;&#xFF0C;&#x7528;&#x4E0B;&#x8FF0;&#x65B9;&#x6CD5;&#x8BBE;&#x7F6E;&#x7684;&#x53C2;&#x6570;&#x90FD;&#x4F1A;&#x88AB;&#x5B58;&#x50A8;&#x5728;&#x8BE5;&#x6587;&#x4EF6;&#x4E2D;&#x3002;</p>
-<p>&#x5177;&#x4F53;&#x4FEE;&#x6539;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+                                <p>In order to ensure security and scalability, SEED program should be configured an IP address with permission to access data. If not, the default is the local IP. After the SEED program is initialized, a config.json file will be generated in the same directory.</p>
+<p>Setting IP whitelist steps are as below:</p>
 <ol>
-<li>&#x5728;SEED&#x7A0B;&#x5E8F;&#x6240;&#x5728;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x8F93;&#x5165;&#x547D;&#x4EE4;&#xFF1A;./seed --path=./workpath/  --config&#xFF0C;&#x4F1A;&#x88AB;&#x8981;&#x6C42;&#x8F93;&#x5165;&#x4E00;&#x6B21;&#x5BC6;&#x7801;&#xFF0C;&#x5FC5;&#x987B;&#x548C;&#x88AB;&#x5907;&#x4EFD;&#x7684;SEED&#x7A0B;&#x5E8F;&#x8BBE;&#x7F6E;&#x7684;&#x521D;&#x59CB;&#x5316;&#x5BC6;&#x7801;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x3002;</li>
-<li>&#x8F93;&#x5165;&#x53C2;&#x6570;&#x540D;&#xFF0C;&#x82E5;&#x6B64;&#x5904;&#x662F;&#x4FEE;&#x6539;&#x88AB;&#x5141;&#x8BB8;&#x8BBF;&#x95EE;SEED&#x7A0B;&#x5E8F;&#x7684;IP&#x5730;&#x5740;&#x5219;&#x8BE5;&#x5904;&#x5FC5;&#x987B;&#x586B;client&#xFF08;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#xFF09;&#x3002;</li>
-<li>&#x8F93;&#x5165;&#x65B0;&#x7684;&#x88AB;&#x5141;&#x8BB8;&#x8BBF;&#x95EE;SEED&#x7A0B;&#x5E8F;&#x7684;IP&#x5730;&#x5740;&#xFF0C;&#x591A;&#x4E2A;IP&#x5730;&#x5740;&#x7528;&#x9017;&#x53F7;&#x5206;&#x9694;&#x3002;&#x88AB;&#x8BBE;&#x7F6E;&#x7684;&#x6570;&#x636E;&#x7EDF;&#x4E00;&#x4EE5;&#x5BC6;&#x6587;&#x5F62;&#x5F0F;&#x88AB;&#x5B58;&#x50A8;&#x5728;seed&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x4E0B;&#x7684;config.json&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x4F1A;&#x751F;&#x6210;.config.json.md5&#x7684;&#x9690;&#x85CF;&#x6587;&#x4EF6;&#xFF0C;&#x5F53;&#x6709;&#x4EBA;&#x624B;&#x5DE5;&#x4FEE;&#x6539;&#x4EFB;&#x4F55;json&#x6216;&#x8005;md5&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x90FD;&#x4F1A;&#x5BFC;&#x81F4;&#x670D;&#x52A1;&#x65E0;&#x6CD5;&#x542F;&#x52A8;&#x3002;</li>
+<li>Paste command and enter the correct password:</li>
+</ol>
+<pre><code class="lang-bash">./seed --path=./workpath/  --config
+</code></pre>
+<ol>
+<li>Enter the data key: client.</li>
+<li>Then enter all IP addresses that are allowed to access seed. They must be separated by comma.</li>
 </ol>
 <pre><code class="lang-bash">    $ ./seed --config
     data path: <span class="hljs-string">&quot;./&quot;</span>, port: <span class="hljs-string">&quot;8899&quot;</span>.
@@ -853,7 +857,9 @@
     Setting config finished. Please start the server again.
 </code></pre>
 <p><br></p>
-<p>&#x8BBE;&#x7F6E;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x8F93;&#x5165;&#x547D;&#x4EE4;&#xFF1A;./seed --path=./workpath/  --port=8899&#xFF0C;&#x91CD;&#x542F;SEED&#x7A0B;&#x5E8F;&#x3002;&#x4F1A;&#x770B;&#x5230;&#x201C;Authorized client is:&#xFF08;&#x65B0;IP&#x5730;&#x5740;&#xFF09;&#x201D;&#xFF0C;&#x6B64;&#x5904;&#x53EF;&#x7528;&#x6765;&#x9A8C;&#x8BC1;&#x4FEE;&#x6539;&#x662F;&#x5426;&#x6210;&#x529F;&#x3002;</p>
+<ol>
+<li>Restart the program and you will see &quot;Authorized client is: &quot;. This can be used to verify if setting whitelist works.</li>
+</ol>
 <pre><code class="lang-bash">    $ ./seed
     data path: <span class="hljs-string">&quot;./&quot;</span>, port: <span class="hljs-string">&quot;8899&quot;</span>.
     Please input passowrd.
@@ -878,7 +884,11 @@
     &#x21E8; http server started on [::]:8899
 </code></pre>
 <p><br></p>
-<p>&#x53E6;&#x4E00;&#x65B9;&#x6CD5;&#x4E5F;&#x53EF;&#x4EE5;&#x9A8C;&#x8BC1;&#x4FEE;&#x6539;&#xFF0C;&#x5728;SEED&#x7A0B;&#x5E8F;&#x6240;&#x5728;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x8F93;&#x5165;&#x547D;&#x4EE4;&#xFF1A;./seed --path=./workpath/  --list&#xFF0C;&#x4F1A;&#x770B;&#x5230;&#x201C;The config list is: client: &#xFF08;&#x65B0;IP&#x5730;&#x5740;&#xFF09;&#x201D;&#x3002;</p>
+<ol>
+<li>Another method to verify is to paste the following command and you will see &quot;The config list is: client: &quot;: </li>
+</ol>
+<pre><code class="lang-bash">./seed --path=./workpath/  --list
+</code></pre>
 <pre><code class="lang-bash">    $ ./seed --list
     data path: <span class="hljs-string">&quot;./&quot;</span>, port: <span class="hljs-string">&quot;8899&quot;</span>.
     Please input passowrd.
@@ -936,7 +946,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Set Whitelist","level":"1.7.6","depth":2,"next":{"title":"Reset Password","level":"1.7.7","depth":2,"path":"seed-reset.md","ref":"seed-reset.md","articles":[]},"previous":{"title":"Data List","level":"1.7.5","depth":2,"path":"seed-list.md","ref":"seed-list.md","articles":[]},"dir":"ltr"},"config":{"plugins":["language-picker"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":2},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"jadepool","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jadepool Docs","language":"en","gitbook":"*"},"file":{"path":"seed-permission.md","mtime":"2019-05-07T11:54:54.670Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-08T04:18:35.852Z"},"basePath":".","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Set Whitelist","level":"1.7.6","depth":2,"next":{"title":"Reset Password","level":"1.7.7","depth":2,"path":"seed-reset.md","ref":"seed-reset.md","articles":[]},"previous":{"title":"Data List","level":"1.7.5","depth":2,"path":"seed-list.md","ref":"seed-list.md","articles":[]},"dir":"ltr"},"config":{"plugins":["language-picker"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":2},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"jadepool","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jadepool Docs","language":"en","gitbook":"*"},"file":{"path":"seed-permission.md","mtime":"2019-06-04T11:12:33.667Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-06T07:06:03.881Z"},"basePath":".","book":{"language":"en"}});
         });
     </script>
 </div>

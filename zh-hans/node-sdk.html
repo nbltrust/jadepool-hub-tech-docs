@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Jadepool · Jadepool Docs</title>
+        <title>Node js SDK · Jadepool Docs</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,7 +61,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="api.html" />
+    <link rel="next" href="java-sdk.html" />
     
     
 
@@ -105,7 +105,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.1.1" data-path="./">
+        <li class="chapter " data-level="1.1.1" data-path="./">
             
                 <a href="./">
             
@@ -679,7 +679,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.10.1" data-path="node-sdk.html">
+        <li class="chapter active" data-level="1.10.1" data-path="node-sdk.html">
             
                 <a href="node-sdk.html">
             
@@ -824,7 +824,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Jadepool</a>
+        <a href="." >Node js SDK</a>
     </h1>
 </div>
 
@@ -839,44 +839,154 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>Jadepool&#x662F;&#x9488;&#x5BF9;&#x4F01;&#x4E1A;&#x7EA7;&#x5BA2;&#x6237;&#x5F00;&#x53D1;&#x7684;&#x7528;&#x4E8E;&#x81EA;&#x52A8;&#x5316;&#x5904;&#x7406;&#x591A;&#x79CD;&#x52A0;&#x5BC6;&#x6570;&#x5B57;&#x8D27;&#x5E01;&#x7684;&#x533A;&#x5757;&#x94FE;&#x4E1A;&#x52A1;&#x7684;&#x8D44;&#x4EA7;&#x5B58;&#x7BA1;&#x7CFB;&#x7EDF;&#xFF0C;&#x53EF;&#x5904;&#x7406;&#x7684;&#x533A;&#x5757;&#x94FE;&#x4E1A;&#x52A1;&#x5305;&#x542B;&#xFF1A;&#x5145;&#x503C;&#x3001;&#x63D0;&#x73B0;&#x3001;&#x51B7;&#x5B58;&#x50A8;&#x3001;&#x62B5;&#x62BC;&#x3001;&#x7A7A;&#x6295;&#x7B49;&#x7B49;&#x3002;Jadepool&#x7684;&#x76EE;&#x6807;&#x5BA2;&#x6237;&#x8303;&#x56F4;&#x5E7F;&#x6CDB;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;&#x4EA4;&#x6613;&#x6240;&#x3001;Tokenfund&#x3001;&#x6570;&#x5B57;&#x8D44;&#x4EA7;&#x7BA1;&#xF9E4;&#x5E73;&#x53F0;&#x3001;&#x9879;&#x2F6C;&#x2F45;&#x7B49;&#x7B49;&#x3002;</p>
-<p>Jadepool&#x662F;&#x5355;&#x7EAF;&#x7684;&#x94B1;&#x5305;&#xFF0C;&#x4F5C;&#x7528;&#x662F;&#x4E3A;&#x5BA2;&#x6237;&#x7BA1;&#x7406;&#x6240;&#x6709;&#x52A0;&#x5BC6;&#x8D44;&#x4EA7;&#x3001;&#x5BF9;&#x533A;&#x5757;&#x94FE;&#x5B9E;&#x65F6;&#x76D1;&#x63A7;&#x548C;&#x5904;&#x7406;&#x6240;&#x6709;&#x533A;&#x5757;&#x94FE;&#x4EA4;&#x4E92;&#xFF0C;&#x6240;&#x4EE5;Jadepool&#x6CA1;&#x6709;&#x4EFB;&#x4F55;C&#x7AEF;&#x7528;&#x6237;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
-<p>Jadepool&#x652F;&#x6301;&#x5E01;&#x79CD;&#x5982;&#x4E0B;&#xFF1A;</p>
-<table>
-<thead>
-<tr>
-<th>&#x72B6;&#x6001;</th>
-<th>&#x5E01;&#x79CD; </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>&#x5DF2;&#x652F;&#x6301;</td>
-<td>BTC&#x3001;ETH&#x3001;ERC20&#x3001;USDT&#x3001;EOS&#x3001;LTC&#x3001;XRP&#x3001;XLM&#x3001;NEO&#x3001;VET&#x3001;QTUM&#x3001;CYB&#x3001;ATOM&#x3001;IRIS&#x3001;BCH&#x3001;ZCASH&#x3001;TEZOS</td>
-</tr>
-<tr>
-<td>&#x5373;&#x5C06;&#x652F;&#x6301;</td>
-<td>ChainX&#x3001;TRON&#x3001;POLKADOT</td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
-<h3 id="&#x652F;&#x6301;&#x591A;&#x79CD;&#x52A0;&#x5BC6;&#x8D44;&#x4EA7;">&#x652F;&#x6301;&#x591A;&#x79CD;&#x52A0;&#x5BC6;&#x8D44;&#x4EA7;</h3>
-<p>&#x7476;&#x6C60;&#x652F;&#x6301;&#x591A;&#x79CD;&#x52A0;&#x5BC6;&#x6570;&#x5B57;&#x8D44;&#x4EA7;&#x7684;&#x5B58;&#x7BA1;&#x3002;&#x6BCF;&#x79CD;&#x52A0;&#x5BC6;&#x6570;&#x5B57;&#x8D27;&#x5E01;&#x7684;&#x533A;&#x5757;&#x94FE;&#x90FD;&#x6709;&#x5176;&#x7279;&#x6B8A;&#x6027;&#xFF0C;&#x6240;&#x4EE5;&#x7476;&#x6C60;&#x662F;&#x4E00;&#x4E2A;&#x80FD;&#x591F;&#x9AD8;&#x6548;&#x517C;&#x5BB9;&#x591A;&#x4E2A;&#x533A;&#x5757;&#x94FE;&#x7684;&#x901A;&#x7528;&#x7CFB;&#x7EDF;&#x3002;&#x7476;&#x6C60;&#x53EF;&#x5E94;&#x5BA2;&#x6237;&#x9700;&#x6C42;&#x589E;&#x52A0;&#x5BF9;&#x66F4;&#x591A;&#x8D44;&#x4EA7;&#x7684;&#x652F;&#x6301;&#x3002;   </p>
-<h3 id="&#x51B7;&#x70ED;&#x5206;&#x79BB;">&#x51B7;&#x70ED;&#x5206;&#x79BB;</h3>
-<p>&#x7476;&#x6C60;&#x4F5C;&#x4E3A;&#x70ED;&#x94B1;&#x5305;&#xFF0C;&#x9700;&#x53E6;&#x5916;&#x914D;&#x5907;&#x786C;&#x4EF6;&#x51B7;&#x94B1;&#x5305;&#x3002;&#x5BA2;&#x6237;&#x53EF;&#x6839;&#x636E;&#x9700;&#x6C42;&#x8C03;&#x6574;&#x5B58;&#x653E;&#x5728;&#x7476;&#x6C60;&#x548C;&#x51B7;&#x94B1;&#x5305;&#x4E2D;&#x7684;&#x8D44;&#x4EA7;&#x6BD4;&#x4F8B;&#x3002;&#x51B7;&#x94B1;&#x5305;&#x7528;&#x4EE5;&#x4FDD;&#x969C;&#x5B58;&#x653E;&#x5728;&#x7476;&#x6C60;&#x5927;&#x90E8;&#x5206;&#x8D44;&#x4EA7;&#x7684;&#x5B89;&#x5168;&#xFF0C;&#x5176;&#x4F59;&#x5219;&#x662F;&#x7528;&#x4E8E;&#x5E94;&#x5BF9;&#x7528;&#x6237;&#x63D0;&#x53D6;&#x5B58;&#x6B3E;&#x7684;&#x6D41;&#x52A8;&#x8D44;&#x4EA7;&#x3002;  </p>
-<h3 id="&#x9AD8;&#x6027;&#x80FD;">&#x9AD8;&#x6027;&#x80FD;</h3>
-<p>&#x5728;&#x5FAE;&#x670D;&#x52A1;&#x67B6;&#x6784;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x7476;&#x6C60;&#x652F;&#x6301;&#x5206;&#x5E03;&#x5F0F;&#x591A;&#x673A;&#x90E8;&#x7F72;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4E00;&#x53F0;&#x673A;&#x5668;&#x53EF;&#x4EE5;&#x53EA;&#x5904;&#x7406;&#x5BF9;&#x4E8E;&#x4E00;&#x6761;&#x533A;&#x5757;&#x94FE;&#x7684;&#x76D1;&#x6D4B;&#x548C;&#x5145;&#x503C;&#x63D0;&#x73B0;&#x8BF7;&#x6C42;&#x3002;&#x8FD9;&#x6837;&#x4E0D;&#x4EC5;&#x5206;&#x6563;&#x5B89;&#x5168;&#x98CE;&#x9669;&#xFF0C;&#x66F4;&#x5927;&#x5E45;&#x63D0;&#x9AD8;&#x5904;&#x7406;&#x8BF7;&#x6C42;&#x6548;&#x7387;&#x3002;</p>
-<h3 id="&#x72EC;&#x7ACB;&#x90E8;&#x7F72;">&#x72EC;&#x7ACB;&#x90E8;&#x7F72;</h3>
-<p>&#x6BCF;&#x4E2A;&#x5BA2;&#x6237;&#x9700;&#x72EC;&#x7ACB;&#x90E8;&#x7F72;&#x4E00;&#x5957;&#x7476;&#x6C60;&#x7CFB;&#x7EDF;&#xFF0C;&#x6240;&#x6709;&#x914D;&#x7F6E;&#x548C;&#x6570;&#x636E;&#x7531;&#x5BA2;&#x6237;&#x638C;&#x63A7;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x7476;&#x6C60;&#x90E8;&#x7F72;&#x4F7F;&#x7528; DOCKER&#xFF0C;&#x6574;&#x4E2A;&#x90E8;&#x7F72;&#x8FC7;&#x7A0B;&#x7B80;&#x5355;&#x5FEB;&#x6377;&#x3002;    </p>
-<h3 id="&#x5BC6;&#x7801;&#x673A;-hsm">&#x5BC6;&#x7801;&#x673A; HSM</h3>
-<p>&#x5BC6;&#x7801;&#x673A; HSM&#x662F;&#x4E13;&#x4E3A;&#x7476;&#x6C60;&#x4E1A;&#x52A1;&#x6253;&#x9020;&#x7684;&#x5E94;&#x7528;&#x5C42;&#x6570;&#x636E;&#x5BC6;&#x7801;&#x673A;&#xFF0C;&#x662F;&#x7269;&#x7406;&#x5B89;&#x5168;&#x7684;&#x786C;&#x4EF6;&#xFF0C;&#x627F;&#x62C5;&#x4FDD;&#x7BA1;&#x79C1;&#x94A5;&#x3001;&#x9A8C;&#x8BC1;&#x4EA4;&#x6613;&#x548C;&#x7B7E;&#x540D;&#x7684;&#x89D2;&#x8272;&#x3002;HSM&#x4E0E;&#x7476;&#x6C60;&#x5BF9;&#x63A5;&#x53EF;&#x5F62;&#x6210;&#x4E00;&#x5957;&#x5B8C;&#x6574;&#x7684;&#x5177;&#x6709;&#x66F4;&#x9AD8;&#x5B89;&#x5168;&#x6027;&#x7684;&#x52A0;&#x5BC6;&#x8D44;&#x4EA7;&#x5B58;&#x7BA1;&#x7CFB;&#x7EDF;&#xFF0C;&#x4EE5;&#x6700;&#x5927;&#x9650;&#x5EA6;&#x4FDD;&#x969C;&#x7476;&#x6C60;&#x79C1;&#x94A5;&#x548C;&#x4EA4;&#x6613;&#x7684;&#x5B89;&#x5168;&#x3002; </p>
-<h3 id="&#x7B2C;&#x4E09;&#x65B9;&#x4E0A;&#x5E01;">&#x7B2C;&#x4E09;&#x65B9;&#x4E0A;&#x5E01;</h3>
-<p>&#x7B2C;&#x4E09;&#x65B9;&#x4E0A;&#x5E01;&#xFF0C;&#x662F;&#x6307;&#x5BF9;&#x4E8E;&#x7279;&#x5B9A;&#x7C7B;&#x522B;&#x6570;&#x5B57;&#x8D44;&#x4EA7;&#x7684;&#x5B89;&#x5168;&#x5B58;&#x7BA1;&#xFF0C;&#x53EF;&#x7531;&#x7476;&#x6C60;&#x7684;&#x5408;&#x4F5C;&#x4F19;&#x4F34;&#x72EC;&#x7ACB;&#x5F00;&#x53D1;&#x5B8C;&#x6210;&#x3002;&#x57FA;&#x4E8E;&#x5FAE;&#x670D;&#x52A1;&#x67B6;&#x6784;&#xFF0C;&#x7476;&#x6C60;&#x5DF2;&#x5B8C;&#x7F8E;&#x652F;&#x6301;&#x7B2C;&#x4E09;&#x65B9;&#x4E0A;&#x5E01;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x8D4B;&#x80FD;&#x5408;&#x4F5C;&#x4F19;&#x4F34;&#x3001;&#x5171;&#x4EAB;&#x5F00;&#x53D1;&#x6210;&#x679C;&#xFF0C;&#x5FEB;&#x901F;&#x62D3;&#x5C55;&#x751F;&#x6001;&#x4F53;&#x7CFB;&#x3002;  </p>
-<h3 id="&#x53EF;&#x89C6;&#x5316;&#x7BA1;&#x7406;">&#x53EF;&#x89C6;&#x5316;&#x7BA1;&#x7406;</h3>
-<p>&#x7476;&#x6C60;Admin&#x662F;&#x4E13;&#x95E8;&#x4E3A;&#x7476;&#x6C60;&#x7CFB;&#x7EDF;&#x5F00;&#x53D1;&#x7684;&#x4E00;&#x6B3E;&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#xFF0C;&#x53EF;&#x4EE5;&#x534F;&#x52A9;&#x5BA2;&#x6237;&#x5168;&#x65B9;&#x4F4D;&#x638C;&#x63A7;&#x7476;&#x6C60;&#x8FD0;&#x884C;&#x72B6;&#x6001;&#x3002;&#x4E0D;&#x540C;&#x89D2;&#x8272;&#x548C;&#x8D26;&#x6237;&#x53EF;&#x5728;&#x88AB;&#x8D85;&#x7EA7;&#x7BA1;&#x7406;&#x5458;&#x9650;&#x5236;&#x6743;&#x9650;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x5BF9;&#x7476;&#x6C60;&#x8FDB;&#x884C;&#x8BFB;&#x5199;&#x64CD;&#x4F5C;&#xFF0C;&#x4F8B;&#x5982;&#x67E5;&#x770B;&#x4F59;&#x989D;&#x3001;&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x3001;&#x7BA1;&#x7406;&#x7528;&#x6237;&#x3001;&#x67E5;&#x770B;&#x8FD0;&#x8425;&#x548C;&#x5BA1;&#x8BA1;&#x60C5;&#x51B5;&#x7B49;&#x7B49;&#x3002; </p>
-<h3 id="&#x7CBE;&#x786E;&#x5BA1;&#x8BA1;">&#x7CBE;&#x786E;&#x5BA1;&#x8BA1;</h3>
-<p>&#x4E3A;&#x786E;&#x4FDD;&#x5BA2;&#x6237;&#x7684;&#x8D44;&#x4EA7;&#x5B89;&#x5168;&#x548C;&#x53CC;&#x65B9;&#x6570;&#x636E;&#x4E00;&#x81F4;&#xFF0C;&#x7476;&#x6C60;&#x63D0;&#x4F9B;&#x5BA1;&#x8BA1;API&#x4F9B;&#x5BA2;&#x6237;&#x6839;&#x636E;&#x81EA;&#x8EAB;&#x9700;&#x6C42;&#x53D1;&#x8D77;&#x5BA1;&#x8BA1;&#x8BF7;&#x6C42;&#xFF0C;&#x6216;&#x8005;&#x53EF;&#x4EE5;&#x5728;admin&#x4E0A;&#x968F;&#x65F6;&#x67E5;&#x770B;&#x5B9E;&#x65F6;&#x5BA1;&#x8BA1;&#x7ED3;&#x679C;&#xFF0C;&#x751A;&#x81F3;&#x53EF;&#x4EE5;&#x7ED9;&#x5BA1;&#x8BA1;&#x8BBE;&#x7F6E;&#x5B9A;&#x65F6;&#xFF0C;&#x5F85;&#x5BA1;&#x8BA1;&#x81EA;&#x52A8;&#x5B8C;&#x6210;&#x540E;&#x4F1A;&#x751F;&#x6210;&#x53EF;&#x4F9B;&#x4E0B;&#x8F7D;&#x7684;&#x5BA1;&#x8BA1;&#x62A5;&#x8868;&#x3002;</p>
+                                <p>&#x67E5;&#x770B;Node js SDK Github&#x4EE3;&#x7801;&#xFF1A;<a href="https://github.com/nbltrust/jadepool-sdk-nodejs" target="_blank">https://github.com/nbltrust/jadepool-sdk-nodejs</a></p>
+<h3 id="node-js-sdk&#x4F7F;&#x7528;&#x6B65;&#x9AA4;">Node js SDK&#x4F7F;&#x7528;&#x6B65;&#x9AA4;</h3>
+<h4 id="step-1">Step 1</h4>
+<p>&#x4F7F;&#x7528;SDK&#x524D;&#x8BF7;&#x5148;&#x642D;&#x5EFA;&#x597D;&#x5E76;&#x542F;&#x52A8;Jadepool&#x7CFB;&#x7EDF;&#xFF0C;&#x5305;&#x62EC;jadepool-bn, jadepool-api&#x548C;jadepool-admin&#x3002;</p>
+<h4 id="step-2">Step 2</h4>
+<p>&#x751F;&#x6210;ecc&#x516C;&#x79C1;&#x94A5;&#x5BF9;&#xFF0C;&#x5728;terminal&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code class="lang-bash">    $ git <span class="hljs-built_in">clone</span> https://github.com/nbltrust/jadepool-sdk-nodejs.git
+</code></pre>
+<p>&#x8FDB;&#x5165;jadepool-sdk-nodejs&#x76EE;&#x5F55;&#xFF0C;&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code class="lang-bash">    $ bin/cli.js keypairs
+</code></pre>
+<p>&#x5F97;&#x51FA;&#x5982;&#x4E0B;&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code class="lang-json">    {  
+       <span class="hljs-string">&quot;priKey&quot;</span>:<span class="hljs-string">&quot;NgM/SLWlOi30GnMcr/QINpXUfFj/vXgb+TH35PEtOY8=&quot;</span>, <span class="hljs-comment">// &#x538B;&#x7F29;&#x79C1;&#x94A5;</span>
+       <span class="hljs-string">&quot;pubKey&quot;</span>:<span class="hljs-string">&quot;Ap6d7b4L3gF8vg2/MNUBNtwK2XyBEaRpePrFWCXad4MT&quot;</span>, <span class="hljs-comment">// &#x538B;&#x7F29;&#x516C;&#x94A5;</span>
+       <span class="hljs-string">&quot;pubKeyUnCompressed&quot;</span>:<span class="hljs-string">&quot;BJ6d7b4L3gF8vg2/MNUBNtwK2XyBEaRpePrFWCXad4MTxWpOvPhJ7JLdDbgdN1d08SU/19IxwnFiTS94gIJ9oeI=&quot;</span> <span class="hljs-comment">//&#x672A;&#x538B;&#x7F29;&#x516C;&#x94A5;</span>
+    }
+</code></pre>
+<h4 id="step-3">Step 3</h4>
+<p>&#x524D;&#x5F80;admin&#x5E94;&#x7528;&#x914D;&#x7F6E;&#x9875;&#x9762;&#xFF0C;&#x521B;&#x5EFA;&#x65B0;&#x5E94;&#x7528;(app ID)&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x5728;Step 2&#x751F;&#x6210;&#x7684;ecc&#x516C;&#x94A5;&#x914D;&#x7F6E;&#x5728;&#x5E94;&#x7528;&#x4E2D;&#x3002;&#x914D;&#x7F6E;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x5F53;&#x8BE5;app ID&#x8C03;&#x7528;API&#x65F6;&#xFF0C;Jadepool&#x4F1A;&#x6839;&#x636E;&#x5176;&#x914D;&#x7F6E;&#x7684;&#x516C;&#x94A5;&#x5BF9;API&#x8BF7;&#x6C42;&#x8FDB;&#x884C;&#x9A8C;&#x7B7E;&#xFF0C;&#x5982;&#x679C;&#x9A8C;&#x8BC1;&#x4E0D;&#x901A;&#x8FC7;API&#x8BF7;&#x6C42;&#x4F1A;&#x88AB;&#x62D2;&#x7EDD;&#x3002;</p>
+<p><strong>&#x63D0;&#x793A;</strong> </p>
+<h4 id="step-4">Step 4</h4>
+<p>&#x5982;&#x679C;&#x5DF2;&#x7ECF;&#x642D;&#x5EFA;&#x63A5;&#x6536;Jadepool&#x56DE;&#x8C03;&#x901A;&#x77E5;&#x670D;&#x52A1;&#xFF0C;&#x5C06;&#x56DE;&#x8C03;&#x901A;&#x77E5;&#x670D;&#x52A1;&#x5730;&#x5740;&#x8BBE;&#x7F6E;&#x5728;Step 3&#x65B0;&#x5EFA;&#x7684;&#x5E94;&#x7528;&#x4E2D;&#x3002;&#x7136;&#x540E;&#x76F4;&#x63A5;&#x5F00;&#x59CB;&#x6267;&#x884C;Step 5&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#xFF0C;&#x5219;&#x5C06;&#x56DE;&#x8C03;&#x901A;&#x77E5;&#x5730;&#x5740;&#x8BBE;&#x7F6E;&#x4E3A;&#x201C;<a href="http://127.0.0.1:9008&#x201D;" target="_blank">http://127.0.0.1:9008&#x201D;</a></p>
+<p>&#x5728;terminal&#x8FDB;&#x5165;jadepool-sdk-nodejs&#x76EE;&#x5F55;&#xFF0C;&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code class="lang-bash">    $ <span class="hljs-built_in">cd</span> example
+    $ npm i
+</code></pre>
+<p>&#x5B89;&#x88C5;&#x5B8C;&#x4F9D;&#x8D56;&#x5305;&#x540E;&#xFF0C;&#x542F;&#x52A8;&#x6A21;&#x4EFF;&#x56DE;&#x8C03;&#x63A5;&#x53D7;&#x670D;&#x52A1;&#xFF0C;&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code class="lang-bash">    $ node app.js
+</code></pre>
+<p>&#x542F;&#x52A8;&#x6210;&#x529F;&#x4F1A;&#x663E;&#x793A;&#x201C;Jadepool callback example listen at 9008&#x201D;&#x3002;</p>
+<h4 id="step-5">Step 5</h4>
+<p>&#x5728;&#x5BF9;&#x63A5;Jadepool SDK&#x7684;&#x9879;&#x76EE;&#x4E0B;&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code class="lang-bash">    $ npm install @jadepool/sdk
+</code></pre>
+<p>&#x521D;&#x59CB;&#x5316;&#x5BF9;&#x63A5;Jadepool&#x7684;&#x914D;&#x7F6E;&#x5BF9;&#x8C61;&#xFF0C;&#x5BF9;&#x63A5;SDK&#x7684;js&#x4EE3;&#x7801;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-js">    <span class="hljs-keyword">const</span> sdk = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;@jadepool/sdk&apos;</span>)
+    <span class="hljs-keyword">const</span> config = {
+      eccKey: <span class="hljs-string">&apos;NgM/SLWlOi30GnMcr/QINpXUfFj/vXgb+TH35PEtOY8=&apos;</span>, <span class="hljs-comment">// Step 2&#x6B65;&#x9AA4;&#x751F;&#x6210;&#x7684;ecc&#x79C1;&#x94A5;</span>
+      eccKeyEncoder: <span class="hljs-string">&apos;base64&apos;</span>, <span class="hljs-comment">// &#x79C1;&#x94A5;&#x7F16;&#x7801;&#x683C;&#x5F0F;&#xFF0C;&#x53EA;&#x63A5;&#x53D7;hex&#x6216;base64</span>
+      httpEndpoint: <span class="hljs-string">&apos;http://jadepool.com:7001&apos;</span>, <span class="hljs-comment">// &#x642D;&#x5EFA;Jadepool&#x670D;&#x52A1;&#x7684;URL</span>
+      appId: <span class="hljs-string">&apos;test&apos;</span> <span class="hljs-comment">// &#x5728;Step 3&#x6B65;&#x9AA4;&#x4E2D;&#x5728;admin&#x521B;&#x5EFA;&#x7684;&#x5E94;&#x7528;(app ID)&#x7684;&#x540D;&#x79F0;</span>
+    }
+</code></pre>
+<h4 id="step-6">Step 6</h4>
+<p>&#x521B;&#x5EFA;SDK&#x5BF9;&#x8C61;&#xFF0C;&#x5C06;Step 5&#x521B;&#x5EFA;&#x7684;config&#x914D;&#x7F6E;&#x4F20;&#x5165;&#xFF0C;&#x5E76;&#x8C03;&#x7528;API&#xFF0C;js&#x4EE3;&#x7801;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-js">    <span class="hljs-keyword">const</span> api = <span class="hljs-keyword">new</span> sdk.Api(config)
+
+    <span class="hljs-comment">// &#x751F;&#x6210;&#x65B0;&#x5145;&#x503C;&#x5730;&#x5740;</span>
+    <span class="hljs-keyword">let</span> address = <span class="hljs-keyword">await</span> api.newAddress(<span class="hljs-string">&apos;BTC&apos;</span>)
+
+    <span class="hljs-comment">// &#x9A8C;&#x8BC1;&#x5730;&#x5740;&#x6709;&#x6548;&#x6027;</span>
+    <span class="hljs-keyword">let</span> valid = <span class="hljs-keyword">await</span> api.verifyAddress(<span class="hljs-string">&apos;BTC&apos;</span>, address)
+
+    <span class="hljs-comment">// &#x7533;&#x8BF7;&#x63D0;&#x73B0;</span>
+    <span class="hljs-keyword">let</span> withdrawOrder = <span class="hljs-keyword">await</span> api.withdraw({
+      coinId: <span class="hljs-string">&apos;BTC&apos;</span>,
+      to: <span class="hljs-string">&apos;mg2bfYdfii2GG13HK94jXBYPPCSWRmSiAS&apos;</span>,
+      value: <span class="hljs-string">&apos;0.1&apos;</span>,
+      sequence: <span class="hljs-number">0</span>
+    })
+
+    <span class="hljs-comment">// &#x67E5;&#x8BE2;&#x8BA2;&#x5355;&#x72B6;&#x6001;</span>
+    <span class="hljs-keyword">let</span> order = <span class="hljs-keyword">await</span> api.getOrder(withdrawOrder.id)
+
+    <span class="hljs-comment">// &#x67E5;&#x8BE2;&#x4EE3;&#x5E01;&#x4F59;&#x989D;&#x72B6;&#x51B5;</span>
+    <span class="hljs-keyword">let</span> balance = <span class="hljs-keyword">await</span> api.getBalance(<span class="hljs-string">&apos;BTC&apos;</span>)
+</code></pre>
+<h4 id="step-7">Step 7</h4>
+<p>&#x5982;&#x679C;Step 6&#x7533;&#x8BF7;&#x63D0;&#x73B0;API&#x8C03;&#x7528;&#x6210;&#x529F;&#xFF0C;&#x63D0;&#x73B0;&#x7684;&#x8BA2;&#x5355;&#x72B6;&#x6001;&#x4F1A;&#x4EE5;&#x56DE;&#x8C03;&#x7684;&#x5F62;&#x5F0F;&#x5411;&#x5728;Step 4&#x8BBE;&#x7F6E;&#x7684;&#x56DE;&#x8C03;&#x901A;&#x77E5;&#x5730;&#x5740;&#x63A8;&#x9001;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-json">{  
+   <span class="hljs-string">&quot;id&quot;</span>:<span class="hljs-string">&quot;205&quot;</span>, <span class="hljs-comment">// &#x8BA2;&#x5355;ID</span>
+   <span class="hljs-string">&quot;state&quot;</span>:<span class="hljs-string">&quot;online&quot;</span>, <span class="hljs-comment">// &#x8BA2;&#x5355;&#x72B6;&#x6001;</span>
+   <span class="hljs-string">&quot;bizType&quot;</span>:<span class="hljs-string">&quot;WITHDRAW&quot;</span>, <span class="hljs-comment">// &#x8BA2;&#x5355;&#x7C7B;&#x578B;</span>
+   <span class="hljs-string">&quot;coinType&quot;</span>:<span class="hljs-string">&quot;USDT&quot;</span>, <span class="hljs-comment">// &#x4EE3;&#x5E01;</span>
+   <span class="hljs-string">&quot;to&quot;</span>:<span class="hljs-string">&quot;n3ssE4cjHB4ygJ65WCTXJxhHgkoR4982RH&quot;</span>, <span class="hljs-comment">// &#x63D0;&#x73B0;&#x76EE;&#x6807;&#x5730;&#x5740;</span>
+   <span class="hljs-string">&quot;value&quot;</span>:<span class="hljs-string">&quot;0.01&quot;</span>, <span class="hljs-comment">// &#x63D0;&#x73B0;&#x91D1;&#x989D;</span>
+   <span class="hljs-string">&quot;confirmations&quot;</span>:<span class="hljs-number">0</span>, <span class="hljs-comment">// &#x4EA4;&#x6613;&#x786E;&#x8BA4;&#x6570;</span>
+   <span class="hljs-string">&quot;create_at&quot;</span>:<span class="hljs-number">1542796362376</span>, <span class="hljs-comment">// &#x8BA2;&#x5355;&#x521B;&#x5EFA;&#x65F6;&#x95F4;</span>
+   <span class="hljs-string">&quot;update_at&quot;</span>:<span class="hljs-number">1542796364037</span>, <span class="hljs-comment">// &#x8BA2;&#x5355;&#x66F4;&#x65B0;&#x65F6;&#x95F4;</span>
+   <span class="hljs-string">&quot;from&quot;</span>:<span class="hljs-string">&quot;n4jVcTDWK4tpeZS6aosYo7M8incK3cdKRQ&quot;</span>, <span class="hljs-comment">// &#x63D0;&#x73B0;&#x51FA;&#x8D26;&#x5730;&#x5740;</span>
+   <span class="hljs-string">&quot;fee&quot;</span>:<span class="hljs-string">&quot;0.00015067&quot;</span>, <span class="hljs-comment">// &#x4EA4;&#x6613;&#x8017;&#x8D39;&#x77FF;&#x5DE5;&#x8D39;</span>
+   <span class="hljs-string">&quot;data&quot;</span>:{ <span class="hljs-comment">// &#x533A;&#x5757;&#x94FE;&#x5B9E;&#x65F6;&#x6570;&#x636E; </span>
+      <span class="hljs-string">&quot;timestampHandle&quot;</span>:<span class="hljs-number">1542796363610</span>,
+      <span class="hljs-string">&quot;burnt&quot;</span>:<span class="hljs-string">&quot;0.00000546&quot;</span>,
+      <span class="hljs-string">&quot;timestampFinish&quot;</span>:<span class="hljs-number">0</span>,
+      <span class="hljs-string">&quot;timestampBegin&quot;</span>:<span class="hljs-number">1542796364036</span>,
+      <span class="hljs-string">&quot;type&quot;</span>:<span class="hljs-string">&quot;Bitcoin&quot;</span>,
+      <span class="hljs-string">&quot;hash&quot;</span>:<span class="hljs-string">&quot;fda1922974fb6875ad3b73be76cb2ded0b1828cf85d04308679da9ed5286bf4f&quot;</span>,
+      <span class="hljs-string">&quot;fee&quot;</span>:<span class="hljs-number">0.00015067</span>,
+      <span class="hljs-string">&quot;blockNumber&quot;</span>:<span class="hljs-number">-1</span>,
+      <span class="hljs-string">&quot;blockHash&quot;</span>:<span class="hljs-string">&quot;&quot;</span>,
+      <span class="hljs-string">&quot;confirmations&quot;</span>:<span class="hljs-number">0</span>,
+      <span class="hljs-string">&quot;from&quot;</span>:[  
+         {  
+            <span class="hljs-string">&quot;address&quot;</span>:<span class="hljs-string">&quot;n4jVcTDWK4tpeZS6aosYo7M8incK3cdKRQ&quot;</span>,
+            <span class="hljs-string">&quot;value&quot;</span>:<span class="hljs-string">&quot;0.00712057&quot;</span>,
+            <span class="hljs-string">&quot;txid&quot;</span>:<span class="hljs-string">&quot;df6e2396fb30a0b8d51f51c1030a642ef29364f4f63b5e49a46cef43b847175d&quot;</span>,
+            <span class="hljs-string">&quot;n&quot;</span>:<span class="hljs-number">1</span>
+         }
+      ],
+      <span class="hljs-string">&quot;to&quot;</span>:[  
+         {  
+            <span class="hljs-string">&quot;address&quot;</span>:<span class="hljs-string">&quot;n3ssE4cjHB4ygJ65WCTXJxhHgkoR4982RH&quot;</span>,
+            <span class="hljs-string">&quot;value&quot;</span>:<span class="hljs-string">&quot;0.00000546&quot;</span>,
+            <span class="hljs-string">&quot;txid&quot;</span>:<span class="hljs-string">&quot;&quot;</span>,
+            <span class="hljs-string">&quot;n&quot;</span>:<span class="hljs-number">0</span>
+         },
+         {  
+            <span class="hljs-string">&quot;address&quot;</span>:<span class="hljs-string">&quot;n4jVcTDWK4tpeZS6aosYo7M8incK3cdKRQ&quot;</span>,
+            <span class="hljs-string">&quot;value&quot;</span>:<span class="hljs-string">&quot;0.00696444&quot;</span>,
+            <span class="hljs-string">&quot;txid&quot;</span>:<span class="hljs-string">&quot;&quot;</span>,
+            <span class="hljs-string">&quot;n&quot;</span>:<span class="hljs-number">1</span>
+         }
+      ]
+   },
+   <span class="hljs-string">&quot;hash&quot;</span>:<span class="hljs-string">&quot;fda1922974fb6875ad3b73be76cb2ded0b1828cf85d04308679da9ed5286bf4f&quot;</span>, <span class="hljs-comment">// &#x4EA4;&#x6613;&#x54C8;&#x5E0C;</span>
+   <span class="hljs-string">&quot;extraData&quot;</span>:<span class="hljs-string">&quot;&quot;</span>,
+   <span class="hljs-string">&quot;sendAgain&quot;</span>:<span class="hljs-literal">false</span>
+}
+</code></pre>
+<h4 id="step-8">Step 8</h4>
+<p>&#x5BF9;&#x56DE;&#x8C03;&#x8FDB;&#x884C;&#x9A8C;&#x7B7E;&#xFF0C;&#x524D;&#x5F80;admin Jadepool&#x670D;&#x52A1;&#x9875;&#x9762;&#xFF0C;&#x590D;&#x5236;Jadepool&#x7684;ecc&#x516C;&#x94A5;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-js">  <span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express&apos;</span>)
+  <span class="hljs-keyword">const</span> morgan = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;morgan&apos;</span>)
+  <span class="hljs-keyword">const</span> cors = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;cors&apos;</span>)
+  <span class="hljs-keyword">const</span> bodyParser = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;body-parser&apos;</span>)
+
+  <span class="hljs-keyword">const</span> app = express()
+  app.use(morgan(<span class="hljs-string">&apos;dev&apos;</span>))
+  app.use(bodyParser.json())
+  app.use(cors())
+
+  <span class="hljs-comment">// &#x4F7F;&#x7528;SDK middleware</span>
+  <span class="hljs-keyword">const</span> sdk = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;../src&apos;</span>)
+  app.use(sdk.middleware({
+    verifyKey: <span class="hljs-string">&apos;BKurum9EkO0jvTYTRJH6sLOOrpctCKIItmcCjy1hBGPNBz4pql3mWjb8JyZ/A99qUUByXX5vcWb292Q5NLFFJt0=&apos;</span>, <span class="hljs-comment">// Jadepool&#x7684;ecc&#x516C;&#x94A5;</span>
+    verifyKeyEncoder: <span class="hljs-string">&apos;base64&apos;</span> <span class="hljs-comment">// Jadepool&#x7684;ecc&#x516C;&#x94A5;&#x7684;&#x7F16;&#x7801;&#x683C;&#x5F0F;&#xFF0C;hex&#x6216;base64</span>
+  }))
+
+  app.post(<span class="hljs-string">&apos;/callback&apos;</span>, (req, res, next) =&gt; {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Jadepool Message:&apos;</span>, <span class="hljs-built_in">JSON</span>.stringify(req.body))
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Is message valid?&apos;</span>, req.msgValid)
+    res.status(<span class="hljs-number">200</span>).send(<span class="hljs-string">&apos;&apos;</span>)
+  })
+</code></pre>
 
                                 
                                 </section>
@@ -905,7 +1015,7 @@
             
                 
                 
-                <a href="api.html" class="navigation navigation-next navigation-unique" aria-label="Next page: API">
+                <a href="java-sdk.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Java SDK">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -916,7 +1026,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Jadepool","level":"1.1.1","depth":2,"next":{"title":"API","level":"1.1.2","depth":2,"path":"api.md","ref":"api.md","articles":[]},"previous":{"title":"简介","level":"1.1","depth":1,"ref":"","articles":[{"title":"Jadepool","level":"1.1.1","depth":2,"path":"README.md","ref":"README.md","articles":[]},{"title":"API","level":"1.1.2","depth":2,"path":"api.md","ref":"api.md","articles":[]},{"title":"快速上手","level":"1.1.3","depth":2,"path":"quick-start.md","ref":"quick-start.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["language-picker"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":2},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"jadepool","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jadepool Docs","language":"zh-hans","gitbook":"*"},"file":{"path":"README.md","mtime":"2019-06-05T11:02:10.082Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-06T07:06:03.881Z"},"basePath":".","book":{"language":"zh-hans"}});
+            gitbook.page.hasChanged({"page":{"title":"Node js SDK","level":"1.10.1","depth":2,"next":{"title":"Java SDK","level":"1.10.2","depth":2,"path":"java-sdk.md","ref":"java-sdk.md","articles":[]},"previous":{"title":"工具","level":"1.10","depth":1,"ref":"","articles":[{"title":"Node js SDK","level":"1.10.1","depth":2,"path":"node-sdk.md","ref":"node-sdk.md","articles":[]},{"title":"Java SDK","level":"1.10.2","depth":2,"path":"java-sdk.md","ref":"java-sdk.md","articles":[]},{"title":"测试链钱包","level":"1.10.3","depth":2,"path":"wallet.md","ref":"wallet.md","articles":[]},{"title":"测试链水龙头","level":"1.10.4","depth":2,"path":"faucet.md","ref":"faucet.md","articles":[]},{"title":"区块链浏览器","level":"1.10.5","depth":2,"path":"explorer.md","ref":"explorer.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["language-picker"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":2},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"jadepool","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jadepool Docs","language":"zh-hans","gitbook":"*"},"file":{"path":"node-sdk.md","mtime":"2019-06-06T07:05:23.165Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-06T07:06:03.881Z"},"basePath":".","book":{"language":"zh-hans"}});
         });
     </script>
 </div>

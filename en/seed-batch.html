@@ -828,12 +828,12 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>&#x53EF;&#x4EE5;&#x5BF9;SEED&#x7A0B;&#x5E8F;&#x7684;data&#x8FDB;&#x884C;&#x6279;&#x91CF;&#x5BFC;&#x5165;&#xFF0C;&#x5728;&#x5728;SEED&#x7A0B;&#x5E8F;&#x6240;&#x5728;&#x76EE;&#x5F55;&#x4E0B;&#x653E;&#x7F6E;txt&#x6587;&#x4EF6;&#xFF0C;&#x6587;&#x4EF6;&#x4E2D;&#x5305;&#x542B;&#x5192;&#x53F7;&#x5206;&#x5272;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x6BCF;&#x884C;&#x662F;&#x4E00;&#x7EC4;data&#x6570;&#x636E;&#x3002;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+                                <p>Data can be imported in a batch instead of setting one by one. Create a &quot;txt&quot; file which contains data under the directory where the SEED program is located. The data format should be as below:</p>
 <pre><code class="lang-txt">    ETH:0x577fc8ccd2f4a31321874841c3251eaf2c2f84f9
     LTC:mhc8TGrKD5daMcjngCurh8pMfywEJZ2sL4
 </code></pre>
 <p><br></p>
-<p>&#x5BFC;&#x5165;&#x524D;data&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<p>Before importing, viewing data returns as below:</p>
 <pre><code class="lang-bash">    $ ./seed --list
     data path: <span class="hljs-string">&quot;./&quot;</span>, port: <span class="hljs-string">&quot;8899&quot;</span>.
     Please input passowrd.
@@ -848,7 +848,10 @@
     client: <span class="hljs-string">&quot;127.0.0.1,47.75.154.248&quot;</span>
 </code></pre>
 <p><br></p>
-<p>&#x5728;SEED&#x7A0B;&#x5E8F;&#x6240;&#x5728;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x8F93;&#x5165;&#x547D;&#x4EE4;&#xFF1A;./seed --path=./workpath/  --import test.txt&#xFF0C;&#x8FD9;&#x91CC;&#x7684;test.txt&#x662F;&#x4E0A;&#x8FF0;&#x7684;&#x5305;&#x542B;&#x5BFC;&#x5165;&#x6570;&#x636E;&#x7684;txt&#x6587;&#x4EF6;&#x540D;&#xFF0C;&#x6587;&#x4EF6;&#x540D;&#x4EFB;&#x610F;&#x3002;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#xFF0C;&#x5FC5;&#x987B;&#x548C;&#x88AB;&#x5907;&#x4EFD;&#x7684;SEED&#x7A0B;&#x5E8F;&#x8BBE;&#x7F6E;&#x7684;&#x521D;&#x59CB;&#x5316;&#x5BC6;&#x7801;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x3002;&#x5982;&#x679C;&#x6587;&#x4EF6;&#x89E3;&#x6790;&#x6B63;&#x786E;&#xFF0C;&#x4F1A;&#x6253;&#x51FA;&#x4E00;&#x5171;&#x8981;&#x5BFC;&#x5165;&#x7684;&#x6570;&#x636E;&#x6761;&#x6570;&#x548C;&#x8986;&#x76D6;&#x7684;&#x6570;&#x636E;&#x6761;&#x6570;&#xFF0C;&#x8F93;&#x5165;yes&#x786E;&#x8BA4;&#x5BFC;&#x5165;&#xFF0C;&#x5BFC;&#x5165;&#x6210;&#x529F;&#x3002;</p>
+<p>Paste command and enter the correct password:</p>
+<pre><code class="lang-bash">./seed --path=./workpath/  --import your-txt-file-name.txt
+</code></pre>
+<p>Then the terminal will show messages as below:</p>
 <pre><code class="lang-bash">    $ ./seed --import test.txt
     data path: <span class="hljs-string">&quot;./&quot;</span>, port: <span class="hljs-string">&quot;8899&quot;</span>.
     Please input passowrd.
@@ -862,7 +865,7 @@
     import data finished. Please start the server again.
 </code></pre>
 <p><br></p>
-<p>&#x5BFC;&#x5165;&#x540E;data&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<p>After importing, viewing data returns as below:</p>
 <pre><code class="lang-bash">    $ ./seed --list
     data path: <span class="hljs-string">&quot;./&quot;</span>, port: <span class="hljs-string">&quot;8899&quot;</span>.
     Please input passowrd.
@@ -921,7 +924,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Import Data","level":"1.7.8","depth":2,"next":{"title":"Data Format","level":"1.7.9","depth":2,"path":"seed-format.md","ref":"seed-format.md","articles":[]},"previous":{"title":"Reset Password","level":"1.7.7","depth":2,"path":"seed-reset.md","ref":"seed-reset.md","articles":[]},"dir":"ltr"},"config":{"plugins":["language-picker"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":2},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"jadepool","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jadepool Docs","language":"en","gitbook":"*"},"file":{"path":"seed-batch.md","mtime":"2019-05-07T11:54:54.667Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-08T04:18:35.852Z"},"basePath":".","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Import Data","level":"1.7.8","depth":2,"next":{"title":"Data Format","level":"1.7.9","depth":2,"path":"seed-format.md","ref":"seed-format.md","articles":[]},"previous":{"title":"Reset Password","level":"1.7.7","depth":2,"path":"seed-reset.md","ref":"seed-reset.md","articles":[]},"dir":"ltr"},"config":{"plugins":["language-picker"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":2},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"jadepool","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jadepool Docs","language":"en","gitbook":"*"},"file":{"path":"seed-batch.md","mtime":"2019-06-04T11:24:12.243Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-06T07:06:03.881Z"},"basePath":".","book":{"language":"en"}});
         });
     </script>
 </div>
