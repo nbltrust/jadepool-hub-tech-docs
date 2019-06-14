@@ -13,7 +13,8 @@ JadePool SAAS，是拓链（上海）科技有限公司瑶池托管生态的重�
 ### 推荐试用流程
 
 1. 在官网注册账号。
-过程中需要使用身份验证器，请参考文档(https://www.jianshu.com/p/f03641c255e3)
+过程中需要使用身份验证器，请参考文档
+> https://www.jianshu.com/p/f03641c255e3
 
 2. 创建wallet。
 ![create wallet](https://ws1.sinaimg.cn/large/006tNc79gy1g40iulo0hrj31400sgjs9.jpg)
@@ -25,10 +26,10 @@ JadePool SAAS，是拓链（上海）科技有限公司瑶池托管生态的重�
 ![get address](https://ws1.sinaimg.cn/large/006tNc79gy1g40j5e7zhkj31400sgwf7.jpg)
 
 5. 充值，线下用钱包往充值地址充钱。
-- ETH及ERC20钱包安装与使用
-请参考文档(https://baijiahao.baidu.com/s?id=1598523071657180048&wfr=spider&for=pc)
+- ETH及ERC20钱包安装与使用,请参考文档
+> https://baijiahao.baidu.com/s?id=1598523071657180048&wfr=spider&for=pc
 - EOS钱包安装与使用
-https://monitor.jungletestnet.io
+> https://monitor.jungletestnet.io
 生成公私钥对:
 ![generate key pair](https://ws3.sinaimg.cn/large/006tNc79gy1g40jgbqw2lj31h40sqdy6.jpg)
 创建账号:
@@ -36,8 +37,8 @@ https://monitor.jungletestnet.io
 向水龙头获取测试币:
 ![faucet](https://ws1.sinaimg.cn/large/006tNc79gy1g40jloqpbej31hc0u01ae.jpg)
 转币：
-https://jungle.eosx.io/guides/how-to-set-up-scatter
-https://jungle.eosx.io/guides/how-to-transfer-tokens
+> https://jungle.eosx.io/guides/how-to-set-up-scatter
+> https://jungle.eosx.io/guides/how-to-transfer-tokens
 
 6. 提现，往私有地址或账号提现。
 ![withdraw](https://ws4.sinaimg.cn/large/006tNc79gy1g40jv7h8phj31400sg74x.jpg)
@@ -45,9 +46,9 @@ https://jungle.eosx.io/guides/how-to-transfer-tokens
 ### API对接
 建议通过sdk来试用，目前支持nodejs的sdk。
 - sdk文档及demo
-https://github.com/nbltrust/jadepool-saas-sdk-nodejs
+> https://github.com/nbltrust/jadepool-saas-sdk-nodejs
 - 接口文档
-http://34.92.224.225:4000/
+> http://34.92.224.225:4000/
 
 ### 问题及支持
 
