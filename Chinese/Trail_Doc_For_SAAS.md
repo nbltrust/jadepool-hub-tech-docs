@@ -30,14 +30,16 @@ JadePool SAAS，是拓链（上海）科技有限公司瑶池托管生态的重�
 > https://baijiahao.baidu.com/s?id=1598523071657180048&wfr=spider&for=pc
 - EOS钱包安装与使用
 > https://monitor.jungletestnet.io
-生成公私钥对:
+
+**生成公私钥对**:
 ![generate key pair](https://ws3.sinaimg.cn/large/006tNc79gy1g40jgbqw2lj31h40sqdy6.jpg)
-创建账号:
+**创建账号**:
 ![create account](https://ws2.sinaimg.cn/large/006tNc79gy1g40jhaa4zjj31h60stwvl.jpg)
-向水龙头获取测试币:
+**从水龙头获取测试币**:
 ![faucet](https://ws1.sinaimg.cn/large/006tNc79gy1g40jloqpbej31hc0u01ae.jpg)
-转币：
+**转币**:
 > https://jungle.eosx.io/guides/how-to-set-up-scatter
+
 > https://jungle.eosx.io/guides/how-to-transfer-tokens
 
 6. 提现，往私有地址或账号提现。
