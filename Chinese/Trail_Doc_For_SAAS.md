@@ -3,12 +3,13 @@
 ### 介绍
 JadePool SAAS，是拓链（上海）科技有限公司瑶池托管生态的重要组成部分，致力于给机构提供贴合业务需求的托管实例与风控服务，丰富的API接口和简便的Web管理界面，让资产的管理更加安全、易用和定制化。
 
-
 - 网址
 https://saas.jadepool.io
 
-
 试用服务我们会先开启ETH,NASH,BTC,EOS。
+- ETH&NASH,kovan测试链
+- BTC,公共测试链
+- EOS,jungle测试链
 
 ### 推荐试用流程
 
@@ -21,7 +22,7 @@ https://saas.jadepool.io
 3. 添加币种。
 ![add coin](https://ws1.sinaimg.cn/large/006tNc79gy1g40j1suxd2j31400sgdh1.jpg)
 
-4. 生成充值地址充值。
+4. 生成充值地址。
 ![get address](https://ws1.sinaimg.cn/large/006tNc79gy1g40j5e7zhkj31400sgwf7.jpg)
 
 5. 充值，线下用钱包往充值地址充钱。
