@@ -46,9 +46,18 @@ db.configdats.update({path:'tokens',origin:/abi/},{$set：{customized:true}},fal
 NODE_ENV=dev node build/index.bundle.js -m do -a do-addresses-set-incoming,ETH //设置ETH地址
 ```
 
-9. 启动瑶池，等待数据库重建index后，再启动链
+9. 数据库block表手动重建index
+```bash
+db.getCollection('blocks').createIndex({ type: 1, height: 1 }, { name: 'findByHeightAsc' })
+db.getCollection('blocks').createIndex({ type: 1, height: -1 }, { name: 'findByHeightDesc' })
+db.getCollection('blocks').createIndex({ type: 1, timestamp: 1 }, { name: 'findByTimestampAsc' })
+db.getCollection('blocks').createIndex({ type: 1, timestamp: -1 }, { name: 'findByTimestampDesc' })
+db.getCollection('blocks').createIndex({ scaned: 1, type: 1, height: 1 }, { name: 'findByScanned', partialFilterExpression: { scaned: false }})
+```
 
-10. 需要superadmin给运维角色增加应用配置的权限，并检查ecc配置和回调地址的设置
+10. 启动瑶池，等待数据库其他表重建index后，再启动链
+
+11. 需要superadmin给运维角色增加应用配置的权限，并检查ecc配置和回调地址的设置
 
 
 
@@ -99,6 +108,16 @@ db.configdats.update({path:'tokens',origin:/abi/},{$set：{customized:true}},fal
 NODE_ENV=production node build/index.bundle.js -m do -a do-addresses-set-incoming,ETH //设置ETH地址
 ```
 
-9. 启动瑶池，等待数据库重建index后，再启动链
+9. 数据库block表手动重建index
 
-10. 需要superadmin给运维角色增加应用配置的权限，并检查ecc配置和回调地址的设置
+```bash
+db.getCollection('blocks').createIndex({ type: 1, height: 1 }, { name: 'findByHeightAsc' })
+db.getCollection('blocks').createIndex({ type: 1, height: -1 }, { name: 'findByHeightDesc' })
+db.getCollection('blocks').createIndex({ type: 1, timestamp: 1 }, { name: 'findByTimestampAsc' })
+db.getCollection('blocks').createIndex({ type: 1, timestamp: -1 }, { name: 'findByTimestampDesc' })
+db.getCollection('blocks').createIndex({ scaned: 1, type: 1, height: 1 }, { name: 'findByScanned', partialFilterExpression: { scaned: false }})
+```
+
+10. 启动瑶池，等待数据库其他表重建index后，再启动链
+
+11. 需要superadmin给运维角色增加应用配置的权限，并检查ecc配置和回调地址的设置
