@@ -46,7 +46,7 @@ db.configdats.update({path:'tokens',origin:/abi/},{$set：{customized:true}},fal
 NODE_ENV=dev node build/index.bundle.js -m do -a do-addresses-set-incoming,ETH //设置ETH地址
 ```
 
-9. 数据库block表手动重建index
+9. 数据库jadepool-BN-dev的block表手动重建index
 ```bash
 db.getCollection('blocks').createIndex({ type: 1, height: 1 }, { name: 'findByHeightAsc' })
 db.getCollection('blocks').createIndex({ type: 1, height: -1 }, { name: 'findByHeightDesc' })
@@ -108,7 +108,7 @@ db.configdats.update({path:'tokens',origin:/abi/},{$set：{customized:true}},fal
 NODE_ENV=production node build/index.bundle.js -m do -a do-addresses-set-incoming,ETH //设置ETH地址
 ```
 
-9. 数据库block表手动重建index
+9. 数据库jadepool-BN-prod的block表手动重建index
 
 ```bash
 db.getCollection('blocks').createIndex({ type: 1, height: 1 }, { name: 'findByHeightAsc' })
