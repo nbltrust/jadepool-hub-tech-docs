@@ -250,7 +250,7 @@
                 <a href="sweep.html">
             
                     
-                    热转冷业务
+                    冷存储业务
             
                 </a>
             
@@ -295,7 +295,7 @@
                 <a href="infra.html">
             
                     
-                    架构
+                    工作模型
             
                 </a>
             
@@ -406,6 +406,19 @@
             
                     
                     常见使用场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="holding-reason.html">
+            
+                <a href="holding-reason.html">
+            
+                    
+                    冻结订单总结
             
                 </a>
             
@@ -912,7 +925,7 @@
         <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
       },
       {
-        <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;addressType&quot;</span>,
+        <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;addressType&quot;</span>, <span class="hljs-comment">// &#x89C1;&#x672C;&#x7BC7;&#x6700;&#x540E;&#x9644;&#x5F55;</span>
         <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;number&quot;</span>
       },
       {
@@ -955,6 +968,7 @@
   }
 </code></pre>
 <h4 id="&#x9A8C;&#x8BC1;&#x5730;&#x5740;---validateaddress">&#x9A8C;&#x8BC1;&#x5730;&#x5740; - validateAddress</h4>
+<p>&#x7528;&#x6765;&#x9A8C;&#x8BC1;&#x4F20;&#x5165;&#x5730;&#x5740;&#x5BF9;&#x4E8E;&#x63A5;&#x5165;&#x533A;&#x5757;&#x94FE;&#x662F;&#x5426;&#x662F;&#x4E00;&#x4E2A;&#x5408;&#x6CD5;&#x7684;&#x5730;&#x5740;&#x3002;</p>
 <pre><code class="lang-json">   {
     <span class="hljs-string">&quot;method&quot;</span>: <span class="hljs-string">&quot;validateAddress&quot;</span>,
     <span class="hljs-string">&quot;params&quot;</span>: [
@@ -969,6 +983,7 @@
   }
 </code></pre>
 <h4 id="&#x83B7;&#x53D6;&#x6700;&#x65B0;&#x533A;&#x5757;&#x53F7;">&#x83B7;&#x53D6;&#x6700;&#x65B0;&#x533A;&#x5757;&#x53F7;</h4>
+<p>&#x5728;&#x8282;&#x70B9;&#x83B7;&#x53D6;&#x6700;&#x9AD8;&#x7684;&#x53EF;&#x4EE5;&#x626B;&#x63CF;&#x7684;&#x533A;&#x5757;&#x53F7;&#x3002;</p>
 <pre><code class="lang-json">   {
     <span class="hljs-string">&quot;method&quot;</span>: <span class="hljs-string">&quot;getBlockNumber&quot;</span>,
     <span class="hljs-string">&quot;params&quot;</span>: [],
@@ -977,7 +992,8 @@
     }
   }
 </code></pre>
-<h4 id="&#x83B7;&#x53D6;&#x5730;&#x5740;&#x94B1;&#x5305;&#x4F59;&#x989D;---getbalance">&#x83B7;&#x53D6;&#x5730;&#x5740;/&#x94B1;&#x5305;&#x4F59;&#x989D; - getBalance</h4>
+<h4 id="&#x83B7;&#x53D6;&#x5730;&#x5740;&#x5E10;&#x53F7;&#x4F59;&#x989D;---getbalance">&#x83B7;&#x53D6;&#x5730;&#x5740;/&#x5E10;&#x53F7;&#x4F59;&#x989D; - getBalance</h4>
+<p>&#x5728;&#x533A;&#x5757;&#x94FE;&#x67E5;&#x8BE2;&#x4E00;&#x4E2A;&#x5730;&#x5740;/&#x8D26;&#x53F7;&#x7684;&#x7279;&#x5B9A;&#x5E01;&#x79CD;&#x7684;&#x4F59;&#x989D;&#x3002;</p>
 <pre><code class="lang-json">   {
     <span class="hljs-string">&quot;method&quot;</span>: <span class="hljs-string">&quot;getBalance&quot;</span>,
     <span class="hljs-string">&quot;params&quot;</span>: [
@@ -995,12 +1011,12 @@
     }
   }
 </code></pre>
-<h4 id="&#x83B7;&#x53D6;&#x533A;&#x5757;&#x57FA;&#x7840;&#x4FE1;&#x606F;getblockresult-&#x83B7;&#x53D6;block&#x4E0B;&#x7684;&#x5168;&#x90E8;txns">&#x83B7;&#x53D6;&#x533A;&#x5757;&#x57FA;&#x7840;&#x4FE1;&#x606F;getBlockResult &#x83B7;&#x53D6;Block&#x4E0B;&#x7684;&#x5168;&#x90E8;txns</h4>
+<h4 id="&#x83B7;&#x53D6;&#x533A;&#x5757;&#x4FE1;&#x606F;">&#x83B7;&#x53D6;&#x533A;&#x5757;&#x4FE1;&#x606F;</h4>
 <pre><code class="lang-json">   {
     <span class="hljs-string">&quot;method&quot;</span>: <span class="hljs-string">&quot;getBlockResult&quot;</span>,
     <span class="hljs-string">&quot;params&quot;</span>: [
       {
-        <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;indexOrHash&quot;</span>,
+        <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;indexOrHash&quot;</span>, <span class="hljs-comment">// &#x533A;&#x5757;&#x53F7;&#x6216;&#x8005;&#x533A;&#x5757;&#x54C8;&#x5E0C;</span>
         <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;number|string&quot;</span>
       }
     ],
@@ -1008,25 +1024,25 @@
       <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;object&quot;</span>,
       <span class="hljs-string">&quot;fields&quot;</span>: [
         {
-          <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;hash&quot;</span>,
+          <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;hash&quot;</span>, <span class="hljs-comment">// &#x533A;&#x5757;&#x54C8;&#x5E0C;</span>
           <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
         },
         {
-          <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;timestamp&quot;</span>,
+          <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;timestamp&quot;</span>, <span class="hljs-comment">// &#x533A;&#x5757;&#x4EA7;&#x751F;&#x7684;&#x65F6;&#x95F4;&#x6233;&#xFF0C;&#x5355;&#x4F4D;&#x662F;&#x6BEB;&#x79D2;</span>
           <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;number&quot;</span>
         },
         {
-          <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;txns&quot;</span>,
+          <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;txns&quot;</span>, <span class="hljs-comment">// &#x533A;&#x5757;&#x91CC;&#x6253;&#x5305;&#x7684;&#x6240;&#x6709;&#x4EA4;&#x6613;</span>
           <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;array&quot;</span>,
           <span class="hljs-string">&quot;element&quot;</span>: {
-            <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;object&quot;</span>,
+            <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;object&quot;</span>, <span class="hljs-comment">// &#x6BCF;&#x4E00;&#x7B14;&#x4EA4;&#x6613;</span>
             <span class="hljs-string">&quot;fields&quot;</span>: [
               {
-                <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;txid&quot;</span>,
+                <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;txid&quot;</span>, <span class="hljs-comment">// &#x4EA4;&#x6613;&#x54C8;&#x5E0C;</span>
                 <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
               },
               {
-                <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;meta&quot;</span>,
+                <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;meta&quot;</span>, <span class="hljs-comment">// &#x989D;&#x5916;&#x4FE1;&#x606F;</span>
                 <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
                 <span class="hljs-string">&quot;required&quot;</span>: <span class="hljs-literal">false</span>
               }
@@ -1688,6 +1704,18 @@
     }
   }
 </code></pre>
+<h3 id="&#x9644;&#x5F55;">&#x9644;&#x5F55;</h3>
+<pre><code class="lang-js">  <span class="hljs-keyword">export</span> declare <span class="hljs-keyword">const</span> ADDRESS_TYPE: {
+  <span class="hljs-comment">/** &#x70ED;&#x4E3B; */</span>
+  HOT_WALLET: <span class="hljs-number">0</span>,
+  <span class="hljs-comment">/** &#x51B7;&#x94B1;&#x5305; */</span>
+  COLD_WALLET: <span class="hljs-number">1</span>,
+  <span class="hljs-comment">/** &#x5145;&#x503C;&#x5730;&#x5740; */</span>
+  DEPOSIT: <span class="hljs-number">2</span>,
+  <span class="hljs-comment">/** &#x5916;&#x90E8;&#x5730;&#x5740; */</span>
+  EXTERNAL: <span class="hljs-number">3</span>
+}
+</code></pre>
 
                                 
                                 </section>
@@ -1723,7 +1751,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"第三方接链","level":"1.10.1","depth":2,"next":{"title":"其他","level":"1.11","depth":1,"ref":"","articles":[{"title":"版本说明","level":"1.11.1","depth":2,"path":"version.md","ref":"version.md","articles":[]},{"title":"联系我们","level":"1.11.2","depth":2,"path":"contact.md","ref":"contact.md","articles":[]}]},"previous":{"title":"社区共享","level":"1.10","depth":1,"ref":"","articles":[{"title":"第三方接链","level":"1.10.1","depth":2,"path":"chain-imp.md","ref":"chain-imp.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["language-picker"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":2},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"jadepool","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jadepool Docs","language":"zh-hans","gitbook":"*"},"file":{"path":"chain-imp.md","mtime":"2019-06-10T09:56:33.500Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-12T11:23:45.687Z"},"basePath":".","book":{"language":"zh-hans"}});
+            gitbook.page.hasChanged({"page":{"title":"第三方接链","level":"1.10.1","depth":2,"next":{"title":"其他","level":"1.11","depth":1,"ref":"","articles":[{"title":"版本说明","level":"1.11.1","depth":2,"path":"version.md","ref":"version.md","articles":[]},{"title":"联系我们","level":"1.11.2","depth":2,"path":"contact.md","ref":"contact.md","articles":[]}]},"previous":{"title":"社区共享","level":"1.10","depth":1,"ref":"","articles":[{"title":"第三方接链","level":"1.10.1","depth":2,"path":"chain-imp.md","ref":"chain-imp.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["language-picker"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":2},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"jadepool","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jadepool Docs","language":"zh-hans","gitbook":"*"},"file":{"path":"chain-imp.md","mtime":"2019-06-13T03:55:35.610Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-04T10:07:47.599Z"},"basePath":".","book":{"language":"zh-hans"}});
         });
     </script>
 </div>
