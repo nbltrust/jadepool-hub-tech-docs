@@ -318,12 +318,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="incoming.html">
+        <li class="chapter " data-level="1.4.3" data-path="state-machine.html">
             
-                <a href="incoming.html">
+                <a href="state-machine.html">
             
                     
-                    入账状态机
+                    状态机
             
                 </a>
             
@@ -331,20 +331,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.4" data-path="outgoing.html">
-            
-                <a href="outgoing.html">
-            
-                    
-                    出账状态机
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4.5" data-path="module.html">
+        <li class="chapter " data-level="1.4.4" data-path="module.html">
             
                 <a href="module.html">
             
@@ -357,7 +344,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.6" data-path="config.html">
+        <li class="chapter " data-level="1.4.5" data-path="config.html">
             
                 <a href="config.html">
             
@@ -923,9 +910,9 @@
 <h3 id="master&#x670D;&#x52A1;">Master&#x670D;&#x52A1;</h3>
 <p>Jadepool Hub&#x7CFB;&#x7EDF;&#x7684;&#x603B;&#x6307;&#x6325;&#x8FDB;&#x7A0B;&#x3002;&#x6574;&#x4E2A;&#x7CFB;&#x7EDF;&#x53EA;&#x6709;&#x4E00;&#x4E2A;Master&#x8FDB;&#x7A0B;&#x3002;</p>
 <h3 id="agent&#x670D;&#x52A1;">Agent&#x670D;&#x52A1;</h3>
-<p>&#x5206;&#x7BA1;&#x6BCF;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x7684;&#x4EE3;&#x7406;&#x8FDB;&#x7A0B;&#x3002;&#x6BCF;&#x4E2A;&#x670D;&#x52A1;&#x53EA;&#x6709;&#x4E00;&#x4E2A;Agent&#x8FDB;&#x7A0B;&#x3002;</p>
+<p>&#x5206;&#x7BA1;&#x6BCF;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x7684;&#x4EE3;&#x7406;&#x8FDB;&#x7A0B;&#x3002;&#x6BCF;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x53EA;&#x6709;&#x4E00;&#x4E2A;Agent&#x8FDB;&#x7A0B;&#x3002;Agent&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;Worker&#x8FDB;&#x7A0B;&#x3002;</p>
 <h3 id="worker&#x670D;&#x52A1;">Worker&#x670D;&#x52A1;</h3>
-<p>&#x8D1F;&#x8D23;&#x5904;&#x7406;&#x4E1A;&#x52A1;&#x7684;&#x6700;&#x5E95;&#x5C42;&#x8FDB;&#x7A0B;&#x3002;Worker&#x8FDB;&#x7A0B;&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E2A;&#xFF0C;&#x53EF;&#x4EE5;&#x8D77;&#x5728;Master&#x670D;&#x52A1;&#x6240;&#x5728;&#x670D;&#x52A1;&#x5668;&#x6216;Agent&#x670D;&#x52A1;&#x6240;&#x5728;&#x670D;&#x52A1;&#x5668;&#x3002;&#x57FA;&#x4E8E;&#x5F53;&#x524D;&#x7684;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;&#xFF0C;&#x6BCF;&#x4E00;&#x6761;&#x533A;&#x5757;&#x94FE;&#x4F7F;&#x7528;&#x5355;&#x72EC;&#x4E00;&#x4E2A;Worker&#x8FDB;&#x7A0B;&#xFF0C;&#x672A;&#x6765;&#x5728;&#x591A;&#x70ED;&#x94B1;&#x5305;&#x7684;&#x5B9E;&#x73B0;&#x4E0A;&#xFF0C;&#x53EF;&#x4EE5;&#x505A;&#x5230;&#x6BCF;&#x4E00;&#x4E2A;task&#x5355;&#x72EC;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;Worker&#x8FDB;&#x7A0B;&#x3002;</p>
+<p>&#x8D1F;&#x8D23;&#x5904;&#x7406;&#x4E1A;&#x52A1;&#x7684;&#x6700;&#x5E95;&#x5C42;&#x8FDB;&#x7A0B;&#x3002;Worker&#x8FDB;&#x7A0B;&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E2A;&#xFF0C;&#x53EF;&#x4EE5;&#x8D77;&#x5728;Master&#x670D;&#x52A1;&#x6240;&#x5728;&#x670D;&#x52A1;&#x5668;&#x6216;Agent&#x670D;&#x52A1;&#x6240;&#x5728;&#x670D;&#x52A1;&#x5668;&#x3002;&#x57FA;&#x4E8E;&#x5F53;&#x524D;&#x7684;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;&#xFF0C;&#x6BCF;&#x4E00;&#x6761;&#x533A;&#x5757;&#x94FE;&#x4F7F;&#x7528;&#x5355;&#x72EC;&#x4E00;&#x4E2A;Worker&#x8FDB;&#x7A0B;&#x3002;</p>
 
                                 
                                 </section>
@@ -965,7 +952,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"工作模型","level":"1.4.1","depth":2,"next":{"title":"交互流程","level":"1.4.2","depth":2,"path":"interact.md","ref":"interact.md","articles":[]},"previous":{"title":"后台详情","level":"1.4","depth":1,"ref":"","articles":[{"title":"工作模型","level":"1.4.1","depth":2,"path":"infra.md","ref":"infra.md","articles":[]},{"title":"交互流程","level":"1.4.2","depth":2,"path":"interact.md","ref":"interact.md","articles":[]},{"title":"入账状态机","level":"1.4.3","depth":2,"path":"incoming.md","ref":"incoming.md","articles":[]},{"title":"出账状态机","level":"1.4.4","depth":2,"path":"outgoing.md","ref":"outgoing.md","articles":[]},{"title":"软件模块","level":"1.4.5","depth":2,"path":"module.md","ref":"module.md","articles":[]},{"title":"配置详情","level":"1.4.6","depth":2,"path":"config.md","ref":"config.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["language-picker"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":2},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"jadepool","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jadepool Docs","language":"zh-hans","gitbook":"*"},"file":{"path":"infra.md","mtime":"2019-07-08T06:27:20.500Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-26T10:54:11.847Z"},"basePath":".","book":{"language":"zh-hans"}});
+            gitbook.page.hasChanged({"page":{"title":"工作模型","level":"1.4.1","depth":2,"next":{"title":"交互流程","level":"1.4.2","depth":2,"path":"interact.md","ref":"interact.md","articles":[]},"previous":{"title":"后台详情","level":"1.4","depth":1,"ref":"","articles":[{"title":"工作模型","level":"1.4.1","depth":2,"path":"infra.md","ref":"infra.md","articles":[]},{"title":"交互流程","level":"1.4.2","depth":2,"path":"interact.md","ref":"interact.md","articles":[]},{"title":"状态机","level":"1.4.3","depth":2,"path":"state-machine.md","ref":"state-machine.md","articles":[]},{"title":"软件模块","level":"1.4.4","depth":2,"path":"module.md","ref":"module.md","articles":[]},{"title":"配置详情","level":"1.4.5","depth":2,"path":"config.md","ref":"config.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["language-picker"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":2},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"jadepool","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jadepool Docs","language":"zh-hans","gitbook":"*"},"file":{"path":"infra.md","mtime":"2019-07-30T07:18:18.027Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-30T09:40:03.422Z"},"basePath":".","book":{"language":"zh-hans"}});
         });
     </script>
 </div>
