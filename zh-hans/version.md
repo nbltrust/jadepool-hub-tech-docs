@@ -1,1 +1,0 @@
-查看Jadepool[版本发布](https://github.com/nbltrust/jadepool-doc/releases)具体信息。

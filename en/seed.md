@@ -1,3 +1,0 @@
-SEED VAULT, developed by NBLTrust, is the alternative solution for HSM. SEED VAULT can generate
-"seed" which can be combined with the derivative path created by Jadepool to derive and recover private keys. SEED will be stored locally as encrypted, and the software guarantees its security by providing client the ability to set password and whitelist. SEED VAULT is also a data safe. It has to store plenty of critical data that are needed by Jadepool, such as cold wallet address. Those data are stored locally as encrypted as well. In comparison, HSM is much more secure than SEED VAULT. However, HSM firmware upgrade takes longer time. Client can choose between HSM and SEED VAULT
-or even switch between them.
