@@ -1,0 +1,21 @@
+| BlockChain  | VERSION    |
+| ----------- | ---------- |
+| BTC         | v0.4.3     |
+| Ethereum    | v2.4.7     |
+| Eosio       | v1.8.0-rc2 |
+| Cybex       | v0.1.31    |
+| Neo         | v2.10.2    |
+| Cosmos      | v0.34.6    |
+| BitcoinCash | v0.8.2     |
+| Qlink       | v1.2.4     |
+| Stellar     | v11.0.0    |
+| Litecoin    | v0.4.4     |
+| Irisnet     | v0.12.3    |
+| Tezos       | v0.0.3     |
+| Chainx      | v1.0.5     |
+| Qtum        | v0.17.6    |
+| Zcash       | v0.4.3     |
+| Algorand    | v1.0.27    |
+| Vechain     | v1.1.2     |
+| Tomo        | v1.5.0     |
+
