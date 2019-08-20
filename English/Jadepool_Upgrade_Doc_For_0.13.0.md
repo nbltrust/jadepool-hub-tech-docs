@@ -34,17 +34,17 @@ from **V0.11.X** to **V0.13.0**
    REDIS_CFG:default: "redis://127.0.0.1:6379"
    ```
 
-9. 删除index
+9. 删除index 
 
-   NODE_ENV=dev  node build/index.bundle.js -m do -a do-db-rebuild-indexes
+   NODE_ENV=dev JP_HOST=127.0.0.1 node build/index.bundle.js -m do -a do-db-rebuild-indexes
 
 10. 升级脚本
 
-    NODE_ENV=dev  node build/index.bundle.js -m do -a do-upgrade-blockchains-config
+    NODE_ENV=dev JP_HOST=127.0.0.1 node build/index.bundle.js -m do -a do-upgrade-blockchains-config
 
 11. 审计脚本
 
-    NODE_ENV=dev  node build/index.bundle.js -m do -a do-audits-recalculate
+    NODE_ENV=dev JP_HOST=127.0.0.1 node build/index.bundle.js -m do -a do-audits-recalculate
 
 12. 启动瑶池，让superadmin给运维增加运维中心的权限，根据之前的配置在admin上进行修改（主要是节点/浏览器配置）。在高级管理-代币管理中查看所有ERC20代币，没有配置币种类型的需要配置为ERC20
 
@@ -88,15 +88,15 @@ from **V0.11.X** to **V0.13.0**
 
 9. 删除index
 
-   NODE_ENV=production node build/index.bundle.js -m do -a do-db-rebuild-indexes
+   NODE_ENV=production JP_HOST=127.0.0.1 node build/index.bundle.js -m do -a do-db-rebuild-indexes
 
 10. 升级脚本
 
-    NODE_ENV=production  node build/index.bundle.js -m do -a do-upgrade-blockchains-config
+    NODE_ENV=production JP_HOST=127.0.0.1 node build/index.bundle.js -m do -a do-upgrade-blockchains-config
 
 11. 审计脚本
 
-    NODE_ENV=production  node build/index.bundle.js -m do -a do-audits-recalculate
+    NODE_ENV=production JP_HOST=127.0.0.1 node build/index.bundle.js -m do -a do-audits-recalculate
 
 12. 启动瑶池，让superadmin给运维增加运维中心的权限，根据之前的配置在admin上进行修改（主要是节点/浏览器配置）。在高级管理-代币管理中查看所有ERC20代币，没有配置币种类型的需要配置为ERC20
 
