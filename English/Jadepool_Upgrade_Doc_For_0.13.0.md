@@ -41,6 +41,7 @@ from **V0.11.X** to **V0.13.0**
    删除index(数据库运行)
    
    db.getCollection('orders').dropIndex('runningJobs1')
+   
    db.getCollection('orders').dropIndex('runningJobs2')
 
 10. 升级脚本
@@ -98,6 +99,7 @@ from **V0.11.X** to **V0.13.0**
    删除index(数据库运行)
    
    db.getCollection('orders').dropIndex('runningJobs1')
+   
    db.getCollection('orders').dropIndex('runningJobs2')
 
 10. 升级脚本
