@@ -39,6 +39,7 @@ from **V0.11.X** to **V0.13.0**
    NODE_ENV=production JP_HOST=127.0.0.1 node build/index.bundle.js -m do -a do-db-rebuild-indexes
    
    删除index(数据库运行)
+   
    db.getCollection('orders').dropIndex('runningJobs1')
    db.getCollection('orders').dropIndex('runningJobs2')
 
@@ -95,6 +96,7 @@ from **V0.11.X** to **V0.13.0**
    NODE_ENV=production JP_HOST=127.0.0.1 node build/index.bundle.js -m do -a do-db-rebuild-indexes
    
    删除index(数据库运行)
+   
    db.getCollection('orders').dropIndex('runningJobs1')
    db.getCollection('orders').dropIndex('runningJobs2')
 
