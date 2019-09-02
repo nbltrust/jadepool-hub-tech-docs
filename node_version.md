@@ -10,9 +10,9 @@
 | Qlink       | v1.2.4     |
 | Stellar     | v11.0.0    |
 | Litecoin    | v0.4.4     |
-| Irisnet     | v0.12.3    |
+| Irisnet     | v0.15.0    |
 | Tezos       | v0.0.3     |
-| Chainx      | v1.0.5     |
+| Chainx      | v1.0.6     |
 | Qtum        | v0.17.6    |
 | Zcash       | v0.4.3     |
 | Algorand    | v1.0.27    |
