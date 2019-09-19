@@ -1,0 +1,1111 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ECC Signing & Verify · Jadepool Docs</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="jadepool">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="sdk.html" />
+    
+    
+    <link rel="prev" href="ecc-keypair.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <span>
+            
+                    
+                    Introduction
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    What is Jadepool Hub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="api.html">
+            
+                <a href="api.html">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="quick-start.html">
+            
+                <a href="quick-start.html">
+            
+                    
+                    Quick Start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Technical Terms
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="jade-terms.html">
+            
+                <a href="jade-terms.html">
+            
+                    
+                    Jadepool Hub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="chain-terms.html">
+            
+                <a href="chain-terms.html">
+            
+                    
+                    Blockchain
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Main Services
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="deposit.html">
+            
+                <a href="deposit.html">
+            
+                    
+                    Deposit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="withdraw.html">
+            
+                <a href="withdraw.html">
+            
+                    
+                    Withdrawal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="sweep.html">
+            
+                <a href="sweep.html">
+            
+                    
+                    Cold Storage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="staking.html">
+            
+                <a href="staking.html">
+            
+                    
+                    Network Resource Staking
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Technical Details
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="private-key.html">
+            
+                <a href="private-key.html">
+            
+                    
+                    Private Key Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="address-pattern.html">
+            
+                <a href="address-pattern.html">
+            
+                    
+                    Deposit Address Mode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="transfer-pattern.html">
+            
+                <a href="transfer-pattern.html">
+            
+                    
+                    Out Transfer Mode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="state-machine.html">
+            
+                <a href="state-machine.html">
+            
+                    
+                    Order State Machine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="infrastructure.html">
+            
+                <a href="infrastructure.html">
+            
+                    
+                    Infrastructure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="module.html">
+            
+                <a href="module.html">
+            
+                    
+                    System Module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="config.html">
+            
+                <a href="config.html">
+            
+                    
+                    Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Admin Management System
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="admin-case.html">
+            
+                <a href="admin-case.html">
+            
+                    
+                    Common Situations
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    SEED
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="seed-init.html">
+            
+                <a href="seed-init.html">
+            
+                    
+                    Initialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="seed-backup.html">
+            
+                <a href="seed-backup.html">
+            
+                    
+                    Backup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="seed-data.html">
+            
+                <a href="seed-data.html">
+            
+                    
+                    Set Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="seed-list.html">
+            
+                <a href="seed-list.html">
+            
+                    
+                    Data List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="seed-permission.html">
+            
+                <a href="seed-permission.html">
+            
+                    
+                    Set Whitelist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="seed-reset.html">
+            
+                <a href="seed-reset.html">
+            
+                    
+                    Reset Password
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="seed-batch.html">
+            
+                <a href="seed-batch.html">
+            
+                    
+                    Import Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="seed-format.html">
+            
+                <a href="seed-format.html">
+            
+                    
+                    Data Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Tools
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="ecc-keypair.html">
+            
+                <a href="ecc-keypair.html">
+            
+                    
+                    Generating ECC Keypair
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.2" data-path="ecc-sig.html">
+            
+                <a href="ecc-sig.html">
+            
+                    
+                    ECC Signing & Verify
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="sdk.html">
+            
+                <a href="sdk.html">
+            
+                    
+                    SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="wallet.html">
+            
+                <a href="wallet.html">
+            
+                    
+                    Testnet Wallet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="smart-contract.html">
+            
+                <a href="smart-contract.html">
+            
+                    
+                    Deploy Testnet Smart Contract
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="add-erc20.html">
+            
+                <a href="add-erc20.html">
+            
+                    
+                    How To Add ERC20
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="faucet.html">
+            
+                <a href="faucet.html">
+            
+                    
+                    Testnet Faucet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="explorer.html">
+            
+                <a href="explorer.html">
+            
+                    
+                    Explorer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    FAQ
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="general-faq.html">
+            
+                <a href="general-faq.html">
+            
+                    
+                    Operation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="security-faq.html">
+            
+                <a href="security-faq.html">
+            
+                    
+                    Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="dev-faq.html">
+            
+                <a href="dev-faq.html">
+            
+                    
+                    Development
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="ops-faq.html">
+            
+                <a href="ops-faq.html">
+            
+                    
+                    Dev-ops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="finalize-tx.md">
+            
+                <span>
+            
+                    
+                    Standards of Finalizing Transaction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="holding-reason.md">
+            
+                <span>
+            
+                    
+                    Order Holding Reason
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Community
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="checklist.md">
+            
+                <span>
+            
+                    
+                    Implementing Chain Checklist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="chain-imp.md">
+            
+                <span>
+            
+                    
+                    How To Implement Chain
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Other
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="version.html">
+            
+                <a href="version.html">
+            
+                    
+                    Releases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="contact.html">
+            
+                <a href="contact.html">
+            
+                    
+                    Contact Us
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >ECC Signing & Verify</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="nodejs">Node.js</h3>
+<p>Run command under your nodejs project directory:</p>
+<pre><code class="lang-bash">  $ npm install @jadepool/crypto
+</code></pre>
+<h4 id="ecc-sign">ECC sign</h4>
+<p>js code example&#xFF1A;</p>
+<pre><code class="lang-js">    <span class="hljs-keyword">const</span> crypto = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;@jadepool/crypto&apos;</span>)
+
+    <span class="hljs-comment">// the request data</span>
+    <span class="hljs-keyword">const</span> request = { <span class="hljs-string">&apos;sequence&apos;</span>: <span class="hljs-number">1</span>, <span class="hljs-string">&apos;to&apos;</span>: <span class="hljs-string">&apos;mynameisshaw&apos;</span>, <span class="hljs-string">&apos;type&apos;</span>: <span class="hljs-string">&apos;EOS&apos;</span>, <span class="hljs-string">&apos;value&apos;</span>: <span class="hljs-string">&apos;0.01&apos;</span> }
+
+    <span class="hljs-comment">// client&apos;s ECC private key</span>
+    <span class="hljs-keyword">const</span> privateKey = Buffer.from(<span class="hljs-string">&apos;FaPcG2eai53rUQClSNUEV57QXNWcOlTUlNb1A+WNsjA=&apos;</span>, <span class="hljs-string">&apos;base64&apos;</span>)
+    <span class="hljs-keyword">const</span> result = crypto.ecc.sign(request, privateKey, {accept: <span class="hljs-string">&apos;object&apos;</span>})
+
+    <span class="hljs-comment">// signature and timestamp must be included in the request boby</span>
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;signature: &apos;</span>, <span class="hljs-built_in">JSON</span>.stringify(result.signature))
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;timestamp: &apos;</span>, result.timestamp)
+</code></pre>
+<p>Result:</p>
+<pre><code>    signature:  {  
+           &quot;r&quot;:&quot;pA32VzWQ6xaIM1UrpGM3QbqGuU4eJcdd7BgHMHO5ymA=&quot;,
+           &quot;s&quot;:&quot;Rp5ALEkeV+dDqPj6YpLxvC4oxA4+1lHzgcr3b/w39xY=&quot;,
+           &quot;v&quot;:28
+    }
+    timestamp:  1560252461780
+</code></pre><h4 id="ecc-verify-signature">ECC verify signature</h4>
+<p>js code example&#xFF1A;</p>
+<pre><code class="lang-js">  <span class="hljs-keyword">const</span> crypto = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;@jadepool/crypto&apos;</span>)
+
+  <span class="hljs-comment">// Jadepool Hub&apos;s ECC public key</span>
+  <span class="hljs-keyword">const</span> jadePubKey = Buffer.from(<span class="hljs-string">&apos;BKzjJTLJBlLhuukWJI5CenqxCu7qEGeUlmmj9NoQll75DXKX9TjyMAajH5T9z67Z6N04yFun4oX3J0MDMpJa7+U=&apos;</span>, <span class="hljs-string">&apos;base64&apos;</span>)
+
+  <span class="hljs-comment">// the response or the callback from Jadepool Hub</span>
+  <span class="hljs-keyword">const</span> response = {
+    code: <span class="hljs-number">0</span>,
+    status: <span class="hljs-number">0</span>,
+    message: <span class="hljs-string">&apos;OK&apos;</span>,
+    crypto: <span class="hljs-string">&apos;ecc&apos;</span>,
+    timestamp: <span class="hljs-number">1558076348165</span>,
+    sig: {
+      r: <span class="hljs-string">&apos;KiEhjv3GO2CPloOHHDQLj9ETMGta5duP5ZL0Wd5oxWA=&apos;</span>,
+      s: <span class="hljs-string">&apos;em9opR2TQCcCjvHRL4yFpZ1fiZs1HBeEudUwI6b+76g=&apos;</span>,
+      v: <span class="hljs-number">27</span>
+    },
+    result: {
+      balance: <span class="hljs-string">&apos;0&apos;</span>,
+      balanceAvailable: <span class="hljs-string">&apos;0&apos;</span>,
+      balanceUnavailable: <span class="hljs-string">&apos;0&apos;</span>,
+      update_at: <span class="hljs-number">1558076348163</span>,
+      addressesWithBalance: <span class="hljs-number">1</span>,
+      namespace: <span class="hljs-string">&apos;Eosio&apos;</span>,
+      sid: <span class="hljs-string">&apos;FHvzET7r64eyXYgtAAAD&apos;</span>
+    }
+  }
+
+  <span class="hljs-keyword">const</span> obj = response.result
+  <span class="hljs-keyword">let</span> sigResult = {}
+  sigResult.signature = response.sig
+  sigResult.timestamp = response.timestamp
+
+  <span class="hljs-keyword">const</span> isValid = crypto.ecc.verify(obj, sigResult, jadePubKey)
+  <span class="hljs-built_in">console</span>.log(isValid)
+</code></pre>
+<h3 id="java">Java</h3>
+<p>Go to<a href="https://github.com/nbltrust/jadepool-ecc-java/releases" target="_blank">jadepool-ecc-java</a> and download the jar. Use the jar package as dependency in your project.</p>
+<h4 id="ecc-sign">ECC sign</h4>
+<p>java code example&#xFF1A;</p>
+<pre><code class="lang-java">  <span class="hljs-keyword">import</span> com.jadepool.ecc.*;
+  <span class="hljs-keyword">import</span> java.sql.Timestamp;
+
+  <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception </span>{
+      <span class="hljs-comment">// client&apos;s ECC private key</span>
+      String privateKey = <span class="hljs-string">&quot;feDhgnJGkNMWSmPlbMtC+4DmUruJAtdCu4j3Vxu2CWM=&quot;</span>;
+      Ecc ecc = <span class="hljs-keyword">new</span> Ecc(privateKey);
+      <span class="hljs-comment">// the reuqest data</span>
+      String requestData = <span class="hljs-string">&quot;{\&quot;sequence\&quot;:0,\&quot;to\&quot;:\&quot;awesome3\&quot;,\&quot;type\&quot;:\&quot;EOS\&quot;,\&quot;value\&quot;:\&quot;0.01\&quot;}&quot;</span>;
+      <span class="hljs-comment">// timestamp</span>
+      Long timestamp = (<span class="hljs-keyword">new</span> Timestamp(System.currentTimeMillis())).getTime();
+      String sig = ecc.sign(requestData, timestamp);
+
+      JSONParser parser = <span class="hljs-keyword">new</span> JSONParser();
+      JSONObject sigObject = (JSONObject)parser.parse(sig);
+      String r = (String)sigObject.get(<span class="hljs-string">&quot;r&quot;</span>);
+      String s = (String)sigObject.get(<span class="hljs-string">&quot;s&quot;</span>);
+      Long v = (Long)sigObject.get(<span class="hljs-string">&quot;v&quot;</span>);
+
+      System.out.println(<span class="hljs-string">&quot;r: &quot;</span> + r);
+      System.out.println(<span class="hljs-string">&quot;s: &quot;</span> + s);
+      System.out.println(<span class="hljs-string">&quot;v: &quot;</span> + v);
+    }
+  }
+</code></pre>
+<p>Result:</p>
+<pre><code>  r: u7nKOHNYgS1NyaM9TS3+MyGjGiAI3PpSfPA3iWgl1eQ=
+  s: USvy2L2jelmSp1cbxk1INGlsRnsabhKpaSihMCJ9fu0=
+  v: 28
+</code></pre><h4 id="ecc-verify-signature">ECC verify signature</h4>
+<p>java code example&#xFF1A;</p>
+<pre><code class="lang-java">  <span class="hljs-keyword">import</span> com.jadepool.ecc.*;
+
+  <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception </span>{
+      <span class="hljs-comment">// Jadepool Hub&apos;s ECC public key</span>
+      String jadePubKey = <span class="hljs-string">&quot;BKzjJTLJBlLhuukWJI5CenqxCu7qEGeUlmmj9NoQll75DXKX9TjyMAajH5T9z67Z6N04yFun4oX3J0MDMpJa7+U=&quot;</span>;
+      Ecc ecc = <span class="hljs-keyword">new</span> Ecc();
+      ecc.setJadePubKey(jadePubKey);
+      <span class="hljs-comment">// the response or the callback from Jadepool Hub</span>
+      String response = <span class="hljs-string">&quot;{\n&quot;</span> +
+                <span class="hljs-string">&quot;    \&quot;code\&quot;: 0,\n&quot;</span> +
+                <span class="hljs-string">&quot;    \&quot;status\&quot;: 0,\n&quot;</span> +
+                <span class="hljs-string">&quot;    \&quot;message\&quot;: \&quot;OK\&quot;,\n&quot;</span> +
+                <span class="hljs-string">&quot;    \&quot;crypto\&quot;: \&quot;ecc\&quot;,\n&quot;</span> +
+                <span class="hljs-string">&quot;    \&quot;timestamp\&quot;: 1558076348165,\n&quot;</span> +
+                <span class="hljs-string">&quot;    \&quot;sig\&quot;: {\n&quot;</span> +
+                <span class="hljs-string">&quot;        \&quot;r\&quot;: \&quot;KiEhjv3GO2CPloOHHDQLj9ETMGta5duP5ZL0Wd5oxWA=\&quot;,\n&quot;</span> +
+                <span class="hljs-string">&quot;        \&quot;s\&quot;: \&quot;em9opR2TQCcCjvHRL4yFpZ1fiZs1HBeEudUwI6b+76g=\&quot;,\n&quot;</span> +
+                <span class="hljs-string">&quot;        \&quot;v\&quot;: 27\n&quot;</span> +
+                <span class="hljs-string">&quot;    },\n&quot;</span> +
+                <span class="hljs-string">&quot;    \&quot;result\&quot;: {\n&quot;</span> +
+                <span class="hljs-string">&quot;        \&quot;balance\&quot;: \&quot;0\&quot;,\n&quot;</span> +
+                <span class="hljs-string">&quot;        \&quot;balanceAvailable\&quot;: \&quot;0\&quot;,\n&quot;</span> +
+                <span class="hljs-string">&quot;        \&quot;balanceUnavailable\&quot;: \&quot;0\&quot;,\n&quot;</span> +
+                <span class="hljs-string">&quot;        \&quot;update_at\&quot;: 1558076348163,\n&quot;</span> +
+                <span class="hljs-string">&quot;        \&quot;addressesWithBalance\&quot;: 1,\n&quot;</span> +
+                <span class="hljs-string">&quot;        \&quot;namespace\&quot;: \&quot;Eosio\&quot;,\n&quot;</span> +
+                <span class="hljs-string">&quot;        \&quot;sid\&quot;: \&quot;FHvzET7r64eyXYgtAAAD\&quot;\n&quot;</span> +
+                <span class="hljs-string">&quot;    }\n&quot;</span> +
+                <span class="hljs-string">&quot;}&quot;</span>;
+      <span class="hljs-keyword">boolean</span> isValid = ecc.verify(response);
+
+      System.out.println(isValid);
+    }
+  }
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ecc-keypair.html" class="navigation navigation-prev " aria-label="Previous page: Generating ECC Keypair">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="sdk.html" class="navigation navigation-next " aria-label="Next page: SDK">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ECC Signing & Verify","level":"1.7.2","depth":2,"next":{"title":"SDK","level":"1.7.3","depth":2,"path":"sdk.md","ref":"sdk.md","articles":[]},"previous":{"title":"Generating ECC Keypair","level":"1.7.1","depth":2,"path":"ecc-keypair.md","ref":"ecc-keypair.md","articles":[]},"dir":"ltr"},"config":{"plugins":["language-picker"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":2},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"jadepool","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jadepool Docs","language":"en","gitbook":"*"},"file":{"path":"ecc-sig.md","mtime":"2019-09-19T11:38:09.824Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-19T14:22:27.684Z"},"basePath":".","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
