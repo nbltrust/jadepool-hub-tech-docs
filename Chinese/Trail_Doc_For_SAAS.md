@@ -46,11 +46,11 @@ JadePool SAAS，是拓链（上海）科技有限公司瑶池托管生态的重�
 ![withdraw](https://ws4.sinaimg.cn/large/006tNc79gy1g40jv7h8phj31400sg74x.jpg)
 
 ### API对接
-建议通过sdk来试用，目前支持nodejs的sdk。
+建议通过sdk来试用，目前支持nodejs和go的sdk。
 - sdk文档及demo
 > https://github.com/nbltrust/jadepool-saas-sdk-nodejs
 - 接口文档
-> http://39.98.58.238:5000
+> https://nbltrust.github.io/jadepool-saas-api-docs
 
 ### 问题及支持
 
