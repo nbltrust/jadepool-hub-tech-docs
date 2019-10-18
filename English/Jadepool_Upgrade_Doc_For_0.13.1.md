@@ -15,6 +15,10 @@ from **V0.11.X** to **V0.13.1**
    -  服务发现consul（多机模式需要在每台机子上安装consul）
 
       安装consul详见[瑶池部署文档](https://github.com/nbltrust/jadepool-doc/blob/master/Chinese/瑶池部署文档.md)
+      
+3. 第三方接入修改
+  
+   -  详见[release-note](https://github.com/nbltrust/jadepool-doc/releases/tag/V0.13.0-alpha.0)
 
 ### 测试环境升级步骤：
 
