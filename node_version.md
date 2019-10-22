@@ -18,4 +18,8 @@
 | Algorand    | v1.0.27    |
 | Vechain     | v1.1.2     |
 | Tomo        | v1.5.0     |
+| Ripple      | v1.2.4     |
+| Tron        |            |
+| EveriToken  |            |
+| Harmony     |            |
 
