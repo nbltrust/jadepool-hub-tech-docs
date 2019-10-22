@@ -5,7 +5,7 @@
 | Eosio       | v1.8.0-rc2 |
 | Cybex       | v0.1.31    |
 | Neo         | v2.10.2    |
-| Cosmos      | v0.34.6    |
+| Cosmos      | v1.0.0     |
 | BitcoinCash | v0.8.2     |
 | Qlink       | v1.2.4     |
 | Stellar     | v11.0.0    |
