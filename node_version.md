@@ -13,7 +13,7 @@
 | Irisnet     | v0.15.0    |
 | Tezos       | v0.0.3     |
 | Chainx      | v1.0.6     |
-| Qtum        | v0.17.6    |
+| Qtum        | v0.18.1    |
 | Zcash       | v0.4.3     |
 | Algorand    | v1.0.27    |
 | Vechain     | v1.1.2     |
