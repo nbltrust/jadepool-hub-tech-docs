@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Bitcoin · Jadepool Docs</title>
+        <title>安全性 · Jadepool Docs</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,8 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="ethereum.html" />
+    <link rel="next" href="api.html" />
     
+    
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -118,7 +120,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.1.2" data-path="product-security.html">
+        <li class="chapter active" data-level="1.1.2" data-path="product-security.html">
             
                 <a href="product-security.html">
             
@@ -1003,7 +1005,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.12.1" data-path="bitcoin.html">
+        <li class="chapter " data-level="1.12.1" data-path="bitcoin.html">
             
                 <a href="bitcoin.html">
             
@@ -1356,7 +1358,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Bitcoin</a>
+        <a href="." >安全性</a>
     </h1>
 </div>
 
@@ -1371,56 +1373,21 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="requirements">Requirements</h2>
+                                <h3 id="&#x4EA7;&#x54C1;&#x8BBE;&#x8BA1;&#x5C42;&#x9762;">&#x4EA7;&#x54C1;&#x8BBE;&#x8BA1;&#x5C42;&#x9762;</h3>
 <ul>
-<li>ubuntu16.04+</li>
-<li>nodejs v8</li>
-<li>2 Core CPU or above</li>
-<li>8G Memory or above</li>
-<li>500G Storage or above</li>
-<li>10Mbit/s bandwidth or above</li>
-<li>NTP service on</li>
+<li>sequence&#x673A;&#x5236;&#xFF1A;&#x5411;Jadepool Hub&#x7684;&#x8BF7;&#x6C42;&#x4E2D;&#x90FD;&#x8981;&#x6C42;&#x52A0;&#x5165;&#x552F;&#x4E00;sequence&#xFF0C;&#x9632;&#x6B62;&#x540C;&#x4E00;&#x4E1A;&#x52A1;&#x8BF7;&#x6C42;&#x88AB;&#x91CD;&#x590D;&#x5904;&#x7406;&#x3002;</li>
+<li>&#x901A;&#x4FE1;&#x5B89;&#x5168;&#xFF1A;Jadepool Hub&#x6574;&#x4E2A;&#x7CFB;&#x7EDF;&#x548C;&#x4E0A;&#x6E38;&#x670D;&#x52A1;&#x95F4;&#x3001;&#x7CFB;&#x7EDF;&#x5185;&#x5404;&#x5FAE;&#x670D;&#x52A1;&#x4E4B;&#x95F4;&#x901A;&#x4FE1;&#x90FD;&#x9700;&#x8981;&#x7ECF;&#x8FC7;ECC&#x7B7E;&#x540D;&#x548C;&#x9A8C;&#x8BC1;&#x3002;</li>
+<li>&#x81EA;&#x5BA1;&#x8BA1;&#x6A21;&#x5757;&#xFF1A;&#x672A;&#x53D1;&#x5E03;&#x3002;&#x6838;&#x5BF9;Hub&#x6240;&#x6709;&#x4E0A;&#x94FE;&#x8BA2;&#x5355;&#x548C;&#x94FE;&#x4E0A;&#x4EA4;&#x6613;&#x72B6;&#x6001;&#x76F8;&#x7B26;&#xFF0C;&#x5E01;&#x79CD;&#x3001;&#x54C8;&#x5E0C;&#x3001;&#x76EE;&#x6807;&#x5730;&#x5740;&#x3001;&#x91D1;&#x989D;&#x3001;&#x624B;&#x7EED;&#x8D39;&#x4E00;&#x81F4;&#x3002;&#x6838;&#x5BF9;Hub&#x8BA2;&#x5355;&#x548C;&#x94FE;&#x4E0A;&#x4EA4;&#x6613;&#x6570;&#x91CF;&#x4E00;&#x81F4;&#x3002;&#x6838;&#x5BF9;Hub&#x4E3A;&#x5E73;&#x8D26;&#x751F;&#x6210;&#x7684;&#x8BA2;&#x5355;&#x4E4B;&#x95F4;&#x5173;&#x7CFB;&#x6B63;&#x786E;&#xFF0C;&#x4F8B;&#x5982;&#x5185;&#x90E8;&#x51FA;&#x8D26;&#x548C;&#x5185;&#x90E8;&#x5165;&#x8D26;&#x3001;&#x5F02;&#x5E38;&#x5165;&#x8D26;&#x548C;&#x64A4;&#x9500;&#x548C;&#x5145;&#x503C;&#x7B49;&#x3002;</li>
+<li>&#x591A;&#x4EBA;&#x5BA1;&#x6279;&#x5904;&#x7406;&#x5F02;&#x5E38;&#xFF1A;&#x5BF9;&#x4E8E;&#x8BA2;&#x5355;&#x5F02;&#x5E38;&#x60C5;&#x51B5;&#x9700;&#x8981;&#x591A;&#x4EBA;&#x5BA1;&#x6279;&#x5904;&#x7406;&#xFF0C;&#x9632;&#x6B62;&#x5355;&#x4EBA;&#x4F5C;&#x6076;&#x6216;&#x53D1;&#x751F;&#x5904;&#x7406;&#x4E8B;&#x6545;&#x5BFC;&#x81F4;&#x8D44;&#x4EA7;&#x635F;&#x5931;&#x3002;</li>
 </ul>
-<h2 id="install">install</h2>
-<pre><code class="lang-sh">useradd -m -r bitcore
-su - bitcore
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
-nvm install v8
-npm install bitcore -g
-bitcore create &lt;path&gt;
-<span class="hljs-built_in">cd</span> &lt;path&gt;
-bitcore install insight-api insight-ui
-</code></pre>
-<h2 id="setup-bitcore-config">Setup Bitcore config</h2>
-<p><details></details></p>
-<p><summary>Example bitcore-node.json</summary>
-<br></p>
-<pre><code class="lang-json">{
-  <span class="hljs-string">&quot;network&quot;</span>: <span class="hljs-string">&quot;livenet&quot;</span>,
-  <span class="hljs-string">&quot;port&quot;</span>: <span class="hljs-number">3001</span>,
-  <span class="hljs-string">&quot;services&quot;</span>: [
-    <span class="hljs-string">&quot;bitcoind&quot;</span>,
-    <span class="hljs-string">&quot;insight-api&quot;</span>,
-    <span class="hljs-string">&quot;insight-ui&quot;</span>,
-    <span class="hljs-string">&quot;web&quot;</span>
-  ],
-  <span class="hljs-string">&quot;servicesConfig&quot;</span>: {
-    <span class="hljs-string">&quot;insight-api&quot;</span>: {
-      <span class="hljs-string">&quot;disableRateLimiter&quot;</span>: <span class="hljs-literal">true</span>
-    },
-    <span class="hljs-string">&quot;bitcoind&quot;</span>: {
-      <span class="hljs-string">&quot;spawn&quot;</span>: {
-        <span class="hljs-string">&quot;datadir&quot;</span>: <span class="hljs-string">&quot;./data&quot;</span>,
-        <span class="hljs-string">&quot;exec&quot;</span>: <span class="hljs-string">&quot;/home/bitcore/.nvm/versions/node/&lt;version&gt;/lib/node_modules/bitcore/node_modules/bitcore-node/bin/bitcoind&quot;</span>
-      }
-    }
-  }
-}
-</code></pre>
-<p>&lt;/details&gt;</p>
-<h3 id="start-bitcore">Start Bitcore</h3>
-<pre><code class="lang-sh">nohup bitcored  &gt; bitcored.log 2&gt;&amp;1 &amp;
-</code></pre>
+<h3 id="&#x8D44;&#x4EA7;&#x5B89;&#x5168;&#x5C42;&#x9762;">&#x8D44;&#x4EA7;&#x5B89;&#x5168;&#x5C42;&#x9762;</h3>
+<ul>
+<li>&#x79C1;&#x94A5;&#x5B89;&#x5168;&#xFF1A;Seed Vault&#x53EF;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;&#x5BC6;&#x7801;&#x3001;&#x672C;&#x5730;&#x52A0;&#x5BC6;&#x548C;&#x8BBE;&#x7F6E;&#x767D;&#x540D;&#x5355;&#x591A;&#x91CD;&#x9632;&#x62A4;&#x4FDD;&#x62A4;&#x79CD;&#x5B50;&#xFF0C;&#x79C1;&#x94A5;&#x4E0D;&#x4F1A;&#x5B58;&#x5728;&#x4EFB;&#x4F55;&#x670D;&#x52A1;&#x5668;&#x3002;&#x4E9A;&#x9A6C;&#x900A;&#x4E91;&#x5BC6;&#x7801;&#x673A;&#x65B9;&#x6848;&#x5206;&#x522B;&#x83B7;&#x5F97;FIPS 140&#x4E09;&#x7EA7;&#x8BA4;&#x8BC1;&#x3002;</li>
+</ul>
+<h3 id="&#x8FD0;&#x7EF4;&#x5C42;&#x9762;">&#x8FD0;&#x7EF4;&#x5C42;&#x9762;</h3>
+<ul>
+<li>&#x9694;&#x79BB;&#x90E8;&#x7F72;&#xFF1A;Jadepool Hub&#x53CA;&#x5176;&#x8282;&#x70B9;&#x90FD;&#x9700;&#x90E8;&#x7F72;&#x5728;&#x4E00;&#x4E2A;&#x79C1;&#x6709;&#x7F51;&#x7EDC;&#x4E2D;&#xFF0C;&#x6700;&#x5927;&#x7A0B;&#x5EA6;&#x7269;&#x7406;&#x9694;&#x79BB;&#x3002;</li>
+</ul>
 
                                 
                                 </section>
@@ -1448,8 +1415,12 @@ bitcore install insight-api insight-ui
 
             
                 
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Jadepool Hub">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="ethereum.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Ethereum">
+                
+                <a href="api.html" class="navigation navigation-next " aria-label="Next page: API">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1460,7 +1431,7 @@ bitcore install insight-api insight-ui
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Bitcoin","level":"1.12.1","depth":2,"next":{"title":"Ethereum","level":"1.12.2","depth":2,"path":"ethereum.md","ref":"ethereum.md","articles":[]},"previous":{"title":"区块链使用须知","level":"1.12","depth":1,"ref":"","articles":[{"title":"Bitcoin","level":"1.12.1","depth":2,"path":"bitcoin.md","ref":"bitcoin.md","articles":[]},{"title":"Ethereum","level":"1.12.2","depth":2,"path":"ethereum.md","ref":"ethereum.md","articles":[]},{"title":"EOS","level":"1.12.3","depth":2,"path":"eos.md","ref":"eos.md","articles":[]},{"title":"Litecoin","level":"1.12.4","depth":2,"path":"litecoin.md","ref":"litecoin.md","articles":[]},{"title":"Ripple","level":"1.12.5","depth":2,"path":"ripple.md","ref":"ripple.md","articles":[]},{"title":"Stellar","level":"1.12.6","depth":2,"path":"stellar.md","ref":"stellar.md","articles":[]},{"title":"Neo","level":"1.12.7","depth":2,"path":"neo.md","ref":"neo.md","articles":[]},{"title":"VeChain","level":"1.12.8","depth":2,"path":"vechain.md","ref":"vechain.md","articles":[]},{"title":"Cybex","level":"1.12.9","depth":2,"path":"cybex.md","ref":"cybex.md","articles":[]},{"title":"Qtum","level":"1.12.10","depth":2,"path":"qtum.md","ref":"qtum.md","articles":[]},{"title":"Cosmos","level":"1.12.11","depth":2,"path":"cosmos.md","ref":"cosmos.md","articles":[]},{"title":"IRISnet","level":"1.12.12","depth":2,"path":"iris.md","ref":"iris.md","articles":[]},{"title":"Bitcoin Cash","level":"1.12.13","depth":2,"path":"bch.md","ref":"bch.md","articles":[]},{"title":"Tezos","level":"1.12.14","depth":2,"path":"tezos.md","ref":"tezos.md","articles":[]},{"title":"ChainX","level":"1.12.15","depth":2,"path":"chainx.md","ref":"chainx.md","articles":[]},{"title":"QLink","level":"1.12.16","depth":2,"path":"qlink.md","ref":"qlink.md","articles":[]},{"title":"Algorand","level":"1.12.17","depth":2,"path":"algorand.md","ref":"algorand.md","articles":[]},{"title":"TomoChain","level":"1.12.18","depth":2,"path":"tomo.md","ref":"tomo.md","articles":[]},{"title":"Tron","level":"1.12.19","depth":2,"path":"tron.md","ref":"tron.md","articles":[]},{"title":"Polkadot","level":"1.12.20","depth":2,"path":"kusama.md","ref":"kusama.md","articles":[]},{"title":"Blockstack","level":"1.12.21","depth":2,"path":"blockstack.md","ref":"blockstack.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["language-picker"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":2},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"jadepool","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jadepool Docs","language":"zh-hans","gitbook":"*"},"file":{"path":"bitcoin.md","mtime":"2019-10-10T11:08:29.639Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-01T10:43:20.271Z"},"basePath":".","book":{"language":"zh-hans"}});
+            gitbook.page.hasChanged({"page":{"title":"安全性","level":"1.1.2","depth":2,"next":{"title":"API","level":"1.1.3","depth":2,"path":"api.md","ref":"api.md","articles":[]},"previous":{"title":"Jadepool Hub","level":"1.1.1","depth":2,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["language-picker"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":2},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"jadepool","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jadepool Docs","language":"zh-hans","gitbook":"*"},"file":{"path":"product-security.md","mtime":"2019-11-01T10:39:21.255Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-01T10:43:20.271Z"},"basePath":".","book":{"language":"zh-hans"}});
         });
     </script>
 </div>
