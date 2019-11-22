@@ -1,4 +1,4 @@
-from **V0.11.X** to **V0.13.5**
+from **V0.11.X** to **V0.13.5(及以上)**
 
 **BreakingChanges**
 
@@ -10,15 +10,15 @@ from **V0.11.X** to **V0.13.5**
 
 2. 依赖增加
 
-   -  Redis 5.x
-
-   -  服务发现consul（多机模式需要在每台机子上安装consul）
-
-      安装consul详见 [瑶池部署文档](https://github.com/nbltrust/jadepool-doc/blob/master/Chinese/瑶池部署文档.md)
+   - Redis 5.x
+   - NodeJS版本 10.16.x
+   - 服务发现consul 1.5.3（多机模式需要在每台机子上安装consul）
+     安装consul详见 [瑶池部署文档](https://github.com/nbltrust/jadepool-doc/blob/master/Chinese/瑶池部署文档.md)
       
-3. 第三方接入修改
+3. **第三方接入修改**
   
-   -  详见 [release-note](https://github.com/nbltrust/jadepool-doc/releases/tag/V0.13.0-alpha.0)
+   - 详见 [release-note](https://github.com/nbltrust/jadepool-doc/releases/tag/V0.13.0-alpha.0)
+   - 第三方接入参考示例 [Stellar](https://github.com/nbltrust/jadepool-agent-xlm)
    
 4. API-v1不再维护
    -  API-v2 [文档](https://nbltrust.github.io/jadepool-hub-api-docs/#v2-api)
@@ -74,9 +74,6 @@ from **V0.11.X** to **V0.13.5**
     NODE_ENV=dev node build/index.bundle.js -m do -a do-addresses-set-incoming,incomingOnly
 
 13. 启动瑶池，根据之前的配置在admin上进行修改（主要是节点配置）
-
-
-
 
 
 ### 生产环境升级步骤：
