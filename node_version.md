@@ -22,4 +22,6 @@
 | Tron        |            |
 | EveriToken  |            |
 | Harmony     |            |
-
+| Kusama      | v0.6.5     |
+| BlockStack  |            |
+|             |            |
