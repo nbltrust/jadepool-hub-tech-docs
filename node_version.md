@@ -22,7 +22,8 @@
 | Tron        | v3.6.2 |     	v3.6.2       | V0.13.8-beta.0 |
 | EveriToken  | v4.1.0 |     EVT 4.1.4       | V0.13.8-beta.0 |
 | Harmony     |            |            | V0.13.7-beta.0 |
-| Kusama      | v0.6.5     |  v0.6.17    | V0.13.8-beta.0 |
+| Kusama      | v0.7.0     |  v0.6.17    | V0.13.8-beta.0 |
 | BlockStack  | v20.0.0.0 |     	v21.0.0.2       | V0.13.8-beta.0 |
+|             |            |            |            |
 |             |            |            |            |
 |             |            |            |            |
