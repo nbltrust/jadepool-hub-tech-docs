@@ -129,6 +129,6 @@ from **V0.11.X** to **V0.13.5(及以上)**
 
 13. 关闭瑶池，跑地址升级脚本
 
-    NODE_ENV=dev node build/index.bundle.js -m do -a do-addresses-set-incoming,incomingOnly
+    NODE_ENV=production node build/index.bundle.js -m do -a do-addresses-set-incoming,incomingOnly
     
 14. 再次启动瑶池
