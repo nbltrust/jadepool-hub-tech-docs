@@ -75,7 +75,7 @@ from **V0.11.X** to **V0.13.5(及以上)**
 
     NODE_ENV=dev node build/index.bundle.js -m do -a do-addresses-set-incoming,incomingOnly
     
-14. 再次启动瑶池
+14. 等待数据库index建完，再次启动瑶池
 
 
 ### 生产环境升级步骤：
@@ -131,4 +131,4 @@ from **V0.11.X** to **V0.13.5(及以上)**
 
     NODE_ENV=production node build/index.bundle.js -m do -a do-addresses-set-incoming,incomingOnly
     
-14. 再次启动瑶池
+14. 等待数据库index建完，再次启动瑶池
