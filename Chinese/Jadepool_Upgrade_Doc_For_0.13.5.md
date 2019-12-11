@@ -58,9 +58,9 @@ from **V0.11.X** to **V0.13.5(及以上)**
    ```
 
 9. 删除index
-
    NODE_ENV=dev  node build/index.bundle.js -m do -a do-db-rebuild-indexes
-
+   db.getCollection('agendaJobs').dropIndexes()
+   
 10. 升级脚本
 
     NODE_ENV=dev  node build/index.bundle.js -m do -a do-upgrade-blockchains-config
@@ -115,6 +115,7 @@ from **V0.11.X** to **V0.13.5(及以上)**
 9. 删除index
 
    NODE_ENV=production node build/index.bundle.js -m do -a do-db-rebuild-indexes
+   db.getCollection('agendaJobs').dropIndexes()
 
 10. 升级脚本
 
