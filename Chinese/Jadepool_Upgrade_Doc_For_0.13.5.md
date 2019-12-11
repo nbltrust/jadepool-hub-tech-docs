@@ -68,12 +68,14 @@ from **V0.11.X** to **V0.13.5(及以上)**
 11. 审计脚本
 
     NODE_ENV=dev  node build/index.bundle.js -m do -a do-audits-recalculate
-    
-12. 地址升级脚本
+
+12. 启动瑶池，根据之前的配置在admin上进行修改（主要是节点配置），确认节点配置正确
+
+13. 关闭瑶池，跑地址升级脚本
 
     NODE_ENV=dev node build/index.bundle.js -m do -a do-addresses-set-incoming,incomingOnly
-
-13. 启动瑶池，根据之前的配置在admin上进行修改（主要是节点配置）
+    
+14. 再次启动瑶池
 
 
 ### 生产环境升级步骤：
@@ -122,9 +124,10 @@ from **V0.11.X** to **V0.13.5(及以上)**
 
     NODE_ENV=production  node build/index.bundle.js -m do -a do-audits-recalculate
     
-12. 地址升级脚本
+12. 启动瑶池，根据之前的配置在admin上进行修改（主要是节点配置），确认节点配置正确
 
-    NODE_ENV=production node build/index.bundle.js -m do -a do-addresses-set-incoming,incomingOnly
+13. 关闭瑶池，跑地址升级脚本
 
-13. 启动瑶池，根据之前的配置在admin上进行修改（主要是节点配置）
-
+    NODE_ENV=dev node build/index.bundle.js -m do -a do-addresses-set-incoming,incomingOnly
+    
+14. 再次启动瑶池
