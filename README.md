@@ -1,5 +1,5 @@
 ## Welcome to Jadepool! 
 
-See full [Jadepool Documentation](https://nbltrust.github.io/jadepool-doc)
+See full [Jadepool Documentation](https://nbltrust.github.io/jadepool-hub-tech-docs)
 
-See [API Documentation](https://nbltrust.github.io/jadepool-api-docs)
+See [API Documentation](https://nbltrust.github.io/jadepool-hub-api-docs)
