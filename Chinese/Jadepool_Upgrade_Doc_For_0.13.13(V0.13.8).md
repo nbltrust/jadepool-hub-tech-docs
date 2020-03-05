@@ -44,7 +44,8 @@
    NODE_ENV=dev node build/index.bundle.js -m do -a do-addresses-set-incoming
    ```
 
-10. 对于V0.11.22及之前版本生成的没有mode字段的充值地址，可以通过该脚本升级地址设置mode
+9. 对于V0.11.22及之前版本生成的没有mode字段的充值地址，可以通过该脚本升级地址设置mode
+
 
    ```bash
    NODE_ENV=dev node build/index.bundle.js -m do -a do-addresses-upgrade-mode
