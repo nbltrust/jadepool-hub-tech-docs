@@ -36,23 +36,22 @@
 
    具体配置可参考jadepool-hub/pm2/master-dev.yml，jadepool-hub-admin也需要修改，具体参考jadepool-hub-admin/pm2/dev.yml，另外注意，自行配置其他环境变量的需要在每个服务中配置相应的环境变量
 
-8. 为了精确显示余额（如ETH充值地址中不够汇总的余额），需要在jadepool-hub目录下跑incoming脚本
+8. 启动瑶池，暂时不要启链，保证jadepool-config正常运行后，跑以下升级脚本（需要加上其他自行配置的环境变量）
+
+9. 为了精确显示余额（如ETH充值地址中不够汇总的余额），需要在jadepool-hub目录下跑incoming脚本
 
    ```bash
    NODE_ENV=dev node build/index.bundle.js -m do -a do-addresses-set-incoming
    ```
 
-9. 对于V0.11.22及之前版本生成的没有mode字段的充值地址，可以通过该脚本升级地址设置mode
+10. 对于V0.11.22及之前版本生成的没有mode字段的充值地址，可以通过该脚本升级地址设置mode
 
    ```bash
    NODE_ENV=dev node build/index.bundle.js -m do -a do-addresses-upgrade-mode
    ```
 
-10. 启动瑶池
+11. 以上脚本如果数据量较多，运行时间会比较长，运行完之后可以正常启动链进程
 
-11. 以上脚本如果数据量较多，运行时间过长，也可以等瑶池启动后再跑，瑶池启动后再运行升级脚本时需要加上 JP_MODE=worker 以及其他自行配置的环境变量
-
-      
 
 
 ### 生产环境升级步骤：
@@ -83,7 +82,10 @@
 
    具体配置可参考jadepool-hub/pm2/master-production.yml，jadepool-hub-admin也需要修改，具体参考jadepool-hub-admin/pm2/production.yml，另外注意，自行配置其他环境变量的需要在每个微服务中配置相应的环境变量
 
-8. 为了精确显示余额（如ETH充值地址中不够汇总的余额），需要在jadepool-hub目录下跑incoming脚本
+8. 启动瑶池，暂时不要启链，保证jadepool-config正常运行后，跑以下升级脚本（需要加上其他自行配置的环境变量）
+
+
+9. 为了精确显示余额（如ETH充值地址中不够汇总的余额），需要在jadepool-hub目录下跑incoming脚本
 
    ```bash
    NODE_ENV=production build/index.bundle.js -m do -a do-addresses-set-incoming
@@ -95,8 +97,4 @@
    NODE_ENV=production build/index.bundle.js -m do -a do-addresses-upgrade-mode
    ```
 
-10. 启动瑶池
-
-11. 以上脚本如果数据量较多，运行时间过长，也可以等瑶池启动后再跑，瑶池启动后再运行升级脚本时需要加上 JP_MODE=worker 以及其他自行配置的环境变量
-
-      
+11. 以上脚本如果数据量较多，运行时间会比较长，运行完之后可以正常启动链进程
