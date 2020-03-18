@@ -18,5 +18,4 @@
      db.getCollection('orders').remove({type:'STX'})
      db.getCollection('audits').remove({type:{$in:['STX','STXBTC']}})
      ```
-   
-     
+ 3. 如果遇到标尺高度比区块高度大的情况，请先检查BTC，Blockstack节点是否正常，然后再执行上述操作。
