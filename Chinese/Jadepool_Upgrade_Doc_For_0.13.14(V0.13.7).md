@@ -36,11 +36,13 @@
 
    jadepool-addrbook：余额查询，与saas配合使用，**如果不用saas则不用配置**
 
-   **具体配置可参考jadepool-hub/pm2/master-dev.yml，**
+   **jadepool-hub需要修改，所有服务具体配置可参考jadepool-hub/pm2/master-dev.yml，**
 
-   **jadepool-hub-admin也需要修改，具体参考jadepool-hub-admin/pm2/dev.yml，**
+   **jadepool-hub-admin需要修改，具体参考jadepool-hub-admin/pm2/dev.yml，**
 
    **另外注意，自行配置其他环境变量的需要在每个服务中配置相应的环境变量**（如果是staging环境，则需修改NODE_ENV=staging）
+   
+   所有服务一起启动的配置可参考https://github.com/nbltrust/jadepool-hub-tech-docs/blob/master/Chinese/start.yml
 
 9. 启动瑶池，暂时不要启链，保证jadepool-config正常运行后，跑以下升级脚本（**需要加上其他自行配置的环境变量，如JP_SECRET等**）
 
@@ -94,11 +96,13 @@
 
    jadepool-addrbook：余额查询，与saas配合使用，**如果不用saas则不用配置**
 
-   **具体配置可参考jadepool-hub/pm2/master-production.yml，**
+   **jadepool-hub需要修改，所有服务具体配置可参考jadepool-hub/pm2/master-production.yml，**
 
    **jadepool-hub-admin也需要修改，具体参考jadepool-hub-admin/pm2/production.yml，**
 
    **另外注意，自行配置其他环境变量的需要在每个微服务中配置相应的环境变量**
+   
+   所有服务一起启动的配置可参考https://github.com/nbltrust/jadepool-hub-tech-docs/blob/master/Chinese/start.yml
 
 9. 启动瑶池，暂时不要启链，保证jadepool-config正常运行后，跑以下升级脚本（**需要加上其他自行配置的环境变量，如JP_SECRET等**）
 
