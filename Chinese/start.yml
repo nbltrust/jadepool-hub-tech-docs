@@ -1,0 +1,77 @@
+apps:
+  - cwd: /opt/jadepool/hub/jadepool/jadepool-hub/
+    name: jadepool-hub
+    script: bin/master.js
+    watch: false
+    kill_timeout: 300000
+    env:
+      NODE_ENV: dev
+  - cwd: /opt/jadepool/hub/jadepool/jadepool-hub/
+    name: jadepool-security
+    script: bin/security.js
+    exec_mode: "cluster"
+    instances: 3
+    watch: false
+    kill_timeout: 60000
+    merge_logs: true
+    env:
+      NODE_ENV: dev
+  - cwd: /opt/jadepool/hub/jadepool/jadepool-hub/
+    name: jadepool-config
+    script: bin/config.js
+    exec_mode: "cluster"
+    instances: 2
+    watch: false
+    kill_timeout: 60000
+    merge_logs: true
+    env:
+      NODE_ENV: dev
+  - cwd: /opt/jadepool/hub/jadepool/jadepool-hub/
+    name: jadepool-notification
+    script: bin/notification.js
+    exec_mode: "cluster"
+    instances: 2
+    watch: false
+    kill_timeout: 60000
+    merge_logs: true
+    env:
+      NODE_ENV: dev
+  - cwd: /opt/jadepool/hub/jadepool/jadepool-hub/
+    name: jadepool-health
+    script: bin/health.js
+    exec_mode: "cluster"
+    instances: 1
+    watch: false
+    kill_timeout: 60000
+    merge_logs: true
+    env:
+      NODE_ENV: dev
+  - cwd: /opt/jadepool/hub/jadepool/jadepool-hub/
+    name: jadepool-addrbook
+    script: bin/addrbook.js
+    exec_mode: "cluster"
+    instances: 4
+    watch: false
+    kill_timeout: 60000
+    merge_logs: true
+    env:
+      NODE_ENV: dev
+   - cwd: /opt/jadepool/hub/jadepool/jadepool-hub-admin/
+    name: jadepool-hub-admin
+    script: bin/main.js
+    exec_mode: "cluster"
+    instances: 2
+    watch: false
+    merge_logs: true
+    kill_timeout: 300000
+    env:
+      NODE_ENV: dev
+  - cwd: /opt/jadepool/hub/jadepool/jadepool-hub-admin-fe/
+    script: node_modules/.bin/nuxt
+    args: 'start --spa'
+    watch: false
+    name: jadepool-hub-admin-fe-dev
+    error_file : /opt/jadepool/hub/jadepool/jadepool-logs/jadepool-hub-admin-fe-dev-error.log
+    out_file : /opt/jadepool/hub/jadepool/jadepool-logs/jadepool-hub-admin-fe-dev-out.log
+    env:
+      NODE_ENV: dev
