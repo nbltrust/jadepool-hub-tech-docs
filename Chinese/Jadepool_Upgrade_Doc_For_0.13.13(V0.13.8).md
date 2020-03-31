@@ -1,10 +1,10 @@
-**V0.13.8** to **V0.13.13**
+## **V0.13.8** to **V0.13.13**
 
-**BreakingChanges**
+## BreakingChanges
 
-- V0.13.9之后是多进程版本，每个链可以启动多个进程。
+- **V0.13.9之后是多进程版本，每个链可以启动多个进程。**
 
-- Stellar已经迁移到hub项目里，不再作为第三方ledger存在，以后使用该链可直接在hub启动，不需要另起agent-xlm服务
+- **Stellar已经迁移到hub项目里，不再作为第三方ledger存在，以后使用该链可直接在hub启动，不需要另起agent-xlm服务**
 
   
 
