@@ -44,9 +44,9 @@
    
    所有服务一起启动的配置可参考https://github.com/nbltrust/jadepool-hub-tech-docs/blob/master/Chinese/start.yml
 
-9. 启动瑶池，暂时不要启链，保证jadepool-config正常运行后，跑以下升级脚本（**需要加上其他自行配置的环境变量，如JP_SECRET等**）
+9. 启动瑶池，暂时不要启链，保证jadepool-config正常运行后，在jadepool-hub的路径下执行以下升级脚本（**需要加上其他自行配置的环境变量，如JP_SECRET等**）
 
-10. 为了精确显示余额（如ETH充值地址中不够汇总的余额），需要在jadepool-hub目录下跑incoming脚本
+10. 为了精确显示余额（如ETH充值地址中不够汇总的余额），需要跑incoming脚本
 
   ```bash
   NODE_ENV=dev node build/index.bundle.js -m do -a do-addresses-set-incoming
@@ -104,10 +104,10 @@
    
    所有服务一起启动的配置可参考https://github.com/nbltrust/jadepool-hub-tech-docs/blob/master/Chinese/start.yml
 
-9. 启动瑶池，暂时不要启链，保证jadepool-config正常运行后，跑以下升级脚本（**需要加上其他自行配置的环境变量，如JP_SECRET等**）
+9. 启动瑶池，暂时不要启链，保证jadepool-config正常运行后，在jadepool-hub的路径下执行以下升级脚本（**需要加上其他自行配置的环境变量，如JP_SECRET等**）
 
 
-9. 为了精确显示余额（如ETH充值地址中不够汇总的余额），需要在jadepool-hub目录下跑incoming脚本
+9. 为了精确显示余额（如ETH充值地址中不够汇总的余额），需要跑incoming脚本
 
    ```bash
    NODE_ENV=production build/index.bundle.js -m do -a do-addresses-set-incoming
