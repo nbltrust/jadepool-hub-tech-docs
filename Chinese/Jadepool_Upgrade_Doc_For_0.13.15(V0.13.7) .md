@@ -42,6 +42,12 @@
    
    所有服务一起启动的配置可参考https://github.com/nbltrust/jadepool-hub-tech-docs/blob/master/Chinese/start.yml
 
+8. 删除redis缓存
+
+   ```bash
+   redis-cli flushall
+   ```
+
 9. 启动瑶池，暂时不要启链，保证jadepool-config正常运行后，跑以下升级脚本（**需要加上其他自行配置的环境变量，如JP_SECRET等**）
 
 10. 为了精确显示余额（如ETH充值地址中不够汇总的余额），需要在jadepool-hub目录下跑incoming脚本
@@ -69,9 +75,9 @@
 
 5. 恢复之前jadepool-hub/config下面的local配置（主要是数据库配置，如果数据库配在seed里，忽略此步骤）
 
-7. 恢复jadepool-hub/lib和jadepool-hub/lib/seed-loader下的配置（go-node-ffi.so/server.data) 
+6. 恢复jadepool-hub/lib和jadepool-hub/lib/seed-loader下的配置（go-node-ffi.so/server.data) 
 
-8. 修改启动脚本yml，需要在启动脚本里加上微服务配置，包括
+7. 修改启动脚本yml，需要在启动脚本里加上微服务配置，包括
 
    jadepool-security：与seed交互
 
@@ -91,6 +97,11 @@
    
    所有服务一起启动的配置可参考https://github.com/nbltrust/jadepool-hub-tech-docs/blob/master/Chinese/start.yml
 
+8. 删除redis缓存
+
+   ```bash
+   redis-cli flushall
+   ```
 9. 启动瑶池，暂时不要启链，保证jadepool-config正常运行后，跑以下升级脚本（**需要加上其他自行配置的环境变量，如JP_SECRET等**）
 
 
