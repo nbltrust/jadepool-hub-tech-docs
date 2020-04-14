@@ -108,7 +108,7 @@
 10. 为了精确显示余额（如ETH充值地址中不够汇总的余额），需要在jadepool-hub目录下跑incoming脚本
 
    ```bash
-   NODE_ENV=production JP_SECRET=xxx build/index.bundle.js -m do -a do-addresses-set-incoming
+   NODE_ENV=production JP_SECRET=xxx node build/index.bundle.js -m do -a do-addresses-set-incoming
    ```
 
 11. 以上脚本如果数据量较多，运行时间会比较长，运行完之后可以正常启动链进程
