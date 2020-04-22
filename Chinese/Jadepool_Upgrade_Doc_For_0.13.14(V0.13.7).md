@@ -122,13 +122,13 @@
 11. 为了精确显示余额（如ETH充值地址中不够汇总的余额），需要跑incoming脚本
 
    ```bash
-   NODE_ENV=production build/index.bundle.js -m do -a do-addresses-set-incoming
+   NODE_ENV=production node build/index.bundle.js -m do -a do-addresses-set-incoming
    ```
 
 12. 对于V0.11.22及之前版本生成的没有mode字段的充值地址，可以通过该脚本升级地址设置mode
 
    ```bash
-   NODE_ENV=production build/index.bundle.js -m do -a do-addresses-upgrade-mode
+   NODE_ENV=production node build/index.bundle.js -m do -a do-addresses-upgrade-mode
    ```
 
 13. 以上脚本如果数据量较多，运行时间会比较长，运行完之后可以正常启动链进程
