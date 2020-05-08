@@ -18,7 +18,7 @@
 | Algorand    | v1.0.27    |  v1.0.27    | V0.13.7-beta.0 |
 | Vechain     | v1.1.2     |  v1.3    | V0.13.16 |
 | Tomo        | v1.5.0     |   v1.6.2   | V0.13.16 |
-| Ripple      | v1.2.4     |  	v1.3.1    | V0.13.16 |
+| Ripple      | v1.2.4     |  	v1.4.0    | V0.13.16 |
 | Tron        | v3.6.2 |     	v3.6.2       | V0.13.16 |
 | EveriToken  | v4.1.0 |     EVT 4.1.4       | V0.13.16 |
 | Harmony     |            |            | V0.13.7-beta.0 |
