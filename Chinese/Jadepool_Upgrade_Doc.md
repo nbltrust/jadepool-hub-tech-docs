@@ -14,7 +14,7 @@
 
 6. 在master服务器上恢复之前jadepool-hub/lib和jadepool-hub/lib/seed-loader下的配置（go-node-ffi.so/server.data) 
 
-7. 开启Cybex的用户注意，如果seed配置是本地钱包模式，需要恢复之前的jadepool-hub/secret/cybex-hot.bin文件
+7. 开启Cybex的用户注意，如果seed配置是本地钱包模式，需要在cybex进程开启的机器上恢复之前的jadepool-hub/secret/cybex-hot.bin文件
 
 8. 启动瑶池
 
@@ -34,7 +34,7 @@
 
 6. 在master服务器上恢复之前jadepool-hub/lib和jadepool-hub/lib/seed-loader下的配置（go-node-ffi.so/server.data) 
 
-7. 开启Cybex的用户注意，如果seed配置是本地钱包模式，需要恢复之前的jadepool-hub/secret/cybex-hot.bin文件
+7. 开启Cybex的用户注意，如果seed配置是本地钱包模式，需要在cybex进程开启的机器上恢复之前的jadepool-hub/secret/cybex-hot.bin文件
 
 8. 启动瑶池
 
