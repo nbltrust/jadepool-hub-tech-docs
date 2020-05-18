@@ -1,4 +1,4 @@
-| BlockChain  | 最低可用版本| 运维节点版本 | Jadepool 支持版本 |
+| BlockChain  | 经测试可用版本| 运维节点版本 | Jadepool 支持版本 |
 | ----------- | ---------- | ---------- | ---------- |
 | BTC         | v0.12.1-bitcore-4    |    v0.12.1-bitcore-4  | V0.13.17 |
 | Ethereum    | v1.9.9     |     	v1.9.9 | V0.13.17 |
