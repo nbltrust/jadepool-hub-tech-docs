@@ -6,7 +6,7 @@
 | Cybex       | v0.1.31    |   	v0.2.35  | V0.13.17 |
 | Neo         | v2.10.2    |    	v2.10.3 | V0.13.17    |
 | Cosmos      | v2.0.3 (cosmoshub-3)     |      | V0.13.17 |
-| BitcoinCash | v2.0.5     |      | V0.13.17 |
+| BitcoinCash | 0.21.0     | 0.21.3   | V0.13.17 |
 | Qlink       | v1.2.4     |  	v1.2.4    | V0.13.17 |
 | Stellar     | v11.0.0    |     | V0.13.17 |
 | Litecoin    | v0.4.4     |   v0.13.2.0   | V0.13.17 |
