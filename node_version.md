@@ -11,7 +11,7 @@
 | Stellar     | v11.0.0    |     | V0.13.17 |
 | Litecoin    | v0.4.4     |   v0.13.2.0   | V0.13.17 |
 | Irisnet     | v0.15.0    |  v0.15.0	   | V0.13.17 |
-| Tezos       | v0.0.3 （babylon）   |      | V0.13.17 |
+| Tezos       | v0.0.3 （babylon）   | v7.0     | V0.13.17 |
 | Chainx      | v1.0.6     |  v1.0.6    | V0.13.17 |
 | Qtum        | v0.18.1    |     | V0.13.17 |
 | Zcash       | v0.4.3     |   	v2.1.0-1   | V0.13.7-beta.0 |
