@@ -19,7 +19,7 @@
 | Ripple      | v1.5.0     | V0.13.19 |  	v1.4.0    | V0.14.3-beta.0 |
 | Kusama      | v0.8.3    | V0.13.19-beta.1 |  v0.8.3  | V0.14.3-beta.0 | 
 | Edgeware    | v3.0.1    | V0.13.19 | v3.0.1     |  V0.14.3-beta.0          | 
-| Crab        |  v0.6.0   | V0.13.19-beta.1 |   v0.6.0      |  V0.14.3-beta.0  |
+| Crab        |  v0.6.0   | V0.13.19 |   v0.6.0      |  V0.14.3-beta.0  |
 | Cybex       | v0.2.36    | V0.13.19 |   	  |  |
 | Cosmos      | v2.0.7 (cosmoshub-3)     | V0.13.19 |    |  |
 | Stellar     | v13.0.0    | V0.13.19 |    |  |
