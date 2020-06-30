@@ -434,7 +434,7 @@ NODE_ENV=dev node build/index.bundle.js -m do -a do-wallet-template-import
 
 
 
-###四 ChangeLog
+### 四 ChangeLog
 
 - 瑶池启动脚本增加 jadepool-biz-monitor 服务
 - 需要在seed配置cold-signer导出的根公钥
