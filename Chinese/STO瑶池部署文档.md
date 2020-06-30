@@ -431,3 +431,15 @@ pm2 start pm2.config.yml
 ```
 NODE_ENV=dev node build/index.bundle.js -m do -a do-wallet-template-import
 ```
+
+
+
+###四 ChangeLog
+
+- 瑶池启动脚本增加 jadepool-biz-monitor 服务
+- 需要在seed配置cold-signer导出的根公钥
+- 需要运行钱包初始化脚本
+  - 脚本运行完之后会生成运营钱包op_wallet（walletID：MANUAL_OP)
+  - 默认配置DSTOKEN代币并且在钱包中开启
+
+- 需要在admin页面的系统配置里设置sudoKey才能调用st相关接口
