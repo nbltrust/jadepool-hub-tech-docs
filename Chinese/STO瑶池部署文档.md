@@ -347,7 +347,7 @@ consul文档可以参考[官方文档](https://www.consul.io/docs/index.html)
 
 
 6. 配置cold-signer
-- 在离线机器上准备好环境
+- 在离线机器上准备好环境（Mac）
 ```bash
 node 10.17.0
 ```
