@@ -66,6 +66,12 @@ unzip consul_1.6.0_linux_amd64.zip
 sudo mv consul /usr/bin/
 ```
 
+* 安装nginx
+```bash
+sudo apt update
+sudo apt install -y nginx
+```
+
 ### 二 部署瑶池 
 1. 请在服务器新建工作目录，并将收到的瑶池版本放到工作目录，为了方便描述用$WORKSPACE表示工作目录：
 
@@ -107,9 +113,9 @@ vim ./jadepool-hub/config/local-production.json
 }
 ```
 
-3. 新建pm2配置文件
+3. 新建配置文件
 
-vim pm2.config.yml       (master)
+ - vim pm2.config.yml       (master)
 
 ⚠️ NODE_ENV启动模式production对应主网，staging/dev对应测试网
 
@@ -180,15 +186,43 @@ apps:
     kill_timeout: 300000    
     env:
       NODE_ENV: dev
-  - cwd: ./jadepool-hub-admin-fe/
-    name: jadepool-hub-admin-fe
-    script: node_modules/.bin/nuxt
-    args: 'start --spa'
-    watch: false
-    error_file : ./logs/pm2-jadepool-hub-admin-fe-error.log
-    out_file : ./logs/pm2-jadepool-hub-admin-fe-out.log
 ```
 
+ - 使用nginx反向代理指向jadepool-hub-admin-fe静态文件, nginx配置参考
+ 
+ ```bash
+ server {
+  listen       3000;
+
+  location / {
+    # 此处填写jadepool-hub-admin-fe路径
+    root   /opt/jadepool-hub/jadepool-hub-admin-fe/build;
+    index  index.html index.htm;
+
+    add_header Access-Control-Allow-Origin *;
+    add_header Access-Control-Allow-Methods "POST, HEAD, PUT, PATCH, GET, DELETE";
+    add_header Access-Control-Allow-Headers "cache-control, content-type, Origin, Authorization, Accept";
+    add_header Access-Control-Allow-Credentials true;
+
+    # First attempt to serve request as file, then
+    # as directory, then fall back to displaying a 404.
+    try_files $uri $uri/ =404;
+    error_page 404 =301 /;
+  }
+
+  location /api {
+    proxy_redirect off;
+    proxy_pass http://localhost:7002;
+    proxy_set_header Host $host:$server_port;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header REMOTE-HOST $remote_addr;
+
+    expires 0m;
+  }
+}
+ 
+ ```
 
 
 4. 配置seed（可参见seed使用文档https://nbltrust.github.io/jadepool-hub-tech-docs/zh-hans/seed-init.html）
@@ -431,6 +465,7 @@ pm2 start pm2.config.yml
 ```
 NODE_ENV=dev node build/index.bundle.js -m do -a do-wallet-template-import
 ```
+4. 启动nginx
 
 
 
