@@ -461,8 +461,9 @@ cd R1.2.1.190121
 cd $WORKSPACE
 pm2 start pm2.config.yml
 ```
-3. 跑初始化脚本（⚠️ NODE_ENV启动模式production对应主网，staging/dev对应测试网，根据瑶池的启动模式来配置）
+3. 在jadepool-hub目录下面跑初始化脚本（⚠️ NODE_ENV启动模式production对应主网，staging/dev对应测试网，根据瑶池的启动模式来配置）
 ```
+cd jadepool-hub
 NODE_ENV=dev node build/index.bundle.js -m do -a do-wallet-template-import
 ```
 4. 启动nginx
