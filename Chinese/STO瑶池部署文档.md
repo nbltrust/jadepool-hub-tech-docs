@@ -247,7 +247,8 @@ Initialization finished. Please start the server again.
 ```
 
 * 设置冷钱包地址
-设置冷钱包地址,需要将支持的链都需要配置;
+
+设置冷钱包地址,需要使用的链都必须要配置;
 > ./seed --path=./data/ --data
 
 Example:
