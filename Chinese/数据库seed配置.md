@@ -7,10 +7,10 @@ key = MONGO_CFG:config
 value = mongodb://jadepool:pwd@127.0.0.1/jadepool-cfg-prod
 
 key = MONGO_CFG:default
-value = mongodb://jadepool:pwd@127.0.0.1/jadepool-BN-dev
+value = mongodb://jadepool:pwd@127.0.0.1/jadepool-BN-prod
 
 key = MONGO_CFG:admin
-value = mongodb://jadepool:pwd@127.0.0.1/jadepool-BN-dev
+value = mongodb://jadepool:pwd@127.0.0.1/jadepool-BN-prod
 
 key = REDIS_CFG
 value = default
