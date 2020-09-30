@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>6.1.服务架构 · Jadepool Docs</title>
+        <title>10.8.使用BLS Keygen · Jadepool Docs</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,8 +61,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="process.html" />
     
+    <link rel="prev" href="explorer.html" />
     
 
     </head>
@@ -595,7 +595,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.6.1" data-path="infrastructure.html">
+        <li class="chapter " data-level="1.6.1" data-path="infrastructure.html">
             
                 <a href="infrastructure.html">
             
@@ -970,7 +970,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10.8" data-path="bls-keygen-tutorial.html">
+        <li class="chapter active" data-level="1.10.8" data-path="bls-keygen-tutorial.html">
             
                 <a href="bls-keygen-tutorial.html">
             
@@ -1063,7 +1063,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >6.1.服务架构</a>
+        <a href="." >10.8.使用BLS Keygen</a>
     </h1>
 </div>
 
@@ -1078,15 +1078,62 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p><br></p>
-<p><img src="image/infrastructure.png" alt=""></p>
-<p><br></p>
-<h3 id="master&#x670D;&#x52A1;">Master&#x670D;&#x52A1;</h3>
-<p>Jadepool Hub&#x7CFB;&#x7EDF;&#x7684;&#x603B;&#x6307;&#x6325;&#x8FDB;&#x7A0B;&#x3002;&#x6574;&#x4E2A;&#x7CFB;&#x7EDF;&#x53EA;&#x6709;&#x4E00;&#x4E2A;Master&#x8FDB;&#x7A0B;&#x3002;</p>
-<h3 id="agent&#x670D;&#x52A1;">Agent&#x670D;&#x52A1;</h3>
-<p>&#x5206;&#x7BA1;&#x6BCF;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x7684;&#x4EE3;&#x7406;&#x8FDB;&#x7A0B;&#x3002;&#x6BCF;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x53EA;&#x6709;&#x4E00;&#x4E2A;Agent&#x8FDB;&#x7A0B;&#x3002;Agent&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;Worker&#x8FDB;&#x7A0B;&#x3002;</p>
-<h3 id="worker&#x670D;&#x52A1;">Worker&#x670D;&#x52A1;</h3>
-<p>&#x8D1F;&#x8D23;&#x5904;&#x7406;&#x4E1A;&#x52A1;&#x7684;&#x6700;&#x5E95;&#x5C42;&#x8FDB;&#x7A0B;&#x3002;Worker&#x8FDB;&#x7A0B;&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E2A;&#xFF0C;&#x53EF;&#x4EE5;&#x8D77;&#x5728;Master&#x670D;&#x52A1;&#x6240;&#x5728;&#x670D;&#x52A1;&#x5668;&#x6216;Agent&#x670D;&#x52A1;&#x6240;&#x5728;&#x670D;&#x52A1;&#x5668;&#x3002;&#x57FA;&#x4E8E;&#x5F53;&#x524D;&#x7684;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;&#xFF0C;&#x6BCF;&#x4E00;&#x6761;&#x533A;&#x5757;&#x94FE;&#x4F7F;&#x7528;&#x5355;&#x72EC;&#x4E00;&#x4E2A;Worker&#x8FDB;&#x7A0B;&#x3002;</p>
+                                <h2 id="&#x521D;&#x59CB;&#x5316;">&#x521D;&#x59CB;&#x5316;</h2>
+<p>BLS Keygen&#x662F;&#x5728;Seed Vault&#x7A0B;&#x5E8F;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x6269;&#x5C55;&#x4E86;&#x884D;&#x751F;BLS&#x516C;&#x79C1;&#x94A5;&#x5BF9;&#x3001;&#x751F;&#x6210;&#x5411;ETH2.0&#x9A8C;&#x8BC1;&#x8005;&#x62B5;&#x62BC;&#x7684;&#x6570;&#x636E;&#x7684;&#x8F6F;&#x4EF6;&#x7A0B;&#x5E8F;&#x3002;&#x521D;&#x6B21;&#x4F7F;&#x7528;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x5BC6;&#x7801;&#xFF0C;&#x4E4B;&#x540E;&#x7684;&#x7B7E;&#x540D;&#x64CD;&#x4F5C;&#x90FD;&#x9700;&#x8981;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#x8FDB;&#x884C;&#x3002;&#x5EFA;&#x8BAE;&#x8BBE;&#x7F6E;&#x8DB3;&#x591F;&#x590D;&#x6742;&#x7684;&#x5BC6;&#x7801;&#x5E76;&#x5C06;&#x5176;&#x5907;&#x4EFD;&#xFF0C;&#x5907;&#x4EFD;&#x65B9;&#x6CD5;&#x8BF7;&#x53C2;&#x8003;<a href="seed-backup.html">&#x6587;&#x6863;</a>&#x3002;</p>
+<p>&#x8F93;&#x5165;&#x547D;&#x4EE4;&#x521D;&#x59CB;&#x5316;&#xFF1A;./signer&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-bash">$ ./signer
+data path: <span class="hljs-string">&quot;./&quot;</span>.
+lock file successfully
+The signer has not been initialized, please <span class="hljs-built_in">type</span> <span class="hljs-string">&quot;yes&quot;</span> to continue.
+-&gt; yes
+Input password first time.
+-&gt;
+Input password again.
+-&gt;
+Initialization finished. Please start the server again.
+</code></pre>
+<h2 id="&#x542F;&#x52A8;js-signer&#x8FDB;&#x7A0B;">&#x542F;&#x52A8;js-signer&#x8FDB;&#x7A0B;</h2>
+<pre><code class="lang-bash">pm2 start js-signer/json-rpc-svr.js
+</code></pre>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong>&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;testnet&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x65B9;&#x5F0F;&#x5207;&#x6362;&#x5230;mainnet&#x3002;testnet&#x5BF9;&#x5E94;ETH2.0&#x7684;Medalla&#x6D4B;&#x8BD5;&#x94FE;&#x3002;</p>
+<ol>
+<li>&#x524D;&#x5F80;&#x6587;&#x4EF6;&#x5939;&#xFF1A;cd js-signer</li>
+<li>&#x4FEE;&#x6539;config.js<pre><code class="lang-bash">module.exports = {
+network:<span class="hljs-string">&quot;testnet&quot;</span> // mainnet
+}
+</code></pre>
+</li>
+</ol>
+<h2 id="&#x542F;&#x52A8;signer">&#x542F;&#x52A8;signer</h2>
+<p>&#x8F93;&#x5165;&#x547D;&#x4EE4;&#xFF1A;./signer&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-bash">$ ./signer 
+data path: <span class="hljs-string">&quot;./&quot;</span>.
+Please input passowrd.
+-&gt;
+Password is correct.
+config.json md5[99914b932bd37a50b983c5e7c90ae93b] pass check
+data.json md5[99914b932bd37a50b983c5e7c90ae93b] pass check
+seed.json md5[c7d05d18171108a85523fd0917df6c4b] pass check
+lock file successfully
+Successfully recover the seed, now starting the seed server :)
+Authorized client is: [127.0.0.1].
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v3.3.10-dev
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+&#x21E8; http server started on [::]:8901
+</code></pre>
+<h2 id="&#x4F7F;&#x7528;api">&#x4F7F;&#x7528;API</h2>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong>BLS Keygen&#x7684;&#x7AEF;&#x53E3;&#x662F;8901</p>
+<h3 id="&#x884D;&#x751F;keypair">&#x884D;&#x751F;keypair</h3>
+<p><a href="https://nbltrust.github.io/jadepool-hub-api-docs/#derive-bls-key-pair" target="_blank">https://nbltrust.github.io/jadepool-hub-api-docs/#derive-bls-key-pair</a></p>
+<h3 id="&#x751F;&#x6210;deposit-data">&#x751F;&#x6210;deposit data</h3>
+<p><a href="https://nbltrust.github.io/jadepool-hub-api-docs/#generate-deposit-data" target="_blank">https://nbltrust.github.io/jadepool-hub-api-docs/#generate-deposit-data</a></p>
 
                                 
                                 </section>
@@ -1114,10 +1161,10 @@
 
             
                 
-                
-                <a href="process.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 6.2.进程分类">
-                    <i class="fa fa-angle-right"></i>
+                <a href="explorer.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 10.7.区块链浏览器">
+                    <i class="fa fa-angle-left"></i>
                 </a>
+                
                 
             
         
@@ -1126,7 +1173,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"6.1.服务架构","level":"1.6.1","depth":2,"next":{"title":"6.2.进程分类","level":"1.6.2","depth":2,"path":"process.md","ref":"process.md","articles":[]},"previous":{"title":"6.运维","level":"1.6","depth":1,"ref":"","articles":[{"title":"6.1.服务架构","level":"1.6.1","depth":2,"path":"infrastructure.md","ref":"infrastructure.md","articles":[]},{"title":"6.2.进程分类","level":"1.6.2","depth":2,"path":"process.md","ref":"process.md","articles":[]},{"title":"6.3.软件模块","level":"1.6.3","depth":2,"path":"module.md","ref":"module.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["language-picker"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":2},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"jadepool","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jadepool Docs","language":"zh-hans","gitbook":"*"},"file":{"path":"infrastructure.md","mtime":"2019-07-30T07:18:18.027Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-30T04:24:15.773Z"},"basePath":".","book":{"language":"zh-hans"}});
+            gitbook.page.hasChanged({"page":{"title":"10.8.使用BLS Keygen","level":"1.10.8","depth":2,"next":{"title":"11.其他","level":"1.11","depth":1,"ref":"","articles":[{"title":"11.1.版本说明","level":"1.11.1","depth":2,"path":"version.md","ref":"version.md","articles":[]},{"title":"11.2.联系我们","level":"1.11.2","depth":2,"path":"contact.md","ref":"contact.md","articles":[]}]},"previous":{"title":"10.7.区块链浏览器","level":"1.10.7","depth":2,"path":"explorer.md","ref":"explorer.md","articles":[]},"dir":"ltr"},"config":{"plugins":["language-picker"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":2},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"jadepool","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jadepool Docs","language":"zh-hans","gitbook":"*"},"file":{"path":"bls-keygen-tutorial.md","mtime":"2020-09-30T04:23:57.511Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-30T04:24:15.773Z"},"basePath":".","book":{"language":"zh-hans"}});
         });
     </script>
 </div>
