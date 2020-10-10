@@ -37,4 +37,3 @@
 | Cardano     | v3.2.0     | V0.13.14-beta.1 |            |            | 
 | Nervos      | v0.25.2   | V0.13.14-beta.1 |            |         | 
 | Harmony     |            | V0.13.7-beta.0 |            | | 
-| EveriToken  | v4.1.0 | V0.13.17-beta.0 |            |  | 
