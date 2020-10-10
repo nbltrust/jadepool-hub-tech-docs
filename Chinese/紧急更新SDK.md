@@ -17,7 +17,7 @@
       "@polkadot/util-crypto": "^3.5.1",
       "bignumber.js": "^9.0.0"
     }
-  }
+   }
    ```
 
 4. 在目前的路径下（jadepool-hub/blockchains/Kusama）执行 npm install
