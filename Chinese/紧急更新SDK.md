@@ -8,16 +8,16 @@
 
    ```bash
    {
-     "name": "jadepool-chain-kusama",
-     "private": true,
-     "dependencies": {
-       "@polkadot/api": "~1.18.1",
-       "@polkadot/keyring": "~2.14.0-beta.0",
-       "@polkadot/util": "~2.14.0-beta.0",
-       "@polkadot/util-crypto": "~2.14.0-beta.0",
-       "bignumber.js": "^9.0.0"
-     }
-   }
+    "name": "jadepool-chain-kusama",
+    "private": true,
+    "dependencies": {
+      "@polkadot/api": "^2.1.1",
+      "@polkadot/keyring": "^3.5.1",
+      "@polkadot/util": "^3.5.1",
+      "@polkadot/util-crypto": "^3.5.1",
+      "bignumber.js": "^9.0.0"
+    }
+  }
    ```
 
 4. 在目前的路径下（jadepool-hub/blockchains/Kusama）执行 npm install
