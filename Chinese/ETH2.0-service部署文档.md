@@ -4,6 +4,9 @@
 ```bash
 nvm install 12.19.0
 
+# 安装完后自动应用12，切回10
+nvm use 10.17.0
+
 # 设置默认使用10.17.0,保证主程序默认用node10启动
 nvm alias default 10.17.0
 
