@@ -19,7 +19,7 @@ vim start-bls-verify.yml
 ```bash
 apps:
   - cwd: /opt/jadepool/hub/jadepool/jadepool-hub/services/bls-verify #指定运行路径
-    interpreter: /root/.nvm/versions/node/v12.19.0/bin  # 指定上述获取的node12的路径
+    interpreter: /root/.nvm/versions/node/v12.19.0/bin/node  # 指定上述获取的node12的路径
     name: jadepool-bls-verify
     script: bin/index.js
     # exec_mode: "cluster"
