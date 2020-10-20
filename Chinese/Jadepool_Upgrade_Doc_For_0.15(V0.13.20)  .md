@@ -4,7 +4,7 @@
 
 - **V0.15.x版本的BTC使用bitcore node v8节点（弃用insight-api），需提前部署好。**
 - 瑶池BTC链目前实现读写分离，也可将读节点和写节点配置为同一个
-- BTC和blockstack都需要更换为bitcore node v8节点
+- BTC和blockstack所连的BTC节点都需要更换为bitcore node v8节点
 
 ## 测试环境升级步骤：
 
