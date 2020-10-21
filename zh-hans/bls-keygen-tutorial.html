@@ -1078,7 +1078,13 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="&#x521D;&#x59CB;&#x5316;">&#x521D;&#x59CB;&#x5316;</h2>
+                                <h2 id="&#x73AF;&#x5883;&#x8981;&#x6C42;">&#x73AF;&#x5883;&#x8981;&#x6C42;</h2>
+<ol>
+<li>nodejs = v12.x</li>
+<li>pm2 = 4.4.0</li>
+<li>golang = 1.13.4</li>
+</ol>
+<h2 id="&#x521D;&#x59CB;&#x5316;">&#x521D;&#x59CB;&#x5316;</h2>
 <p>BLS Keygen&#x662F;&#x5728;Seed Vault&#x7A0B;&#x5E8F;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x6269;&#x5C55;&#x4E86;&#x884D;&#x751F;BLS&#x516C;&#x79C1;&#x94A5;&#x5BF9;&#x3001;&#x751F;&#x6210;&#x5411;ETH2.0&#x9A8C;&#x8BC1;&#x8005;&#x62B5;&#x62BC;&#x7684;&#x6570;&#x636E;&#x7684;&#x8F6F;&#x4EF6;&#x7A0B;&#x5E8F;&#x3002;&#x521D;&#x6B21;&#x4F7F;&#x7528;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x5BC6;&#x7801;&#xFF0C;&#x4E4B;&#x540E;&#x7684;&#x7B7E;&#x540D;&#x64CD;&#x4F5C;&#x90FD;&#x9700;&#x8981;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#x8FDB;&#x884C;&#x3002;&#x5EFA;&#x8BAE;&#x8BBE;&#x7F6E;&#x8DB3;&#x591F;&#x590D;&#x6742;&#x7684;&#x5BC6;&#x7801;&#x5E76;&#x5C06;&#x5176;&#x5907;&#x4EFD;&#xFF0C;&#x5907;&#x4EFD;&#x65B9;&#x6CD5;&#x8BF7;&#x53C2;&#x8003;<a href="seed-backup.html">&#x6587;&#x6863;</a>&#x3002;</p>
 <p>&#x8F93;&#x5165;&#x547D;&#x4EE4;&#x521D;&#x59CB;&#x5316;&#xFF1A;./signer&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
 <pre><code class="lang-bash">$ ./signer
@@ -1093,9 +1099,9 @@ Input password again.
 Initialization finished. Please start the server again.
 </code></pre>
 <h2 id="&#x542F;&#x52A8;js-signer&#x8FDB;&#x7A0B;">&#x542F;&#x52A8;js-signer&#x8FDB;&#x7A0B;</h2>
-<pre><code class="lang-bash">NODE_ENV=testnet pm2 start js-signer/json-rpc-svr.js
+<pre><code class="lang-bash">NETWORK=testnet pm2 start js-signer/json-rpc-svr.js
 </code></pre>
-<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong>&#x82E5;&#x4F7F;&#x7528;mainnet&#xFF0C;&#x5C06;&#x542F;&#x52A8;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x8BBE;&#x7F6E;&#x4E3A;NODE_ENV=mainnet&#x3002;testnet&#x53EA;&#x5BF9;&#x5E94;ETH2.0&#x7684;Medalla&#x6D4B;&#x8BD5;&#x94FE;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong>&#x82E5;&#x4F7F;&#x7528;mainnet&#xFF0C;&#x5C06;&#x542F;&#x52A8;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x8BBE;&#x7F6E;&#x4E3A;NODE_ENV=mainnet&#x3002;testnet&#x53EA;&#x5BF9;&#x5E94;ETH2.0&#x7684;<a href="https://github.com/goerli/medalla/blob/master/medalla/README.md" target="_blank">Medalla&#x6D4B;&#x8BD5;&#x94FE;</a>&#x3002;</p>
 <h2 id="&#x542F;&#x52A8;signer">&#x542F;&#x52A8;signer</h2>
 <p>&#x8F93;&#x5165;&#x547D;&#x4EE4;&#xFF1A;./signer&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
 <pre><code class="lang-bash">$ ./signer 
@@ -1165,7 +1171,7 @@ ____________________________________O/_______
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"10.8.使用BLS Keygen","level":"1.10.8","depth":2,"next":{"title":"11.其他","level":"1.11","depth":1,"ref":"","articles":[{"title":"11.1.版本说明","level":"1.11.1","depth":2,"path":"version.md","ref":"version.md","articles":[]},{"title":"11.2.联系我们","level":"1.11.2","depth":2,"path":"contact.md","ref":"contact.md","articles":[]}]},"previous":{"title":"10.7.区块链浏览器","level":"1.10.7","depth":2,"path":"explorer.md","ref":"explorer.md","articles":[]},"dir":"ltr"},"config":{"plugins":["language-picker"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":2},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"jadepool","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jadepool Docs","language":"zh-hans","gitbook":"*"},"file":{"path":"bls-keygen-tutorial.md","mtime":"2020-10-19T07:21:46.177Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-19T07:21:58.158Z"},"basePath":".","book":{"language":"zh-hans"}});
+            gitbook.page.hasChanged({"page":{"title":"10.8.使用BLS Keygen","level":"1.10.8","depth":2,"next":{"title":"11.其他","level":"1.11","depth":1,"ref":"","articles":[{"title":"11.1.版本说明","level":"1.11.1","depth":2,"path":"version.md","ref":"version.md","articles":[]},{"title":"11.2.联系我们","level":"1.11.2","depth":2,"path":"contact.md","ref":"contact.md","articles":[]}]},"previous":{"title":"10.7.区块链浏览器","level":"1.10.7","depth":2,"path":"explorer.md","ref":"explorer.md","articles":[]},"dir":"ltr"},"config":{"plugins":["language-picker"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":2},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"jadepool","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jadepool Docs","language":"zh-hans","gitbook":"*"},"file":{"path":"bls-keygen-tutorial.md","mtime":"2020-10-21T04:25:27.070Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-21T04:26:05.872Z"},"basePath":".","book":{"language":"zh-hans"}});
         });
     </script>
 </div>
