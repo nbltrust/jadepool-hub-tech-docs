@@ -7,18 +7,18 @@
 | BlockChain  | 测试节点版本 | 瑶池迭代版本 | 运维节点版本 | 瑶池生产版本 |
 | ----------- | ---------- | ---------- | ---------- | ---------- | 
 | BTC(insight) | v0.12.1    | V0.13.21 |    v0.12.1-bitcore-4  |  |
-| BTC(bc1)    | v0.19.0.1    | V0.15.4 |    v0.19.0.1  | V0.15.4-beta.0 |
-| USDT(omni) | v0.8.1    | V0.13.21 |    v0.8.1  | V0.15.4-beta.0 |
-| Ethereum    | v1.9.16     | V0.13.21 |     	v1.9.9 | V0.15.4-beta.0 |
-| Eosio       | v2.0.1 | V0.13.21 | v2.0.1 | V0.15.4-beta.0 |
-| Neo         | v2.10.3    | V0.13.21 |    	v2.10.3 | V0.15.4-beta.0   |
-| BitcoinCash | 0.21.3     | V0.13.21 | 0.21.3   | V0.15.4-beta.0 |
-| Qlink       | v1.3.3     | V0.13.21 |  	v1.3.3    | V0.15.4-beta.0 |
-| Litecoin    | v0.13.2.0    | V0.13.21 |   v0.13.2.0   | V0.15.4-beta.0 |
-| Chainx      | v1.1.0     | V0.13.21 |  v1.1.0    | V0.15.4-beta.0 | 
-| Ripple      | v1.5.0     | V0.13.21 |  	v1.4.0    | V0.15.4-beta.0 |
-| Kusama      | v0.8.25    | V0.13.21-hotfix.6 |  v0.8.3  | V0.15.4-beta.0 | 
-| Polkadot      | v0.8.25    | V0.13.21-hotfix.6 |  v0.8.3  | V0.15.4-beta.0 |
+| BTC(bc1)    | v0.19.0.1    | V0.15.6 |    v0.19.0.1  | V0.15.6-beta.0 |
+| USDT(omni) | v0.8.1    | V0.13.21 |    v0.8.1  | V0.15.6-beta.0 |
+| Ethereum    | v1.9.24     | V0.13.21 |     	v1.9.9 | V0.15.6-beta.0 |
+| Eosio       | v2.0.1 | V0.13.21 | v2.0.1 | V0.15.6-beta.0 |
+| Neo         | v2.10.3    | V0.13.21 |    	v2.10.3 | V0.15.6-beta.0   |
+| BitcoinCash | 0.21.3     | V0.13.21 | 0.21.3   | V0.15.6-beta.0 |
+| Qlink       | v1.3.3     | V0.13.21 |  	v1.3.3    | V0.15.6-beta.0 |
+| Litecoin    | v0.13.2.0    | V0.13.21 |   v0.13.2.0   | V0.15.6-beta.0 |
+| Chainx      | v1.1.0     | V0.13.21 |  v1.1.0    | V0.15.6-beta.0 | 
+| Ripple      | v1.5.0     | V0.13.21 |  	v1.4.0    | V0.15.6-beta.0 |
+| Kusama      | v0.8.26    | V0.13.21-hotfix.6 |  v0.8.3  | V0.15.6-beta.0 | 
+| Polkadot      | v0.8.26    | V0.13.21-hotfix.6 |  v0.8.3  | V0.15.6-beta.0 |
 | Cosmos      | v2.0.7 (cosmoshub-3)     | V0.13.21 |    |  |
 | Stellar     | v13.0.0    | V0.13.21 |    |  |
 | Irisnet     | 0.16.0    | V0.13.21 |  	   |  |
@@ -29,11 +29,11 @@
 | Tron        | v4.0.1 | V0.13.21 |     	       |  |
 | BlockStack  | v21.0.0.2 | V0.13.21 |     	       |  |
 | PlatonAlaya      | v0.12.1   | V0.13.21 |   |    |
-| Binance     | |V0.15.4 | |V0.15.4-beta.0
+| Binance     | |V0.15.4 | |V0.15.6-beta.0
 | Filecoin     |v1.1.2 |V0.13.21 | |
 | Zcash       | v0.4.3     | V0.13.7-beta.0 |   	   |  | 
 | Edgeware    | v3.0.1    | V0.13.20 | v3.0.1     |       | 
-| Crab        |  v0.6.0   | V0.13.20 |         |    |
+| Crab        |  v0.6.0   | V0.13.21 |         | V0.15.6-beta.0    |
 | Cybex       | v0.2.36    | V0.13.20 |   	  |  |
 | Algorand    | v1.0.27    | V0.13.7-beta.0 |      |  |
 | DASH        | v0.14.0.0   | V0.13.14-beta.1 |        |    |
