@@ -29,7 +29,7 @@
 | Tron        | v4.0.1 | V0.13.21 |     	       |  |
 | BlockStack  | v21.0.0.2 | V0.13.21 |     	       |  |
 | PlatonAlaya      | v0.12.1   | V0.13.21 |   |    |
-| Binance     | |V0.15.6 | |V0.15.6-beta.0
+| Binance     |v0.8.0 |V0.15.6 | |V0.15.6-beta.0
 | Binance Smart Chain    |1.0.3 |V0.15.6 | |V0.15.6-beta.0
 | Filecoin     |v1.1.2 |V0.13.21 | |
 | Zcash       | v0.4.3     | V0.13.7-beta.0 |   	   |  | 
