@@ -17,8 +17,8 @@
 | Litecoin    | v0.13.2.0    | V0.13.21 |   v0.13.2.0   | V0.15.6-beta.0 |
 | Chainx      | v1.1.0     | V0.13.21 |  v1.1.0    | V0.15.6-beta.0 | 
 | Ripple      | v1.5.0     | V0.13.21 |  	v1.4.0    | V0.15.6-beta.0 |
-| Kusama      | v0.8.26    | V0.13.21-hotfix.6 |  v0.8.3  | V0.15.6-beta.0 | 
-| Polkadot      | v0.8.26    | V0.13.21-hotfix.6 |  v0.8.3  | V0.15.6-beta.0 |
+| Kusama      | v0.8.26    | V0.13.21 |  v0.8.3  | V0.15.6-beta.0 | 
+| Polkadot      | v0.8.26    | V0.13.21 |  v0.8.3  | V0.15.6-beta.0 |
 | Cosmos      | v2.0.7 (cosmoshub-3)     | V0.13.21 |    |  |
 | Stellar     | v13.0.0    | V0.13.21 |    |  |
 | Irisnet     | 0.16.0    | V0.13.21 |  	   |  |
@@ -31,6 +31,7 @@
 | PlatonAlaya      | v0.12.1   | V0.13.21 |   |    |
 | Binance     | |V0.15.4 | |V0.15.6-beta.0
 | Filecoin     |v1.1.2 |V0.13.21 | |
+| Conflux     |v1.0.2 |V0.13.21-beta.1 | |
 | Zcash       | v0.4.3     | V0.13.7-beta.0 |   	   |  | 
 | Edgeware    | v3.0.1    | V0.13.20 | v3.0.1     |       | 
 | Crab        |  v0.6.0   | V0.13.21 |         | V0.15.6-beta.0    |
