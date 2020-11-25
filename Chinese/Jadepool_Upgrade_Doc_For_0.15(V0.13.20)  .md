@@ -31,23 +31,23 @@
       ```bash
       server {
        listen       3000;
-     
+       
        location / {
          # 此处填写jadepool-hub-admin-fe路径
          root   /opt/jadepool-hub/jadepool-hub-admin-fe/build;
          index  index.html index.htm;
-     
+       
          add_header Access-Control-Allow-Origin *;
          add_header Access-Control-Allow-Methods "POST, HEAD, PUT, PATCH, GET, DELETE";
          add_header Access-Control-Allow-Headers "cache-control, content-type, Origin, Authorization, Accept";
          add_header Access-Control-Allow-Credentials true;
-     
+       
          # First attempt to serve request as file, then
          # as directory, then fall back to displaying a 404.
          try_files $uri $uri/ =404;
          error_page 404 =301 /;
        }
-     
+       
        location /api {
          proxy_redirect off;
          proxy_pass http://localhost:7002;
@@ -55,11 +55,11 @@
          proxy_set_header X-Real-IP $remote_addr;
          proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
          proxy_set_header REMOTE-HOST $remote_addr;
-     
+       
          expires 0m;
        }
      }
-      ```
+     ```
 
 9. 清理consul数据（该脚本可在以后升级版本时定期执行，清理脏数据，脚本里的consul ip请自行替换）
 
@@ -89,7 +89,13 @@
    db.getCollection('addresses').createIndex({ wallet: 1, type: 1, create_at: -1, incoming: 1, incomings: 1, mode: 1 }, { name: 'adminNormal' })
    ```
 
-11. 重建完毕后，启动瑶池，启动nginx，在区块链配置界面将每个链的节点和浏览器配置重新填入，完成后可开启链进程
+11. 清空redis
+
+   ```bash
+   redis-cli flushall
+   ```
+
+12. 重建完毕后，启动瑶池，启动nginx，在区块链配置界面将每个链的节点和浏览器配置重新填入，完成后可开启链进程
 
 
 ****
@@ -119,23 +125,23 @@
       ```bash
       server {
        listen       3000;
-     
+       
        location / {
          # 此处填写jadepool-hub-admin-fe路径
          root   /opt/jadepool-hub/jadepool-hub-admin-fe/build;
          index  index.html index.htm;
-     
+       
          add_header Access-Control-Allow-Origin *;
          add_header Access-Control-Allow-Methods "POST, HEAD, PUT, PATCH, GET, DELETE";
          add_header Access-Control-Allow-Headers "cache-control, content-type, Origin, Authorization, Accept";
          add_header Access-Control-Allow-Credentials true;
-     
+       
          # First attempt to serve request as file, then
          # as directory, then fall back to displaying a 404.
          try_files $uri $uri/ =404;
          error_page 404 =301 /;
        }
-     
+       
        location /api {
          proxy_redirect off;
          proxy_pass http://localhost:7002;
@@ -143,11 +149,11 @@
          proxy_set_header X-Real-IP $remote_addr;
          proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
          proxy_set_header REMOTE-HOST $remote_addr;
-     
+       
          expires 0m;
        }
      }
-      ```
+     ```
 
 9. 清理consul数据（该脚本可在以后升级版本时定期执行，清理脏数据，脚本里的consul ip请自行替换）
 
@@ -177,5 +183,11 @@
    db.getCollection('addresses').createIndex({ wallet: 1, type: 1, create_at: -1, incoming: 1, incomings: 1, mode: 1 }, { name: 'adminNormal' })
    ```
 
-11. 重建完毕后，启动瑶池，启动nginx，在区块链配置界面将每个链的节点和浏览器配置重新填入，完成后可开启链进程
+11. 清空redis
+
+   ```bash
+   redis-cli flushall
+   ```
+
+12. 重建完毕后，启动瑶池，启动nginx，在区块链配置界面将每个链的节点和浏览器配置重新填入，完成后可开启链进程
 

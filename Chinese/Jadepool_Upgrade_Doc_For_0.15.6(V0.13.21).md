@@ -106,7 +106,13 @@
    db.getCollection('addresses').createIndex({ wallet: 1, type: 1, create_at: -1, incoming: 1, incomings: 1, mode: 1 }, { name: 'adminNormal' })
    ```
 
-12. 重建完毕后，启动瑶池，启动nginx，在区块链配置界面将每个链的节点、浏览器配置以及在ETH智能合约白名单中自行添加的合约重新填入，ETH的其他配置可按需打开，完成后可开启链进程
+12. 清空redis
+
+   ```bash
+   redis-cli flushall
+   ```
+
+13. 重建完毕后，启动瑶池，启动nginx，在区块链配置界面将每个链的节点、浏览器配置以及在ETH智能合约白名单中自行添加的合约重新填入，ETH的其他配置可按需打开，完成后可开启链进程
 
 
 ****
@@ -211,5 +217,11 @@
    db.getCollection('addresses').createIndex({ wallet: 1, type: 1, create_at: -1, incoming: 1, incomings: 1, mode: 1 }, { name: 'adminNormal' })
    ```
 
-12. 重建完毕后，启动瑶池，启动nginx，在区块链配置界面将每个链的节点、浏览器配置以及在ETH智能合约白名单中自行添加的合约重新填入，ETH的其他配置可按需打开，完成后可开启链进程
+12. 清空redis
+
+   ```bash
+   redis-cli flushall
+   ```
+
+13. 重建完毕后，启动瑶池，启动nginx，在区块链配置界面将每个链的节点、浏览器配置以及在ETH智能合约白名单中自行添加的合约重新填入，ETH的其他配置可按需打开，完成后可开启链进程
 
