@@ -147,7 +147,7 @@
          kill_timeout: 60000
          merge_logs: true
          env:
-           NODE_ENV: dev   //环境变量参考脚本中其他jadepool-hub服务的配置
+           NODE_ENV:    //环境变量参考脚本中其他jadepool-hub服务的配置
     ```
 
 9. 修改jadepool-hub-admin-fe启动配置
