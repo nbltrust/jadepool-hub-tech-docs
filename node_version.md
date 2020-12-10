@@ -7,35 +7,35 @@
 | BlockChain  | 测试节点版本 | 瑶池迭代版本 | 运维节点版本 | 瑶池生产版本 |
 | ----------- | ---------- | ---------- | ---------- | ---------- | 
 | BTC(insight) | v0.12.1    | V0.13.21 |    v0.12.1-bitcore-4  |  |
-| BTC(bc1)    | v0.19.0.1    | V0.15.6 |    v0.19.0.1  | V0.15.6-beta.0 |
-| USDT(omni) | v0.8.1    | V0.13.21 |    v0.8.1  | V0.15.6-beta.0 |
-| Ethereum    | v1.9.24     | V0.13.21 |     	v1.9.9 | V0.15.6-beta.0 |
-| Eosio       | v2.0.1 | V0.13.21 | v2.0.1 | V0.15.6-beta.0 |
-| Neo         | v2.10.3    | V0.13.21 |    	v2.10.3 | V0.15.6-beta.0   |
-| BitcoinCash | 0.21.3     | V0.13.21 | 0.21.3   | V0.15.6-beta.0 |
-| Qlink       | v1.3.3     | V0.13.21 |  	v1.3.3    | V0.15.6-beta.0 |
-| Litecoin    | v0.13.2.0    | V0.13.21 |   v0.13.2.0   | V0.15.6-beta.0 |
-| Chainx      | v1.1.0     | V0.13.21 |  v1.1.0    | V0.15.6-beta.0 | 
-| Ripple      | v1.5.0     | V0.13.21 |  	v1.4.0    | V0.15.6-beta.0 |
-| Kusama      | v0.8.26    | V0.13.21 |  v0.8.3  | V0.15.6-beta.0 | 
-| Polkadot      | v0.8.26    | V0.13.21 |  v0.8.3  | V0.15.6-beta.0 |
-| Cosmos      | v2.0.7 (cosmoshub-3)     | V0.13.21 |    |  |
-| Stellar     | v13.0.0    | V0.13.21 |    |  |
-| Irisnet     | 0.16.0    | V0.13.21 |  	   |  |
-| Tezos       | v7.0   | V0.13.21 |      |  |
-| Qtum        | v0.18.3    | V0.13.21 |     |  | 
-| Vechain     | v1.2.0     | V0.13.21 |      |  |
-| Tomo        | v1.6.2     | V0.13.21 |      |  | 
-| Tron        | v4.0.1 | V0.13.21 |     	       |  |
-| BlockStack  | v21.0.0.2 | V0.13.21 |     	       |  |
-| PlatonAlaya      | v0.12.1   | V0.13.21 |   |    |
-| Binance     | |V0.15.4 | |V0.15.6-beta.0
-| Filecoin     |v1.2.1 |V0.13.21 | |
-| Conflux     |v1.0.2 |V0.13.21-beta.1 | |
-| Binance Smart Chain    |1.0.3 |V0.15.6 | |V0.15.6-beta.0
+| BTC(bc1)    | v0.19.0.1    | V0.15.7 |    v0.19.0.1  | V0.15.7-beta.1 |
+| USDT(omni) | v0.8.1    | V0.15.7 |    v0.8.1  | V0.15.7-beta.1 |
+| Ethereum    | v1.9.24     | V0.15.7 |     	v1.9.9 | V0.15.7-beta.1 |
+| Eosio       | v2.0.1 | V0.15.7 | v2.0.1 | V0.15.7-beta.1 |
+| Neo         | v2.10.3    | V0.15.7 |    	v2.10.3 | V0.15.7-beta.1   |
+| BitcoinCash | 0.21.3     | V0.15.7 | 0.21.3   | V0.15.7-beta.1 |
+| Qlink       | v1.3.3     | V0.15.7 |  	v1.3.3    | V0.15.7-beta.1 |
+| Litecoin    | v0.13.2.0    | V0.15.7 |   v0.13.2.0   | V0.15.7-beta.1 |
+| Chainx      | v2.0     | V0.15.7-beta.1 |  v1.1.0    | V0.15.7-beta.1 | 
+| Ripple      | v1.5.0     | V0.15.7 |  	v1.4.0    | V0.15.7-beta.1 |
+| Kusama      | v0.8.26    | V0.15.7 |  v0.8.3  | V0.15.7-beta.1 | 
+| Polkadot      | v0.8.26    | V0.15.7 |  v0.8.3  | V0.15.7-beta.1 |
+| Cosmos      | v2.0.7 (cosmoshub-3)     | V0.15.7 |    |  |
+| Stellar     | v13.0.0    | V0.15.7 |    |  |
+| Irisnet     | 0.16.0    | V0.15.7 |  	   |  |
+| Tezos       | v7.0   | V0.15.7 |      |  |
+| Qtum        | v0.18.3    | V0.15.7 |     |  | 
+| Vechain     | v1.2.0     | V0.15.7 |      |  |
+| Tomo        | v1.6.2     | V0.15.7 |      |  | 
+| Tron        | v4.0.1 | V0.15.7 |     	       |  |
+| BlockStack  | v21.0.0.2 | V0.15.7 |     	       |  |
+| PlatonAlaya      | v0.12.1   | V0.15.7 |   |    |
+| Binance     | |V0.15.7 | |V0.15.7-beta.1
+| Filecoin     |v1.2.1 |V0.15.7 | |
+| Conflux     |v1.0.2 |V0.15.7 | |
+| Binance Smart Chain    |1.0.3 |V0.15.7 | |V0.15.7-beta.1
 | Zcash       | v0.4.3     | V0.13.7-beta.0 |   	   |  | 
 | Edgeware    | v3.0.1    | V0.13.20 | v3.0.1     |       | 
-| Crab        |  v0.6.0   | V0.13.21 |         | V0.15.6-beta.0    |
+| Crab        |  v0.6.0   | V0.15.7 |         | V0.15.7-beta.1    |
 | Cybex       | v0.2.36    | V0.13.20 |   	  |  |
 | Algorand    | v1.0.27    | V0.13.7-beta.0 |      |  |
 | DASH        | v0.14.0.0   | V0.13.14-beta.1 |        |    |
