@@ -31,7 +31,8 @@
 | PlatonAlaya      | v0.12.1   | V0.15.7 |   |    |
 | Binance     | |V0.15.7 | |V0.15.7-beta.1
 | Filecoin     |v1.2.1 |V0.15.7 | |
-| Conflux     |v1.0.2 |V0.15.7 | |
+| Filecash     |v0.9.0 |V0.15.7-beta.2 | |
+| Conflux     |v1.1.0 |V0.15.7 | |
 | Binance Smart Chain    |1.0.3 |V0.15.7 | |V0.15.7-beta.1
 | Zcash       | v0.4.3     | V0.13.7-beta.0 |   	   |  | 
 | Edgeware    | v3.0.1    | V0.13.20 | v3.0.1     |       | 
