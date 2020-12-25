@@ -27,7 +27,7 @@
 | Tomo        | v1.6.2     | V0.15.7 |      |  | 
 | Tron        | v4.0.1 | V0.15.7 |     	       |  |
 | BlockStack  | v21.0.0.2 | V0.15.7 |     	       |  |
-| PlatonAlaya      | v0.12.1   | V0.15.7 |   |    |
+| PlatonAlaya      | v0.14.0   | V0.15.7 |   |    |
 | Binance     | |V0.15.7 | |V0.15.7-beta.1
 | Filecoin     |v1.2.1 |V0.15.7 | |
 | Filecash     |v0.9.0 |V0.15.7-beta.2 | |
