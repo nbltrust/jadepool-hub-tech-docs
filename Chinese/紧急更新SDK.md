@@ -12,6 +12,7 @@
    {
     "name": "jadepool-chain-kusama",
     "private": true,
+    "main": "index.js",
     "dependencies": {
       "@polkadot/api": "^3.4.2-3",
       "@polkadot/keyring": "^3.5.1",
@@ -43,6 +44,7 @@
    {
     "name": "jadepool-chain-polkadot",
     "private": true,
+    "main": "index.js",
     "dependencies": {
       "@polkadot/api": "^3.4.2-3",
       "@polkadot/keyring": "^3.5.1",
