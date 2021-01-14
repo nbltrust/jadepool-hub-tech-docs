@@ -18,7 +18,7 @@
       "@polkadot/keyring": "^3.5.1",
       "@polkadot/util": "^3.5.1",
       "@polkadot/util-crypto": "^3.5.1",
-      "bignumber.js": "^9.0.0"，
+      "bignumber.js": "^9.0.0",
       "elliptic": "^6.5.3"
     }
    }
@@ -50,7 +50,7 @@
       "@polkadot/keyring": "^3.5.1",
       "@polkadot/util": "^3.5.1",
       "@polkadot/util-crypto": "^3.5.1",
-      "bignumber.js": "^9.0.0"，
+      "bignumber.js": "^9.0.0",
       "elliptic": "^6.5.3"
     }
    }
