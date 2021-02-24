@@ -16,8 +16,8 @@
 | Litecoin    | v0.13.2.0    | V0.15.10 |   v0.13.2.0   | V0.15.10 |
 | Chainx      | v2.0     | V0.15.10 |  v1.1.0    | V0.15.10 | 
 | Ripple      | v1.5.0     | V0.15.10 |  	v1.4.0    | V0.15.10 |
-| Kusama      | v0.8.28    | V0.15.10-hotfix.1 |  v0.8.3  | V0.15.10 | 
-| Polkadot      | v0.8.28    | V0.15.10-hotfix.3 |  v0.8.3  | V0.15.10 |
+| Kusama      | v0.8.28    | V0.15.10-hotfix.5 |  v0.8.3  | V0.15.10 | 
+| Polkadot      | v0.8.28    | V0.15.10-hotfix.5 |  v0.8.3  | V0.15.10 |
 | Cosmos      | v4.0.3      | V0.15.10-hotfix.4 |    |  |
 | Stellar     | v13.0.0    | V0.15.10 |    |  |
 | Irisnet     | 0.16.0    | V0.15.10 |  	   |  |
@@ -29,7 +29,7 @@
 | BlockStack  | v21.0.0.2 | V0.15.10 |     	       |  |
 | PlatonAlaya      | v0.14.0   | V0.15.10 |   |    |
 | Binance     | |V0.15.10 | |V0.15.10
-| Filecoin     |v1.2.1 |V0.15.10 | |
+| Filecoin     |v1.5.0 |V0.15.10 | |
 | Filecash     |v0.9.0 |V0.15.10 | |
 | Conflux     |v1.1.0 |V0.15.10 | |
 | Binance Smart Chain    |1.0.3 |V0.15.10 | |V0.15.10
