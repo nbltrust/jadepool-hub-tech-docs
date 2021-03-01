@@ -31,7 +31,7 @@
 | Binance     | |V0.15.10 | |V0.15.10
 | Filecoin     |v1.5.0 |V0.15.10 | |
 | Filecash     |v0.9.0 |V0.15.10 | |
-| Conflux     |v1.1.0 |V0.15.10 | |
+| Conflux     |v1.1.1 |V0.15.10-hotfix.6 | |
 | Binance Smart Chain    |1.0.3 |V0.15.10 | |V0.15.10
 | Zcash       | v0.4.3     | V0.13.7-beta.0 |   	   |  | 
 | Edgeware    | v3.0.1    | V0.13.20 | v3.0.1     |       | 
