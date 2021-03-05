@@ -1,0 +1,996 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Dev-ops · Jadepool Docs</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="jadepool">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="finalize-tx.md" />
+    
+    
+    <link rel="prev" href="dev-faq.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <span>
+            
+                    
+                    Introduction
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    What is Jadepool Hub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="api.html">
+            
+                <a href="api.html">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="quick-start.html">
+            
+                <a href="quick-start.html">
+            
+                    
+                    Quick Start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Technical Terms
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="jade-terms.html">
+            
+                <a href="jade-terms.html">
+            
+                    
+                    Jadepool Hub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="chain-terms.html">
+            
+                <a href="chain-terms.html">
+            
+                    
+                    Blockchain
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Main Services
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="deposit.html">
+            
+                <a href="deposit.html">
+            
+                    
+                    Deposit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="withdraw.html">
+            
+                <a href="withdraw.html">
+            
+                    
+                    Withdrawal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="sweep.html">
+            
+                <a href="sweep.html">
+            
+                    
+                    Cold Storage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="staking.html">
+            
+                <a href="staking.html">
+            
+                    
+                    Network Resource Staking
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Technical Details
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="private-key.html">
+            
+                <a href="private-key.html">
+            
+                    
+                    Private Key Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="address-pattern.html">
+            
+                <a href="address-pattern.html">
+            
+                    
+                    Deposit Address Mode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="transfer-pattern.html">
+            
+                <a href="transfer-pattern.html">
+            
+                    
+                    Out Transfer Mode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="state-machine.html">
+            
+                <a href="state-machine.html">
+            
+                    
+                    Order State Machine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="infrastructure.html">
+            
+                <a href="infrastructure.html">
+            
+                    
+                    Infrastructure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="module.html">
+            
+                <a href="module.html">
+            
+                    
+                    System Module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="config.html">
+            
+                <a href="config.html">
+            
+                    
+                    Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Admin Management System
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="admin-case.html">
+            
+                <a href="admin-case.html">
+            
+                    
+                    Common Situations
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    SEED
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="seed-init.html">
+            
+                <a href="seed-init.html">
+            
+                    
+                    Initialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="seed-backup.html">
+            
+                <a href="seed-backup.html">
+            
+                    
+                    Backup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="seed-data.html">
+            
+                <a href="seed-data.html">
+            
+                    
+                    Set Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="seed-list.html">
+            
+                <a href="seed-list.html">
+            
+                    
+                    Data List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="seed-permission.html">
+            
+                <a href="seed-permission.html">
+            
+                    
+                    Set Whitelist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="seed-reset.html">
+            
+                <a href="seed-reset.html">
+            
+                    
+                    Reset Password
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="seed-batch.html">
+            
+                <a href="seed-batch.html">
+            
+                    
+                    Import Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="seed-format.html">
+            
+                <a href="seed-format.html">
+            
+                    
+                    Data Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Tools
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="ecc-keypair.html">
+            
+                <a href="ecc-keypair.html">
+            
+                    
+                    Generating ECC Keypair
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="ecc-sig.html">
+            
+                <a href="ecc-sig.html">
+            
+                    
+                    ECC Signing & Verify
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="sdk.html">
+            
+                <a href="sdk.html">
+            
+                    
+                    SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="wallet.html">
+            
+                <a href="wallet.html">
+            
+                    
+                    Testnet Wallet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="smart-contract.html">
+            
+                <a href="smart-contract.html">
+            
+                    
+                    Deploy Testnet Smart Contract
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="add-erc20.html">
+            
+                <a href="add-erc20.html">
+            
+                    
+                    How To Add ERC20
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="faucet.html">
+            
+                <a href="faucet.html">
+            
+                    
+                    Testnet Faucet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="explorer.html">
+            
+                <a href="explorer.html">
+            
+                    
+                    Explorer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    FAQ
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="general-faq.html">
+            
+                <a href="general-faq.html">
+            
+                    
+                    Operation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="security-faq.html">
+            
+                <a href="security-faq.html">
+            
+                    
+                    Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="dev-faq.html">
+            
+                <a href="dev-faq.html">
+            
+                    
+                    Development
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8.4" data-path="ops-faq.html">
+            
+                <a href="ops-faq.html">
+            
+                    
+                    Dev-ops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="finalize-tx.md">
+            
+                <span>
+            
+                    
+                    Standards of Finalizing Transaction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="holding-reason.md">
+            
+                <span>
+            
+                    
+                    Order Holding Reason
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Community
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="checklist.md">
+            
+                <span>
+            
+                    
+                    Implementing Chain Checklist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="chain-imp.md">
+            
+                <span>
+            
+                    
+                    How To Implement Chain
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Other
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="version.html">
+            
+                <a href="version.html">
+            
+                    
+                    Releases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="contact.html">
+            
+                <a href="contact.html">
+            
+                    
+                    Contact Us
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Dev-ops</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="what-starting-modes-does-jadepool-have-what-are-their-differences">What starting modes does Jadepool have? What are their differences?</h3>
+<p>There are three modes: dev, staging, and production. Both dev and staging modes use testnet. Dev is the test environment, in which the ECC is not on, while the staging is the pre-production environment, in which the ECC is turned on and the default configuration is the same as that for the production environment. Production mode is for production environment, where ECC is on and applies the mainnet.</p>
+<h3 id="if-jadepool-starts-with-the-production-mode-can-i-configured-it-with-testnet-node">if Jadepool starts with the production mode, can I configured it with testnet node?</h3>
+<p>No. Dev and staging modes use testnet and production mode must be configured with mainnet node.</p>
+<h3 id="how-to-set-callback">How to set callback?</h3>
+<p>Each appid can be configured with notification URLs corresponding to each order type. Go to &quot;App ID&quot; on Admin and set your app with the notification URL of which the order you desired to receive callback.</p>
+<h3 id="what-to-do-if-my-notification-service-does-not-receive-callback">What to do if my notification service does not receive callback?</h3>
+<p>First, check if your service is working well. If it is, check whether the notification URL of the order is correct. If it is not correct, go to &quot;App ID&quot; page to correct it and resend the callback. If everything is good, go to &quot;Process Management&quot; page to check whether the &quot;general process&quot; is up.</p>
+<h3 id="can-i-set-more-than-one-notification-url-for-one-order-type">Can I set more than one notification URL for one order type?</h3>
+<p>No. Only one notification URL can be configured for one order type under an appid.</p>
+<h3 id="what-should-i-do-to-enabledisable-a-blockchain">What should I do to enable/disable a blockchain?</h3>
+<p>To enable: Go to &#x201C;Blockchain Management&#x201D;, click &#x201C;More&#x201D; of the blockchain you want to enable and fill in the node URL, then click &quot;Enable&quot;. Then go to &quot;Process Management&quot; page, select the machine you want to initiate the blockchain on and click &quot;Add Process&quot;, select the blockchain in the pop-up window and confirm it is added. </p>
+<p>To disable: Go to &#x201C;Blockchain Management&#x201D;, select the blockchain and click &quot;Disable&quot;. If there are still processes running, the disable button will kill all processes and after it is done, you can click &quot;disable&quot; again to fully disbale the blockchain. </p>
+<h3 id="what-is-the-ruler-height-and-the-synced-block">What is the ruler height and the synced block?</h3>
+<p>As the node keeps synchronizing with the blockchain, Jadepool will filter each transaction in the block and then determine the order type depending on different cases and store the transaction information in database. The ruler height is the height of the block that has been scanned by Jadepool. The synced block is the block height that Jadepool&apos;s node has synced to.</p>
+<h3 id="the-ruler-heightsynced-block-has-remained-the-same-for-a-long-time-what-should-i-do">The ruler height/synced block has remained the same for a long time, what should I do?</h3>
+<p>First, check if the node is running properly. If it is, go to &quot;Process Management&quot; to restart the blockchain&apos;s process.</p>
+<h3 id="what-is-the-impact-if-the-ruler-height-is-lower-than-the-synced-block-height">What is the impact if the ruler height is lower than the synced block height?</h3>
+<p>Scanning would be much behind, that means, the newly incoming transactions won&apos;t be recognized until the blocks they were mined into are scanned by the Jadepool.</p>
+<h3 id="why-is-the-ruler-height-always-lower-than-the-synced-block">Why is the ruler height always lower than the synced block?</h3>
+<p>Considering the high possibility of the blockchain fork, for each chain Jadepool has configured a &quot;soft fork ignore gap&quot; to prevent mistakenly recording invalid transactions on the forked chain. In other words, Jadepool only scans the block lower than the synced block deducting &quot;soft fork ignore gap&quot;. Thus, the height difference between the ruler height of the synced block height is the value of &quot;soft fork ignore gap&quot; configured.</p>
+<h3 id="there-is-a-large-height-difference-between-ruler-height-and-the-synced-block-height-how-long-will-it-take-for-ruler-height-to-catch-up-with-the-synced-block-can-it-be-accelerated">There is a large height difference between ruler height and the synced block height. How long will it take for ruler height to catch up with the synced block? Can it be accelerated?</h3>
+<p>This depends on the block producing speed and the interval of the scheduled task to scan blocks. You can lower the interval configuration or increase the block number to scan in one scheduled task. If only for testing, you can click &quot;reset ruler&quot; on &quot;Blockchain Management&quot; page.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="dev-faq.html" class="navigation navigation-prev " aria-label="Previous page: Development">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="finalize-tx.md" class="navigation navigation-next " aria-label="Next page: Standards of Finalizing Transaction">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Dev-ops","level":"1.8.4","depth":2,"next":{"title":"Standards of Finalizing Transaction","level":"1.8.5","depth":2,"path":"finalize-tx.md","ref":"finalize-tx.md","articles":[]},"previous":{"title":"Development","level":"1.8.3","depth":2,"path":"dev-faq.md","ref":"dev-faq.md","articles":[]},"dir":"ltr"},"config":{"plugins":["language-picker"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":1},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"jadepool","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jadepool Docs","language":"en","gitbook":"*"},"file":{"path":"ops-faq.md","mtime":"2019-06-03T09:06:08.148Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-05T06:33:28.014Z"},"basePath":".","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
