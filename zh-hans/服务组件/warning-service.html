@@ -780,7 +780,7 @@
                 <span>
             
                     
-                    9.单用户全托管+离线冷签名
+                    9.离线HSM冷钱包
             
                 </span>
             
@@ -789,9 +789,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.9.1" data-path="../offline-sign-mode.html">
+        <li class="chapter " data-level="1.9.1" data-path="../HSM离线冷钱包/intro.html">
             
-                <a href="../offline-sign-mode.html">
+                <a href="../HSM离线冷钱包/intro.html">
             
                     
                     9.1.简介
@@ -802,12 +802,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.2" data-path="../preparation.html">
+        <li class="chapter " data-level="1.9.2" data-path="../HSM离线冷钱包/csa-tutorial.html">
             
-                <a href="../preparation.html">
+                <a href="../HSM离线冷钱包/csa-tutorial.html">
             
                     
-                    9.2.准备工作
+                    9.2.CSA备份和恢复
             
                 </a>
             
@@ -815,25 +815,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.3" data-path="../batch-tutorial.html">
+        <li class="chapter " data-level="1.9.3" data-path="../HSM离线冷钱包/csa-command.html">
             
-                <a href="../batch-tutorial.html">
-            
-                    
-                    9.3.批处理使用教程
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.4" data-path="../cold-signer-tutorial.html">
-            
-                <a href="../cold-signer-tutorial.html">
+                <a href="../HSM离线冷钱包/csa-command.html">
             
                     
-                    9.4.离线签名程序使用教程
+                    9.3.CSA命令
             
                 </a>
             
@@ -1059,7 +1046,7 @@ Cosmos, BitcoinCash, Bitcoin, Cybex, EOS, Ethereum, Irisnet, Litecoin, ChainX, Q
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4.3.告警","level":"1.4.3","depth":2,"next":{"title":"5.私钥安全","level":"1.5","depth":1,"ref":"","articles":[{"title":"5.1.Seed Vault","level":"1.5.1","depth":2,"path":"私钥安全/seed.md","ref":"私钥安全/seed.md","articles":[]},{"title":"5.2.初始化","level":"1.5.2","depth":2,"path":"私钥安全/seed-init.md","ref":"私钥安全/seed-init.md","articles":[]},{"title":"5.3.备份","level":"1.5.3","depth":2,"path":"私钥安全/seed-backup.md","ref":"私钥安全/seed-backup.md","articles":[]},{"title":"5.4.设置数据","level":"1.5.4","depth":2,"path":"私钥安全/seed-data.md","ref":"私钥安全/seed-data.md","articles":[]},{"title":"5.5.访问权限","level":"1.5.5","depth":2,"path":"私钥安全/seed-permission.md","ref":"私钥安全/seed-permission.md","articles":[]},{"title":"5.6.修改密码","level":"1.5.6","depth":2,"path":"私钥安全/seed-reset.md","ref":"私钥安全/seed-reset.md","articles":[]},{"title":"5.7.批量导入数据","level":"1.5.7","depth":2,"path":"私钥安全/seed-batch.md","ref":"私钥安全/seed-batch.md","articles":[]},{"title":"5.8.配置格式","level":"1.5.8","depth":2,"path":"私钥安全/seed-format.md","ref":"私钥安全/seed-format.md","articles":[]}]},"previous":{"title":"4.2.审计","level":"1.4.2","depth":2,"path":"服务组件/audit.md","ref":"服务组件/audit.md","articles":[]},"dir":"ltr"},"config":{"plugins":["language-picker"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":1},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"jadepool","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jadepool Docs","language":"zh-hans","gitbook":"*"},"file":{"path":"服务组件/warning-service.md","mtime":"2020-11-18T05:52:17.343Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-05T06:33:28.014Z"},"basePath":"..","book":{"language":"zh-hans"}});
+            gitbook.page.hasChanged({"page":{"title":"4.3.告警","level":"1.4.3","depth":2,"next":{"title":"5.私钥安全","level":"1.5","depth":1,"ref":"","articles":[{"title":"5.1.Seed Vault","level":"1.5.1","depth":2,"path":"私钥安全/seed.md","ref":"私钥安全/seed.md","articles":[]},{"title":"5.2.初始化","level":"1.5.2","depth":2,"path":"私钥安全/seed-init.md","ref":"私钥安全/seed-init.md","articles":[]},{"title":"5.3.备份","level":"1.5.3","depth":2,"path":"私钥安全/seed-backup.md","ref":"私钥安全/seed-backup.md","articles":[]},{"title":"5.4.设置数据","level":"1.5.4","depth":2,"path":"私钥安全/seed-data.md","ref":"私钥安全/seed-data.md","articles":[]},{"title":"5.5.访问权限","level":"1.5.5","depth":2,"path":"私钥安全/seed-permission.md","ref":"私钥安全/seed-permission.md","articles":[]},{"title":"5.6.修改密码","level":"1.5.6","depth":2,"path":"私钥安全/seed-reset.md","ref":"私钥安全/seed-reset.md","articles":[]},{"title":"5.7.批量导入数据","level":"1.5.7","depth":2,"path":"私钥安全/seed-batch.md","ref":"私钥安全/seed-batch.md","articles":[]},{"title":"5.8.配置格式","level":"1.5.8","depth":2,"path":"私钥安全/seed-format.md","ref":"私钥安全/seed-format.md","articles":[]}]},"previous":{"title":"4.2.审计","level":"1.4.2","depth":2,"path":"服务组件/audit.md","ref":"服务组件/audit.md","articles":[]},"dir":"ltr"},"config":{"plugins":["language-picker"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":1},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"jadepool","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jadepool Docs","language":"zh-hans","gitbook":"*"},"file":{"path":"服务组件/warning-service.md","mtime":"2020-11-18T05:52:17.343Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-04-28T09:19:17.656Z"},"basePath":"..","book":{"language":"zh-hans"}});
         });
     </script>
 </div>
