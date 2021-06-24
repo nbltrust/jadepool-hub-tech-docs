@@ -21,6 +21,10 @@ nvm install 14.15.2
 
 # 设置默认使用14.15.2
 nvm alias default 14.15.2
+
+# update in-memory PM2 with local PM2
+# 如果报错pm2找不到需要重装: npm install -g pm2
+pm2 update
 ```
 
 8. 将启动脚本中filecoin-signer相关的配置删除（此服务已经迁移到主程序代码里，不需要再另外启用，没有配置的请忽略）
@@ -64,6 +68,10 @@ nvm install 14.15.2
 
 # 设置默认使用14.15.2
 nvm alias default 14.15.2
+
+# update in-memory PM2 with local PM2
+# 如果报错pm2找不到需要重装: npm install -g pm2
+pm2 update
 ```
 
 8. 将启动脚本中filecoin-signer相关的配置删除（此服务已经迁移到主程序代码里，不需要再另外启用，没有配置的请忽略）
