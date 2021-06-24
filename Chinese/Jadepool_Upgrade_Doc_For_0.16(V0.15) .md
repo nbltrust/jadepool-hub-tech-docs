@@ -49,6 +49,8 @@ pm2 update
 
 10. 启动瑶池
 
+   ⚠️ 启动后可用pm2 info processId 查看进程信息，以便确认使用的node版本
+
 
 ****
 
@@ -95,3 +97,5 @@ pm2 update
    ```
 
 10. 启动瑶池
+
+   ⚠️ 启动后可用pm2 info processId 查看进程信息，以便确认使用的node版本
