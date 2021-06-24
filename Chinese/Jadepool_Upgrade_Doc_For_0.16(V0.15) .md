@@ -23,7 +23,7 @@ nvm install 14.15.2
 nvm alias default 14.15.2
 
 # update in-memory PM2 with local PM2
-# 如果报错pm2找不到需要重装: npm install -g pm2
+# 如果报错pm2找不到需要重装: npm install pm2 -g
 pm2 update
 ```
 
@@ -72,7 +72,7 @@ nvm install 14.15.2
 nvm alias default 14.15.2
 
 # update in-memory PM2 with local PM2
-# 如果报错pm2找不到需要重装: npm install -g pm2
+# 如果报错pm2找不到需要重装: npm install pm2 -g
 pm2 update
 ```
 
