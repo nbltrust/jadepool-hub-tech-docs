@@ -14,6 +14,7 @@ from  **R1.2.1.190121** to  **v2.3.1**
    ```
    
 3. 等待界面出现 Change md5 to sha256 succeeded, Please start the server again. 后，用新版本seed替换掉原seed，升级完成
+4. 用新版本的so文件替换掉jadepool-hub/lib下的原so文件，即可启动瑶池
   
    
   
