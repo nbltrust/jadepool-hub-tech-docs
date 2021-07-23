@@ -10,7 +10,7 @@ from  **R1.2.1.190121** to  **v2.3.1**
    ./upgradeMD5-SHA256
    
    # 如果原seed运行时有指定工作路径的，执行
-   ./upgradeMD5-SHA256 --path=./workdir/
+   # ./upgradeMD5-SHA256 --path=./workdir/
    ```
    
 3. 等待界面出现 Change md5 to sha256 succeeded, Please start the server again. 后，用新版本seed替换掉原seed，升级完成
