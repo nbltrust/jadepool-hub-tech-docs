@@ -2,7 +2,8 @@
 
 from  **R1.2.1.190121** to  **v2.3.1**
 
-1. 备份原seed程序及相关数据文件，包括.data.json.md5等隐藏文件
+1. 关停瑶池和seed
+3. 备份原seed程序及相关数据文件，包括.data.json.md5等隐藏文件
 
 2. 把upgradeMD5-SHA256放到原seed的执行目录下，执行upgradeMD5-SHA256升级seed数据
 
