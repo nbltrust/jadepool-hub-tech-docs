@@ -1,4 +1,4 @@
-1.配置审计数据库（必须）
+1. 配置审计数据库（必须）
 瑶池启动前，需要给审计配置单独的数据库
 1）数据库配在local-production.json文件的
      在mongo处增加一个键值，
@@ -6,9 +6,11 @@
 2）数据库配在dataseed的
 更新MONGO_CFG键，值增加audit，MONGO_CFG: "default/config/admin/audit"
 增加一个键MONGO_CFG:audit，值为mongodb://127.0.0.1:27017/dev-audit-result，库名自拟
-2.使用企业微信通知（可选）
+
+2. 使用企业微信通知（可选）
 如果需要使用企业微信通知服务，需要在services/audit-chain/config/index.js文件下开启并加上企业微信的相关配置。此配置是从文件读取，后期如果是整个包文件升级会被覆盖，需要重新配置。
-3.配置审计启动方式（必须）
+
+3. 配置审计启动方式（必须）
 审计作为一个单独的service启动，跟其他service启动方式一致，master-production.yml文件中有样例，pm2程序中显示的进程名称为jadepool-auditchain
   - cwd: ./
     name: jadepool-auditchain
@@ -20,13 +22,16 @@
     merge_logs: true
     env:
       NODE_ENV: production
-4.修改审计运行时间（后期运维参考）
+      
+4. 修改审计运行时间（后期运维参考）
 审计每天开始运行的时间是服务器18时。
 如要修改，先停掉审计进程，执行db.admintaskcfgs.updateOne({name: 'other-audit-chain'}, {$set: {cron: '0 0 18 * * *'}})，cron的顺序是“秒 分 时 * * *”，后面三个*不变
 进入redis index为2的库（select 2），keys *JADEPOOL_JOB_QUEUE:other-audit-chain*，把查询出来的结果删除
 再重启审计进程就可以了
-5.配置审计节点（必须）
+
+5. 配置审计节点（必须）
 admin上，“区块链管理-设置-节点-审计节点”处配上审计用的节点，可以跟通用节点一致。
 BTC、ETH、FILECOIN、omniUSDT，这几条链，开启的链需要配审计节点
-6.开启审计服务（必须）
+
+6. 开启审计服务（必须）
 admin上，“高级管理-系统服务配置-功能-审计功能”，开启审计功能
