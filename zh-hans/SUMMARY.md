@@ -72,6 +72,7 @@
    * [10.6.服务架构](devops/infrastructure.md)
    * [10.7.软件模块](devops/module.md)
    * [10.8.配置项](tutorial/config.md)
+   * [10.9.使用HSA](tutorial/hsa.md)
    <!-- * [10.5.使用测试链钱包](其他教程/wallet.md) -->
    <!-- * [10.6.测试链水龙头](其他教程/faucet.md) -->
    <!-- * [10.7.区块链浏览器](其他教程/explorer.md) -->
