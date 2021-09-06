@@ -1,0 +1,1 @@
+Jadepool Hub即将支持对接Amazon CloudHSM，Amazon CloudHSM已拥有FIPS 140-2 Level 3认证。敬请期待。

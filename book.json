@@ -1,0 +1,16 @@
+{
+    "title": "Jadepool Docs",
+    "author": "jadepool",
+    "language": "en",
+    "gitbook": "3.2.3",
+    "root": ".",
+    "plugins": [
+        "language-picker"
+
+    ],
+    "pluginsConfig": {
+        "language-picker": {
+            "grid-columns": 1
+        }
+    }
+}
