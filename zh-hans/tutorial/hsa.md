@@ -35,7 +35,10 @@ Please enter the HSM's login password again:
 Test connection to HSM is successful.
 ```
 
-## 3.配置ip白名单
+## 3.备份HSM
+根据HSM的备份操作步骤进行操作。
+
+## 4.配置ip白名单
 ./hsa config --client
 此处需要配置jadepool master所在机器的ip地址。
 ```bash
@@ -48,10 +51,10 @@ Please enter the Client IPs,split by common
 -> 172.18.16.41
 ```
 
-## 4.备份HSA
+## 5.备份HSA
 将hsa所在的整个目录备份，包括hsa，data，languages和lib
 
-## 5.启动HSA
+## 6.启动HSA
 ./hsa --server
 hsa服务的默认端口为3501，启动时可以加--port来指定端口，启动后hsa即可正常使用，这里跟seed vault的使用方式一样，可在screen里启动hsa保持hsa的正常连接。
 screen使用方法：https://linuxize.com/post/how-to-use-linux-screen/
@@ -75,11 +78,11 @@ ____________________________________O/_______
 ⇨ http server started on [::]:3501
 ```
 
-## 6.配置url
+## 7.配置URL
 如下图所示，在admin页面-系统服务配置-系统设置-HSA配置中将hsa服务的url按照实际情况配置进去，此时HSA所有相关配置都已完成。
 ![](image/hsa-settings.png)
 
-## 7.钱包选择私钥源
+## 8.钱包选择私钥源
 以上步骤完成后，在admin新建钱包，在钱包中开启区块链时可选择热钱包私钥源为HSM，选定提交后无法更改。
 
 
