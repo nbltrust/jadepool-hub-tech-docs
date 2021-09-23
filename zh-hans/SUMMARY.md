@@ -36,32 +36,32 @@
    * [5.8.配置格式](security/seed-format.md)
    <!-- * [Amazon Cloud HSM](cloudhsm.md)   -->
 
-* 6.Admin后台管理
-   * [6.1.常用术语](admin/admin-terms.md)
-   * [6.2.常见使用场景](admin/admin-case.md)
+* 6.AML混币安全托管
+   * [6.1.简介](aml-duo/aml-safe.md)
+   * [6.2.准备工作](aml-duo/safe-preparation.md)
+   * [6.3.订单附加流程](aml-duo/biz-flow.md)
+   * [6.4.订单类型示意图](aml-duo/order-type.md)
+
+* 7.离线HSM冷钱包
+   * [7.1.简介](hsm-cold/intro.md)
+   * [7.2.CSA备份和恢复](hsm-cold/csa-tutorial.md)
+
+* 8.Admin后台管理
+   * [8.1.常用术语](admin/admin-terms.md)
+   * [8.2.常见使用场景](admin/admin-case.md)
       <!-- * [5.2.1.创建新钱包](wallet-guide.md) -->
-      * [6.2.1.开启区块链](admin/enable-chain.md)
-      * [6.2.2.禁用区块链](admin/disable-chain.md)
-      * [6.2.3.上架代币](admin/enable-token.md)
-      * [6.2.4.下架代币](admin/disable-token.md)
+      * [8.2.1.开启区块链](admin/enable-chain.md)
+      * [8.2.2.禁用区块链](admin/disable-chain.md)
+      * [8.2.3.上架代币](admin/enable-token.md)
+      * [8.2.4.下架代币](admin/disable-token.md)
 
-* 7.常见问题
-   * [7.1.运营相关](faq/general-faq.md)
-   * [7.2.安全相关](faq/security-faq.md)
-   * [7.3.开发相关](faq/dev-faq.md)
-   * [7.4.运维相关](faq/ops-faq.md)
-   * [7.5.订单未处理原因](faq/init-reason.md)
-   * [7.6.冻结订单原因](faq/holding-reason.md)
-
-* 8.AML混币安全托管
-   * [8.1.简介](aml-duo/aml-safe.md)
-   * [8.2.准备工作](aml-duo/safe-preparation.md)
-   * [8.3.订单附加流程](aml-duo/biz-flow.md)
-
-* 9.离线HSM冷钱包
-   * [9.1.简介](hsm-cold/intro.md)
-   * [9.2.CSA备份和恢复](hsm-cold/csa-tutorial.md)
-   * [9.3.CSA命令](hsm-cold/csa-command.md)
+* 9.常见问题
+   * [9.1.运营相关](faq/general-faq.md)
+   * [9.2.安全相关](faq/security-faq.md)
+   * [9.3.开发相关](faq/dev-faq.md)
+   * [9.4.运维相关](faq/ops-faq.md)
+   * [9.5.订单未处理原因](faq/init-reason.md)
+   * [9.6.冻结订单原因](faq/holding-reason.md)
 
 * 10.其他教程
    * [10.1.系统部署步骤](tutorial/deploy.md)
@@ -71,8 +71,7 @@
    * [10.5.进程分类](devops/process.md)
    * [10.6.服务架构](devops/infrastructure.md)
    * [10.7.软件模块](devops/module.md)
-   * [10.8.配置项](tutorial/config.md)
-   * [10.9.使用HSA](tutorial/hsa.md)
+   * [10.8.使用HSA](tutorial/hsa.md)
    <!-- * [10.5.使用测试链钱包](其他教程/wallet.md) -->
    <!-- * [10.6.测试链水龙头](其他教程/faucet.md) -->
    <!-- * [10.7.区块链浏览器](其他教程/explorer.md) -->
