@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>5.1.Seed Vault · Jadepool Docs</title>
+        <title>5.1.组件介绍 · Jadepool Docs</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,7 +61,7 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="seed-init.html" />
+    <link rel="next" href="use-sv.html" />
     
     
 
@@ -395,12 +395,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.5.1" data-path="seed.html">
+        <li class="chapter active" data-level="1.5.1" data-path="intro.html">
             
-                <a href="seed.html">
+                <a href="intro.html">
             
                     
-                    5.1.Seed Vault
+                    5.1.组件介绍
             
                 </a>
             
@@ -408,12 +408,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="seed-init.html">
+        <li class="chapter " data-level="1.5.2" data-path="use-sv.html">
             
-                <a href="seed-init.html">
+                <a href="use-sv.html">
             
                     
-                    5.2.初始化
+                    5.2.使用Seed Vault
             
                 </a>
             
@@ -421,12 +421,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="seed-backup.html">
+        <li class="chapter " data-level="1.5.3" data-path="use-hsa.html">
             
-                <a href="seed-backup.html">
+                <a href="use-hsa.html">
             
                     
-                    5.3.备份
+                    5.3.使用HSA
             
                 </a>
             
@@ -434,64 +434,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.4" data-path="seed-data.html">
+        <li class="chapter " data-level="1.5.4" data-path="backup-recovery.html">
             
-                <a href="seed-data.html">
-            
-                    
-                    5.4.设置数据
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.5" data-path="seed-permission.html">
-            
-                <a href="seed-permission.html">
+                <a href="backup-recovery.html">
             
                     
-                    5.5.访问权限
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.6" data-path="seed-reset.html">
-            
-                <a href="seed-reset.html">
-            
-                    
-                    5.6.修改密码
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.7" data-path="seed-batch.html">
-            
-                <a href="seed-batch.html">
-            
-                    
-                    5.7.批量导入数据
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.8" data-path="seed-format.html">
-            
-                <a href="seed-format.html">
-            
-                    
-                    5.8.配置格式
+                    5.4.备份与恢复
             
                 </a>
             
@@ -713,6 +661,32 @@
             
         </li>
     
+        <li class="chapter " data-level="1.8.2.5" data-path="../admin/asset-strategy.html">
+            
+                <a href="../admin/asset-strategy.html">
+            
+                    
+                    8.2.5.设置钱包资产策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.6" data-path="../admin/email-settings.html">
+            
+                <a href="../admin/email-settings.html">
+            
+                    
+                    8.2.6.设置接收邮件
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -820,14 +794,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" >
+        <li class="chapter " data-level="1.10" data-path="../devops/module.html">
             
-                <span>
+                <a href="../devops/module.html">
             
                     
-                    10.其他教程
+                    10.7.软件模块
             
-                </span>
+                </a>
             
 
             
@@ -925,19 +899,6 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10.8" data-path="../tutorial/hsa.html">
-            
-                <a href="../tutorial/hsa.html">
-            
-                    
-                    10.8.使用HSA
-            
-                </a>
-            
-
-            
-        </li>
-    
 
             </ul>
             
@@ -973,7 +934,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >5.1.Seed Vault</a>
+        <a href=".." >5.1.组件介绍</a>
     </h1>
 </div>
 
@@ -988,14 +949,18 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>SeedVault&#x53EF;&#x751F;&#x6210;&#x79CD;&#x5B50;&#xFF0C;&#x88AB;&#x7528;&#x6765;&#x548C;&#x7476;&#x6C60;&#x751F;&#x6210;&#x7684;&#x552F;&#x4E00;&#x884D;&#x751F;&#x8DEF;&#x5F84;&#x7ED3;&#x5408;&#x751F;&#x6210;&#x548C;&#x8FD8;&#x539F;&#x79C1;&#x94A5;&#x548C;&#x884D;&#x751F;&#x5730;&#x5740;&#xFF0C;&#x5E76;&#x5BF9;&#x4EA4;&#x6613;&#x8FDB;&#x884C;&#x7B7E;&#x540D;&#x3002;&#x79CD;&#x5B50;&#x88AB;&#x52A0;&#x5BC6;&#x5B58;&#x50A8;&#x4E8E;&#x670D;&#x52A1;&#x5668;&#x672C;&#x5730;&#xFF0C;&#x901A;&#x8FC7;&#x5BA2;&#x6237;&#x8BBE;&#x7F6E;&#x5BC6;&#x7801;&#x4FDD;&#x62A4;&#x548C;&#x8BBE;&#x7F6E;&#x767D;&#x540D;&#x5355;&#x7684;&#x65B9;&#x5F0F;&#x4EE5;&#x4FDD;&#x8BC1;&#x5176;&#x5B89;&#x5168;&#x6027;&#x3002;&#x53E6;&#x5916;&#xFF0C;SeedVault&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x4FDD;&#x9669;&#x7BB1;&#xFF0C;&#x4F1A;&#x5B58;&#x50A8;&#x5F88;&#x591A;&#x7476;&#x6C60;&#x91CD;&#x8981;&#x6570;&#x636E;&#xFF0C;&#x5BA2;&#x6237;&#x4E5F;&#x9700;&#x8BBE;&#x7F6E;&#x88AB;&#x7476;&#x6C60;&#x7528;&#x6765;&#x7EC4;&#x6210;&#x4EA4;&#x6613;&#x7684;&#x91CD;&#x8981;&#x6570;&#x636E;&#xFF0C;&#x4F8B;&#x5982;&#x51B7;&#x94B1;&#x5305;&#x5730;&#x5740;&#xFF0C;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x90FD;&#x4F1A;&#x88AB;&#x52A0;&#x5BC6;&#x5B58;&#x50A8;&#x4E8E;&#x670D;&#x52A1;&#x5668;&#x672C;&#x5730;&#x3002;</p>
+                                <p>&#x5F85;&#x6DFB;&#x52A0;</p>
+<!-- SeedVault可生成种子，被用来和瑶池生成的唯一衍生路径结合生成和还原私钥和衍生地址，并对交易进行签名。种子被加密存储于服务器本地，通过客户设置密码保护和设置白名单的方式以保证其安全性。另外，SeedVault也是一个数据保险箱，会存储很多瑶池重要数据，客户也需设置被瑶池用来组成交易的重要数据，例如冷钱包地址，这些数据都会被加密存储于服务器本地。
+
+
+
+<br>
+
+![](image/derive-addr.png) -->
 <!-- 热钱包服务和Seed Vault之间通信是⽤AES对称加密算法。热钱包服务和Seed Vault需要持有同⼀把密钥。当热钱包服务向Seed Vault请求种⼦时，Seed Vault会⽤密钥对种⼦进⾏加密然后返回，热钱包服务⽤密钥对加密种⼦进⾏解密得到种⼦的明⽂。
 <br> -->
 <!-- 
 下图是衍生路径示意图： -->
-<p><br></p>
-<p><img src="image/derive-addr.png" alt=""></p>
-
                                 
                                 </section>
                             
@@ -1023,7 +988,7 @@
             
                 
                 
-                <a href="seed-init.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 5.2.初始化">
+                <a href="use-sv.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 5.2.使用Seed Vault">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1034,7 +999,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"5.1.Seed Vault","level":"1.5.1","depth":2,"next":{"title":"5.2.初始化","level":"1.5.2","depth":2,"path":"security/seed-init.md","ref":"security/seed-init.md","articles":[]},"previous":{"title":"5.私钥安全","level":"1.5","depth":1,"ref":"","articles":[{"title":"5.1.Seed Vault","level":"1.5.1","depth":2,"path":"security/seed.md","ref":"security/seed.md","articles":[]},{"title":"5.2.初始化","level":"1.5.2","depth":2,"path":"security/seed-init.md","ref":"security/seed-init.md","articles":[]},{"title":"5.3.备份","level":"1.5.3","depth":2,"path":"security/seed-backup.md","ref":"security/seed-backup.md","articles":[]},{"title":"5.4.设置数据","level":"1.5.4","depth":2,"path":"security/seed-data.md","ref":"security/seed-data.md","articles":[]},{"title":"5.5.访问权限","level":"1.5.5","depth":2,"path":"security/seed-permission.md","ref":"security/seed-permission.md","articles":[]},{"title":"5.6.修改密码","level":"1.5.6","depth":2,"path":"security/seed-reset.md","ref":"security/seed-reset.md","articles":[]},{"title":"5.7.批量导入数据","level":"1.5.7","depth":2,"path":"security/seed-batch.md","ref":"security/seed-batch.md","articles":[]},{"title":"5.8.配置格式","level":"1.5.8","depth":2,"path":"security/seed-format.md","ref":"security/seed-format.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["language-picker"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":1},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"jadepool","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jadepool Docs","language":"zh-hans","gitbook":"*"},"file":{"path":"security/seed.md","mtime":"2021-09-28T03:08:55.309Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-09-28T03:11:15.379Z"},"basePath":"..","book":{"language":"zh-hans"}});
+            gitbook.page.hasChanged({"page":{"title":"5.1.组件介绍","level":"1.5.1","depth":2,"next":{"title":"5.2.使用Seed Vault","level":"1.5.2","depth":2,"path":"security/use-sv.md","ref":"security/use-sv.md","articles":[]},"previous":{"title":"5.私钥安全","level":"1.5","depth":1,"ref":"","articles":[{"title":"5.1.组件介绍","level":"1.5.1","depth":2,"path":"security/intro.md","ref":"security/intro.md","articles":[]},{"title":"5.2.使用Seed Vault","level":"1.5.2","depth":2,"path":"security/use-sv.md","ref":"security/use-sv.md","articles":[]},{"title":"5.3.使用HSA","level":"1.5.3","depth":2,"path":"security/use-hsa.md","ref":"security/use-hsa.md","articles":[]},{"title":"5.4.备份与恢复","level":"1.5.4","depth":2,"path":"security/backup-recovery.md","ref":"security/backup-recovery.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["language-picker"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":1},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"jadepool","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jadepool Docs","language":"zh-hans","gitbook":"*"},"file":{"path":"security/intro.md","mtime":"2021-09-29T07:15:55.913Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-09-29T07:19:37.174Z"},"basePath":"..","book":{"language":"zh-hans"}});
         });
     </script>
 </div>
