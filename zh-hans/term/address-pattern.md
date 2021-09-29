@@ -5,7 +5,7 @@
 多地址普通 | Bitcoin, Ethereum, ERC20, Omni(USDT), Litecoin, Neo, VeChain, Qtum, Bitcoin Cash, TomoChain, Tron, Kusama, Polkadot, Tezos, QLink, Blockstack, PlatOn Alaya, Darwinia, Filecoin, Binance Smart Chain
 单账户备注 | EOS, Ripple, Stellar, Cybex, EveriToken
 两模式都支持 | Cosmos, IRISnet, ChainX, Binance
-隔离 | 目前只支持Bitcoin, Ethereum
+AML | 目前只支持Bitcoin, Ethereum
 
 
 **注意**：应用方请求生成充值地址的模式如果是auto，即地址按照上表默认模式生成（对于Cosmos、IRISnet和ChainX来说，使用v2接口auto对应多地址模式）。如果应用方传入的地址模式Jadepool Hub不支持则会拒绝请求(API报错)。
@@ -25,7 +25,7 @@
 ![](image/single-mode.png)
 
 ### 隔离模式
-隔离模式的地址收到入账后，系统不会自动转移资产，前置系统需要对充值入账进行AML审核。审核通过后以API形式告知Jadepool Hub系统，系统会将充值资产转移到主地址。审核不通过运营方可以选择先留在充值地址中不做任何处理，或者从充值地址把资产退款回给用户。
+隔离模式的地址收到入账后，系统不会自动转移资产，前置系统需要对充值入账进行AML审核。审核通过后以API形式告知Jadepool Hub系统，系统会将充值资产转移到主地址。
 
 <!-- ### 常规模式
 normal模式是指，Jadepool Hub不会自发挪用充值地址的资产，所有行为都要应用方主动触发，该场景针对抵押和未来会新增的Dapp功能。在normal模式下，充值地址的抵押状态和Dapp资产状态代表用户在应用方的状态。

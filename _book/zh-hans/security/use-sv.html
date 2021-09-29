@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>5.7.批量导入数据 · Jadepool Docs</title>
+        <title>5.2.使用Seed Vault · Jadepool Docs</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="seed-format.html" />
+    <link rel="next" href="use-hsa.html" />
     
     
-    <link rel="prev" href="seed-reset.html" />
+    <link rel="prev" href="intro.html" />
     
 
     </head>
@@ -397,12 +397,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="seed.html">
+        <li class="chapter " data-level="1.5.1" data-path="intro.html">
             
-                <a href="seed.html">
+                <a href="intro.html">
             
                     
-                    5.1.Seed Vault
+                    5.1.组件介绍
             
                 </a>
             
@@ -410,12 +410,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="seed-init.html">
+        <li class="chapter active" data-level="1.5.2" data-path="use-sv.html">
             
-                <a href="seed-init.html">
+                <a href="use-sv.html">
             
                     
-                    5.2.初始化
+                    5.2.使用Seed Vault
             
                 </a>
             
@@ -423,12 +423,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="seed-backup.html">
+        <li class="chapter " data-level="1.5.3" data-path="use-hsa.html">
             
-                <a href="seed-backup.html">
+                <a href="use-hsa.html">
             
                     
-                    5.3.备份
+                    5.3.使用HSA
             
                 </a>
             
@@ -436,64 +436,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.4" data-path="seed-data.html">
+        <li class="chapter " data-level="1.5.4" data-path="backup-recovery.html">
             
-                <a href="seed-data.html">
-            
-                    
-                    5.4.设置数据
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.5" data-path="seed-permission.html">
-            
-                <a href="seed-permission.html">
+                <a href="backup-recovery.html">
             
                     
-                    5.5.访问权限
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.6" data-path="seed-reset.html">
-            
-                <a href="seed-reset.html">
-            
-                    
-                    5.6.修改密码
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter active" data-level="1.5.7" data-path="seed-batch.html">
-            
-                <a href="seed-batch.html">
-            
-                    
-                    5.7.批量导入数据
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.8" data-path="seed-format.html">
-            
-                <a href="seed-format.html">
-            
-                    
-                    5.8.配置格式
+                    5.4.备份与恢复
             
                 </a>
             
@@ -715,6 +663,32 @@
             
         </li>
     
+        <li class="chapter " data-level="1.8.2.5" data-path="../admin/asset-strategy.html">
+            
+                <a href="../admin/asset-strategy.html">
+            
+                    
+                    8.2.5.设置钱包资产策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.6" data-path="../admin/email-settings.html">
+            
+                <a href="../admin/email-settings.html">
+            
+                    
+                    8.2.6.设置接收邮件
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -822,14 +796,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" >
+        <li class="chapter " data-level="1.10" data-path="../devops/module.html">
             
-                <span>
+                <a href="../devops/module.html">
             
                     
-                    10.其他教程
+                    10.7.软件模块
             
-                </span>
+                </a>
             
 
             
@@ -927,19 +901,6 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10.8" data-path="../tutorial/hsa.html">
-            
-                <a href="../tutorial/hsa.html">
-            
-                    
-                    10.8.使用HSA
-            
-                </a>
-            
-
-            
-        </li>
-    
 
             </ul>
             
@@ -975,7 +936,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >5.7.批量导入数据</a>
+        <a href=".." >5.2.使用Seed Vault</a>
     </h1>
 </div>
 
@@ -990,41 +951,80 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>&#x53EF;&#x4EE5;&#x5BF9;SeedVault&#x7A0B;&#x5E8F;&#x7684;data&#x8FDB;&#x884C;&#x6279;&#x91CF;&#x5BFC;&#x5165;&#xFF0C;&#x5728;SeedVault&#x7A0B;&#x5E8F;&#x6240;&#x5728;&#x76EE;&#x5F55;&#x4E0B;&#x653E;&#x7F6E;txt&#x6587;&#x4EF6;&#xFF0C;&#x6587;&#x4EF6;&#x4E2D;&#x5305;&#x542B;&#x5192;&#x53F7;&#x5206;&#x5272;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x6BCF;&#x884C;&#x662F;&#x4E00;&#x7EC4;data&#x6570;&#x636E;&#x3002;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
-<pre><code class="lang-txt">    ETH:0x577fc8ccd2f4a31321874841c3251eaf2c2f84f9
-    LTC:mhc8TGrKD5daMcjngCurh8pMfywEJZ2sL4
-</code></pre>
-<p><br></p>
-<p>&#x5BFC;&#x5165;&#x524D;data&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
-<pre><code class="lang-bash">    $ ./seed --list
+                                <h1 id="seedvault&#x4F7F;&#x7528;&#x6B65;&#x9AA4;">SeedVault&#x4F7F;&#x7528;&#x6B65;&#x9AA4;</h1>
+<h2 id="1&#x521D;&#x59CB;&#x5316;">1.&#x521D;&#x59CB;&#x5316;</h2>
+<p>&#x521D;&#x6B21;&#x8FD0;&#x2F8F;SeedVault&#x7A0B;&#x5E8F;&#xFF0C;&#x4F1A;&#x8981;&#x6C42;&#x4F7F;&#x2F64;&#x8005;&#x8BBE;&#x7F6E;&#x7BA1;&#x7406;&#x5458;&#x5BC6;&#x7801;&#x3002;&#x6240;&#x6709;&#x5728;SeedVault&#x7A0B;&#x5E8F;&#x8FDB;&#x2F8F;&#x64CD;&#x4F5C;&#x90FD;&#x9700;&#x8981;&#x8F93;&#x2F0A;&#x6B63;&#x786E;&#x7684;&#x5BC6;&#x7801;&#x3002;&#x6240;&#x4EE5;&#x7BA1;&#x7406;&#x5458;&#x5BC6;&#x7801;&#x2F84;&#x5173;&#x91CD;&#x8981;&#xFF0C;&#x5EFA;&#x8BAE;&#x591A;&#x2F08;&#x8BBE;&#x7F6E;&#x4EE5;&#x589E;&#x52A0;&#x590D;&#x6742;&#x5EA6;&#xFF0C;&#x5E76;&#x8BBE;&#x7F6E;&#x5BC6;&#x7801;&#x2F9C;&#x591F;&#x590D;&#x6742;&#xFF0C;&#x6700;&#x540E;&#x4F7F;&#x2F64;&#x8005;&#x9700;&#x8981;&#x59A5;&#x5584;&#x4FDD;&#x7BA1;&#x5BC6;&#x7801;&#x3002;</p>
+<p>&#x5728;terminal&#x4E2D;&#x8FDB;&#x5165;&#x5230;SeedVault&#x7A0B;&#x5E8F;&#x6240;&#x5728;&#x76EE;&#x5F55;&#x4E0B;&#x3002;&#x5728;&#x8BE5;&#x76EE;&#x5F55;&#x4E0B;&#x8F93;&#x5165;&#x547D;&#x4EE4;&#xFF1A;./seed   --path=./workpath/  --port=8899&#xFF0C;path&#x53C2;&#x6570;&#x7528;&#x4E8E;&#x6307;&#x5B9A;SeedVault&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#xFF08;--path=./workpath&#x540E;&#x9762;&#x5FC5;&#x987B;&#x52A0;/&#xFF09;&#xFF0C;&#x672A;&#x6307;&#x5B9A;&#x5219;&#x9ED8;&#x8BA4;&#x4E3A;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x3002;port&#x53C2;&#x6570;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x7AEF;&#x53E3;&#x53F7;&#xFF0C;&#x672A;&#x6307;&#x5B9A;&#x5219;&#x9ED8;&#x8BA4;&#x4E3A;8899&#xFF08;&#x5373;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8F93;&#x5165;./seed&#xFF09;&#x3002;</p>
+<p>&#x9996;&#x6B21;&#x542F;&#x52A8;SeedVault&#x7A0B;&#x5E8F;&#x4F1A;&#x88AB;&#x8981;&#x6C42;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-bash">    $ ./seed
     data path: <span class="hljs-string">&quot;./&quot;</span>, port: <span class="hljs-string">&quot;8899&quot;</span>.
-    Please input passowrd.
+    lock file successfully
+    The seed has not been initialized, please <span class="hljs-built_in">type</span> <span class="hljs-string">&quot;yes&quot;</span> to continue.
     -&gt;
-    Password is correct.
-    config.json sha256[dd1aaf26c557685cc37f93f53a2b6befb2c2e679f5ace6ec7a26d12086f358be] pass check
-    data.json sha256[55ac168c0dc8a0a45d3c83d8e80396b99cb688722f39d4f24d96b5ef6729754f] pass check
-    seed.json sha256[6f45eb53d10aac0aa4d2fab9d2bb541629d33bf70a904f7978096e18d5d36404] pass check
-    The data list is:
-    BTC: <span class="hljs-string">&quot;n4he3WuSAKJdY58ReeXtC8cMse6ip6GL1S&quot;</span>
-    The config list is:
-    client: <span class="hljs-string">&quot;127.0.0.1,47.75.154.248&quot;</span>
 </code></pre>
-<p><br></p>
-<p>&#x5728;SeedVault&#x7A0B;&#x5E8F;&#x6240;&#x5728;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x8F93;&#x5165;&#x547D;&#x4EE4;&#xFF1A;./seed --path=./workpath/  --import test.txt&#xFF0C;&#x8FD9;&#x91CC;&#x7684;test.txt&#x662F;&#x4E0A;&#x8FF0;&#x7684;&#x5305;&#x542B;&#x5BFC;&#x5165;&#x6570;&#x636E;&#x7684;txt&#x6587;&#x4EF6;&#x540D;&#xFF0C;&#x6587;&#x4EF6;&#x540D;&#x4EFB;&#x610F;&#x3002;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#xFF0C;&#x5FC5;&#x987B;&#x548C;&#x88AB;&#x5907;&#x4EFD;&#x7684;SeedVault&#x7A0B;&#x5E8F;&#x8BBE;&#x7F6E;&#x7684;&#x521D;&#x59CB;&#x5316;&#x5BC6;&#x7801;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x3002;&#x5982;&#x679C;&#x6587;&#x4EF6;&#x89E3;&#x6790;&#x6B63;&#x786E;&#xFF0C;&#x4F1A;&#x6253;&#x51FA;&#x4E00;&#x5171;&#x8981;&#x5BFC;&#x5165;&#x7684;&#x6570;&#x636E;&#x6761;&#x6570;&#x548C;&#x8986;&#x76D6;&#x7684;&#x6570;&#x636E;&#x6761;&#x6570;&#xFF0C;&#x8F93;&#x5165;yes&#x786E;&#x8BA4;&#x5BFC;&#x5165;&#xFF0C;&#x5BFC;&#x5165;&#x6210;&#x529F;&#x3002;</p>
-<pre><code class="lang-bash">    $ ./seed --import test.txt
-    data path: <span class="hljs-string">&quot;./&quot;</span>, port: <span class="hljs-string">&quot;8899&quot;</span>.
-    Please input passowrd.
-    -&gt;
-    Password is correct.
-    config.json sha256[dd1aaf26c557685cc37f93f53a2b6befb2c2e679f5ace6ec7a26d12086f358be] pass check
-    data.json sha256[55ac168c0dc8a0a45d3c83d8e80396b99cb688722f39d4f24d96b5ef6729754f] pass check
-    seed.json sha256[6f45eb53d10aac0aa4d2fab9d2bb541629d33bf70a904f7978096e18d5d36404] pass check
-    You will import 2 datas,overwrite 0 datas,confirm by <span class="hljs-built_in">type</span> <span class="hljs-string">&apos;yes&apos;</span>
+<p><br>
+&#x8F93;&#x5165;yes&#x540E;&#xFF0C;&#x4F1A;&#x88AB;&#x8981;&#x6C42;&#x8BBE;&#x7F6E;&#x5BC6;&#x7801;&#xFF0C;&#x8F93;&#x5165;&#x8981;&#x4E3A;SeedVault&#x7A0B;&#x5E8F;&#x8BBE;&#x7F6E;&#x7684;&#x5BC6;&#x7801;&#xFF08;&#x6700;&#x597D;&#x8DB3;&#x591F;&#x590D;&#x6742;&#xFF09;&#x3002;&#x70B9;&#x51FB;enter&#x952E;&#xFF0C;&#x9700;&#x8981;&#x518D;&#x8F93;&#x5165;&#x4E00;&#x904D;&#x5BC6;&#x7801;&#x4EE5;&#x786E;&#x8BA4;&#xFF0C;&#x4E4B;&#x540E;&#x70B9;&#x51FB;enter&#x952E;&#xFF0C;&#x521D;&#x59CB;&#x5316;&#x5B8C;&#x6210;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#x3002;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-bash">    The seed has not been initialized, please <span class="hljs-built_in">type</span> <span class="hljs-string">&quot;yes&quot;</span> to continue.
     -&gt; yes
-    import data finished. Please start the server again.
+    Input password first time.
+    -&gt;
+    Input password again.
+    -&gt;
+    Initialization finished. Please start the server again.
 </code></pre>
-<p><br></p>
-<p>&#x5BFC;&#x5165;&#x540E;data&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<p><br>
+&#x8F93;&#x5165;&#x547D;&#x4EE4;&#xFF1A;./seed   --path=./workpath/  --port=8899&#xFF0C;&#x91CD;&#x65B0;&#x542F;&#x52A8;&#x7A0B;&#x5E8F;&#x3002;&#x4F1A;&#x88AB;&#x8981;&#x6C42;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#xFF0C;&#x5FC5;&#x987B;&#x548C;&#x521D;&#x59CB;&#x5316;&#x65F6;&#x8BBE;&#x7F6E;&#x7684;&#x5BC6;&#x7801;&#x76F8;&#x540C;&#x3002;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#x6B63;&#x786E;&#x540E;&#xFF0C;SeedVault&#x7A0B;&#x5E8F;&#x542F;&#x52A8;&#xFF0C;&#x542F;&#x52A8;&#x6210;&#x529F;&#x540E;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-bash">    $ ./seed
+    data path: <span class="hljs-string">&quot;./&quot;</span>, port: <span class="hljs-string">&quot;8888&quot;</span>.
+    Please input passowrd.
+    -&gt;
+    Password is correct.
+    config.json sha256[dd1aaf26c557685cc37f93f53a2b6befb2c2e679f5ace6ec7a26d12086f358be] pass check
+    data.json sha256[55ac168c0dc8a0a45d3c83d8e80396b99cb688722f39d4f24d96b5ef6729754f] pass check
+    seed.json sha256[6f45eb53d10aac0aa4d2fab9d2bb541629d33bf70a904f7978096e18d5d36404] pass check
+    lock file successfully
+    Successfully recover the seed, now starting the seed server :)
+    Authorized client is: [127.0.0.1].
+
+       ____    __
+      / __/___/ /  ___
+     / _// __/ _ \/ _ \
+    /___/\__/_//_/\___/ v3.2.6
+    High performance, minimalist Go web framework
+    https://echo.labstack.com
+    ____________________________________O/_______
+                                        O\
+    &#x21E8; http server started on [::]:8888
+</code></pre>
+<h2 id="2&#x8BBE;&#x7F6E;&#x81EA;&#x5B9A;&#x4E49;&#x6570;&#x636E;">2.&#x8BBE;&#x7F6E;&#x81EA;&#x5B9A;&#x4E49;&#x6570;&#x636E;</h2>
+<p>&#x8BBE;&#x7F6E;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ol>
+<li>&#x5728;SeedVault&#x7A0B;&#x5E8F;&#x6240;&#x5728;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x8F93;&#x5165;&#x547D;&#x4EE4;&#xFF1A;./seed --path=./workpath/  --data&#xFF0C;&#x4F1A;&#x88AB;&#x8981;&#x6C42;&#x8F93;&#x5165;&#x4E00;&#x6B21;&#x5BC6;&#x7801;&#xFF0C;&#x5FC5;&#x987B;&#x548C;&#x88AB;&#x5907;&#x4EFD;&#x7684;SeedVault&#x7A0B;&#x5E8F;&#x8BBE;&#x7F6E;&#x7684;&#x521D;&#x59CB;&#x5316;&#x5BC6;&#x7801;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x3002;</li>
+<li>&#x8F93;&#x5165;&#x6570;&#x636E;&#x540D;&#xFF0C;&#x5728;&#x6B64;&#x5904;&#x8F93;&#x5165;key&#xFF08;&#x914D;&#x7F6E;&#x952E;&#x503C;&#xFF09;&#x548C;&#x6570;&#x636E;&#xFF0C;&#x914D;&#x7F6E;&#x5177;&#x4F53;&#x683C;&#x5F0F;&#x548C;&#x8BF4;&#x660E;&#x8BF7;&#x53C2;&#x7167;<a href="seed-format.html">&#x914D;&#x7F6E;&#x683C;&#x5F0F;</a>&#x3002;</li>
+<li>&#x6570;&#x636E;&#x8BBE;&#x7F6E;&#x5B8C;&#x6BD5;&#xFF0C;&#x8F93;&#x5165;&#x547D;&#x4EE4;&#xFF1A;./seed  --path=./workpath/  --port=8899&#xFF0C;&#x91CD;&#x65B0;&#x542F;&#x52A8;SeedVault&#x7A0B;&#x5E8F;&#x3002;</li>
+</ol>
+<pre><code class="lang-bash">    $ ./seed --data
+    data path: <span class="hljs-string">&quot;./&quot;</span>, port: <span class="hljs-string">&quot;8899&quot;</span>.
+    Please input passowrd.
+    -&gt;
+    Password is correct.
+    config.json sha256[dd1aaf26c557685cc37f93f53a2b6befb2c2e679f5ace6ec7a26d12086f358be] pass check
+    data.json sha256[55ac168c0dc8a0a45d3c83d8e80396b99cb688722f39d4f24d96b5ef6729754f] pass check
+    seed.json sha256[6f45eb53d10aac0aa4d2fab9d2bb541629d33bf70a904f7978096e18d5d36404] pass check
+    You are <span class="hljs-built_in">set</span> the data now.
+    Please input the name first.
+    -&gt; BTC
+    Please input the data.
+    -&gt; n4he3WuSAKJdY58ReeXtC8cMse6ip6GL1S
+    BTC:n4he3WuSAKJdY58ReeXtC8cMse6ip6GL1S
+    Setting data finished. Please start the server again.
+</code></pre>
+<h2 id="3&#x67E5;&#x8BE2;&#x5DF2;&#x8BBE;&#x7F6E;&#x81EA;&#x5B9A;&#x4E49;&#x6570;&#x636E;">3.&#x67E5;&#x8BE2;&#x5DF2;&#x8BBE;&#x7F6E;&#x81EA;&#x5B9A;&#x4E49;&#x6570;&#x636E;</h2>
+<ol>
+<li>&#x6309;&#x7167;C&#x6240;&#x793A;&#x6B65;&#x9AA4;&#x8BBE;&#x7F6E;&#x5B8C;&#x6210;&#x6BCF;&#x4E2A;&#x5E01;&#x79CD;&#x76F8;&#x5173;&#x6570;&#x636E;&#x3002;</li>
+<li>&#x5728;SeedVault&#x7A0B;&#x5E8F;&#x6240;&#x5728;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x8F93;&#x5165;&#x547D;&#x4EE4;&#xFF1A;./seed --path=./workpath/  --list&#xFF0C;&#x4F1A;&#x88AB;&#x8981;&#x6C42;&#x8F93;&#x5165;&#x4E00;&#x6B21;&#x5BC6;&#x7801;&#xFF0C;&#x5FC5;&#x987B;&#x548C;&#x88AB;&#x5907;&#x4EFD;&#x7684;SeedVault&#x7A0B;&#x5E8F;&#x8BBE;&#x7F6E;&#x7684;&#x521D;&#x59CB;&#x5316;&#x5BC6;&#x7801;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x3002;</li>
+<li>&#x8F93;&#x5165;&#x5BC6;&#x7801;&#x6B63;&#x786E;&#x540E;&#xFF0C;&#x4F1A;&#x770B;&#x5230;&#x5DF2;&#x8BBE;&#x7F6E;&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;&#x660E;&#x7EC6;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</li>
+</ol>
 <pre><code class="lang-bash">    $ ./seed --list
     data path: <span class="hljs-string">&quot;./&quot;</span>, port: <span class="hljs-string">&quot;8899&quot;</span>.
     Please input passowrd.
@@ -1035,11 +1035,162 @@
     seed.json sha256[6f45eb53d10aac0aa4d2fab9d2bb541629d33bf70a904f7978096e18d5d36404] pass check
     The data list is:
     BTC: <span class="hljs-string">&quot;n4he3WuSAKJdY58ReeXtC8cMse6ip6GL1S&quot;</span>
-    ETH: <span class="hljs-string">&quot;0x577fc8ccd2f4a31321874841c3251eaf2c2f84f9&quot;</span>
-    LTC: <span class="hljs-string">&quot;mhc8TGrKD5daMcjngCurh8pMfywEJZ2sL4&quot;</span>
+    The config list is:
+</code></pre>
+<h2 id="4&#x8BBF;&#x95EE;&#x767D;&#x540D;&#x5355;">4.&#x8BBF;&#x95EE;&#x767D;&#x540D;&#x5355;</h2>
+<p>&#x5177;&#x4F53;&#x4FEE;&#x6539;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ol>
+<li>&#x5728;SeedVault&#x7A0B;&#x5E8F;&#x6240;&#x5728;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x8F93;&#x5165;&#x547D;&#x4EE4;&#xFF1A;./seed --path=./workpath/  --config&#xFF0C;&#x4F1A;&#x88AB;&#x8981;&#x6C42;&#x8F93;&#x5165;&#x4E00;&#x6B21;&#x5BC6;&#x7801;&#xFF0C;&#x5FC5;&#x987B;&#x548C;&#x88AB;&#x5907;&#x4EFD;&#x7684;SeedVault&#x7A0B;&#x5E8F;&#x8BBE;&#x7F6E;&#x7684;&#x521D;&#x59CB;&#x5316;&#x5BC6;&#x7801;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x3002;</li>
+<li>&#x8F93;&#x5165;&#x53C2;&#x6570;&#x540D;&#xFF0C;&#x82E5;&#x6B64;&#x5904;&#x662F;&#x4FEE;&#x6539;&#x88AB;&#x5141;&#x8BB8;&#x8BBF;&#x95EE;SeedVault&#x7A0B;&#x5E8F;&#x7684;IP&#x5730;&#x5740;&#x5219;&#x8BE5;&#x5904;&#x5FC5;&#x987B;&#x586B;client&#xFF08;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#xFF09;&#x3002;</li>
+<li>&#x8F93;&#x5165;&#x65B0;&#x7684;&#x88AB;&#x5141;&#x8BB8;&#x8BBF;&#x95EE;SeedVault&#x7A0B;&#x5E8F;&#x7684;IP&#x5730;&#x5740;&#xFF0C;&#x591A;&#x4E2A;IP&#x5730;&#x5740;&#x7528;&#x9017;&#x53F7;&#x5206;&#x9694;&#x3002;&#x88AB;&#x8BBE;&#x7F6E;&#x7684;&#x6570;&#x636E;&#x7EDF;&#x4E00;&#x4EE5;&#x5BC6;&#x6587;&#x5F62;&#x5F0F;&#x88AB;&#x5B58;&#x50A8;&#x5728;SeedVault&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x4E0B;&#x7684;config.json&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x4F1A;&#x751F;&#x6210;.config.json.sha256&#x7684;&#x9690;&#x85CF;&#x6587;&#x4EF6;&#xFF0C;&#x5F53;&#x6709;&#x4EBA;&#x624B;&#x5DE5;&#x4FEE;&#x6539;&#x4EFB;&#x4F55;json&#x6216;&#x8005;sha256&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x90FD;&#x4F1A;&#x5BFC;&#x81F4;&#x670D;&#x52A1;&#x65E0;&#x6CD5;&#x542F;&#x52A8;&#x3002;</li>
+</ol>
+<pre><code class="lang-bash">    $ ./seed --config
+    data path: <span class="hljs-string">&quot;./&quot;</span>, port: <span class="hljs-string">&quot;8899&quot;</span>.
+    Please input passowrd.
+    -&gt;
+    Password is correct.
+    config.json sha256[dd1aaf26c557685cc37f93f53a2b6befb2c2e679f5ace6ec7a26d12086f358be] pass check
+    data.json sha256[55ac168c0dc8a0a45d3c83d8e80396b99cb688722f39d4f24d96b5ef6729754f] pass check
+    seed.json sha256[6f45eb53d10aac0aa4d2fab9d2bb541629d33bf70a904f7978096e18d5d36404] pass check
+    You are <span class="hljs-built_in">set</span> the config now.
+    Please input the name first.
+    -&gt; client
+    Please input the config.
+    -&gt; 127.0.0.1,47.75.154.248
+    client:127.0.0.1,47.75.154.248
+    Setting config finished. Please start the server again.
+</code></pre>
+<p><br></p>
+<p>&#x8BBE;&#x7F6E;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x8F93;&#x5165;&#x547D;&#x4EE4;&#xFF1A;./seed --path=./workpath/  --port=8899&#xFF0C;&#x91CD;&#x542F;SeedVault&#x7A0B;&#x5E8F;&#x3002;&#x4F1A;&#x770B;&#x5230;&#x201C;Authorized client is:&#xFF08;&#x65B0;IP&#x5730;&#x5740;&#xFF09;&#x201D;&#xFF0C;&#x6B64;&#x5904;&#x53EF;&#x7528;&#x6765;&#x9A8C;&#x8BC1;&#x4FEE;&#x6539;&#x662F;&#x5426;&#x6210;&#x529F;&#x3002;</p>
+<pre><code class="lang-bash">    $ ./seed
+    data path: <span class="hljs-string">&quot;./&quot;</span>, port: <span class="hljs-string">&quot;8899&quot;</span>.
+    Please input passowrd.
+    -&gt;
+    Password is correct.
+    config.json sha256[dd1aaf26c557685cc37f93f53a2b6befb2c2e679f5ace6ec7a26d12086f358be] pass check
+    data.json sha256[55ac168c0dc8a0a45d3c83d8e80396b99cb688722f39d4f24d96b5ef6729754f] pass check
+    seed.json sha256[6f45eb53d10aac0aa4d2fab9d2bb541629d33bf70a904f7978096e18d5d36404] pass check
+    lock file successfully
+    Successfully recover the seed, now starting the seed server :)
+    Authorized client is: [127.0.0.1 47.75.154.248].
+
+       ____    __
+      / __/___/ /  ___
+     / _// __/ _ \/ _ \
+    /___/\__/_//_/\___/ v3.2.6
+    High performance, minimalist Go web framework
+    https://echo.labstack.com
+    ____________________________________O/_______
+                                        O\
+    &#x21E8; http server started on [::]:8899
+</code></pre>
+<p><br></p>
+<p>&#x53E6;&#x4E00;&#x65B9;&#x6CD5;&#x4E5F;&#x53EF;&#x4EE5;&#x9A8C;&#x8BC1;&#x4FEE;&#x6539;&#xFF0C;&#x5728;SeedVault&#x7A0B;&#x5E8F;&#x6240;&#x5728;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x8F93;&#x5165;&#x547D;&#x4EE4;&#xFF1A;./seed --path=./workpath/  --list&#xFF0C;&#x4F1A;&#x770B;&#x5230;&#x201C;The config list is: client: &#xFF08;&#x65B0;IP&#x5730;&#x5740;&#xFF09;&#x201D;&#x3002;</p>
+<pre><code class="lang-bash">    $ ./seed --list
+    data path: <span class="hljs-string">&quot;./&quot;</span>, port: <span class="hljs-string">&quot;8899&quot;</span>.
+    Please input passowrd.
+    -&gt;
+    Password is correct.
+    config.json sha256[dd1aaf26c557685cc37f93f53a2b6befb2c2e679f5ace6ec7a26d12086f358be] pass check
+    data.json sha256[55ac168c0dc8a0a45d3c83d8e80396b99cb688722f39d4f24d96b5ef6729754f] pass check
+    seed.json sha256[6f45eb53d10aac0aa4d2fab9d2bb541629d33bf70a904f7978096e18d5d36404] pass check
+    The data list is:
+    BTC: <span class="hljs-string">&quot;n4he3WuSAKJdY58ReeXtC8cMse6ip6GL1S&quot;</span>
     The config list is:
     client: <span class="hljs-string">&quot;127.0.0.1,47.75.154.248&quot;</span>
 </code></pre>
+<h2 id="5&#x4FEE;&#x6539;&#x5BC6;&#x7801;">5.&#x4FEE;&#x6539;&#x5BC6;&#x7801;</h2>
+<ol>
+<li>&#x5728;SeedVault&#x7A0B;&#x5E8F;&#x6240;&#x5728;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x8F93;&#x5165;&#x547D;&#x4EE4;&#xFF1A;./seed --path=./workpath/  --password&#xFF0C;&#x4F1A;&#x88AB;&#x8981;&#x6C42;&#x8F93;&#x5165;&#x4E00;&#x6B21;&#x5BC6;&#x7801;&#xFF0C;&#x5FC5;&#x987B;&#x548C;&#x88AB;&#x5907;&#x4EFD;&#x7684;SeedVault&#x7A0B;&#x5E8F;&#x8BBE;&#x7F6E;&#x7684;&#x521D;&#x59CB;&#x5316;&#x5BC6;&#x7801;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x3002;</li>
+<li>&#x8F93;&#x5165;&#x4E24;&#x6B21;&#x65B0;&#x5BC6;&#x7801;&#x3002;</li>
+<li>&#x7A0B;&#x5E8F;&#x4F1A;&#x5C06;&#x65E7;seed.json&#x5907;&#x4EFD;&#x5230;last.seed.json&#xFF0C;.seed.json.sha256&#x5907;&#x4EFD;&#x5230;seed.json.sha256.last&#xFF0C;&#x5E76;&#x751F;&#x6210;&#x65B0;&#x7684;seed.json&#x548C;.seed.json.sha256&#xFF0C;data&#x548C;conifg&#x540C;&#x7406;&#xFF0C;&#x6B64;&#x65F6;&#x5BC6;&#x7801;&#x4FEE;&#x6539;&#x5B8C;&#x6BD5;&#x3002;</li>
+</ol>
+<pre><code class="lang-bash">    $ ./seed --password
+    data path: <span class="hljs-string">&quot;./&quot;</span>, port: <span class="hljs-string">&quot;8899&quot;</span>.
+    Please input passowrd.
+    -&gt;
+    Password is correct.
+    config.json sha256[dd1aaf26c557685cc37f93f53a2b6befb2c2e679f5ace6ec7a26d12086f358be] pass check
+    data.json sha256[55ac168c0dc8a0a45d3c83d8e80396b99cb688722f39d4f24d96b5ef6729754f] pass check
+    seed.json sha256[6f45eb53d10aac0aa4d2fab9d2bb541629d33bf70a904f7978096e18d5d36404] pass check
+    lock file successfully
+    You are change the password now.
+    Input new password first time.
+    -&gt;
+    Input new password again.
+    -&gt;
+    seed.json move to seed.json.last
+    data.json move to data.json.last
+    config.json move to config.json.last
+    .seed.json.sha256 move to seed.json.sha256.last
+    .data.json.sha256 move to data.json.sha256.last
+    .config.json.sha256 move to config.json.sha256.last
+    Change password succeeded, Please start the server again.
+</code></pre>
+<!-- 如果修改了管理员密码，旧密码时⽣成的⽂件将被改为“last .seed.json”，程序会⽤新的密码对种⼦进⾏加密并存储在"seed.json"⽂件。有两种操作可以选择：
+1. 销毁修改密码前备份的⽂件，将修改密码后⽣成的'seed.json'和'.seed.json.md5'⽂件按照
+上述备份步骤重新备份。
+2. ⽤旧密码时备份的'seed.json'和'.seed.json.md5'⽂件，在同⼀⽬录下使⽤Seed Vault程序
+修改密码，需要和第⼀次修改的密码⼀致。
+
+⽆论采⽤上述哪个操作，都应该按照备份步骤对原⽂件和备份后的⽂件进⾏备份验证。 -->
+<h2 id="6&#x6570;&#x636E;&#x8BBE;&#x7F6E;&#x683C;&#x5F0F;">6.&#x6570;&#x636E;&#x8BBE;&#x7F6E;&#x683C;&#x5F0F;</h2>
+<h3 id="&#x6570;&#x636E;&#x5E93;&#x914D;&#x7F6E;">&#x6570;&#x636E;&#x5E93;&#x914D;&#x7F6E;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x8DEF;&#x5F84;</th>
+<th>key</th>
+<th>&#x8BF4;&#x660E;</th>
+<th>&#x793A;&#x4F8B; </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td>MONGO_CFG</td>
+<td>&#x5FC5;&#x987B;&#x914D;&#x7F6E;&#x5E76;&#x548C;&#x793A;&#x4F8B;&#x4E00;&#x81F4;</td>
+<td>default/config/admin</td>
+</tr>
+<tr>
+<td>data</td>
+<td>MONGO_CFG:default</td>
+<td>&#x7476;&#x6C60;&#x4E3B;&#x6570;&#x636E;</td>
+<td>mongodb://localhost:27017/jadepool-BN-dev</td>
+</tr>
+<tr>
+<td>data</td>
+<td>MONGO_CFG:config</td>
+<td>&#x7476;&#x6C60;&#x914D;&#x7F6E;&#x6570;&#x636E;</td>
+<td>mongodb://localhost:27017/jadepool-cfg-dev</td>
+</tr>
+<tr>
+<td>data</td>
+<td>MONGO_CFG:admin</td>
+<td>&#x7476;&#x6C60;&#x7528;&#x6237;&#x6570;&#x636E;</td>
+<td>mongodb://localhost:27017/jadepool-BN-dev</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x5176;&#x4ED6;&#x914D;&#x7F6E;">&#x5176;&#x4ED6;&#x914D;&#x7F6E;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x8DEF;&#x5F84;</th>
+<th>key</th>
+<th>&#x8BF4;&#x660E;</th>
+<th>&#x793A;&#x4F8B; </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>config</td>
+<td>client</td>
+<td>SeedVault&#x8BBF;&#x95EE;&#x65B9;&#x7684;IP&#x767D;&#x540D;&#x5355;&#xFF0C;&#x53EF;&#x914D;&#x7F6E;&#x591A;&#x4E2A;</td>
+<td>127.0.0.1,127.0.0.2,127.0.0.3</td>
+</tr>
+</tbody>
+</table>
 
                                 
                                 </section>
@@ -1067,12 +1218,12 @@
 
             
                 
-                <a href="seed-reset.html" class="navigation navigation-prev " aria-label="Previous page: 5.6.修改密码">
+                <a href="intro.html" class="navigation navigation-prev " aria-label="Previous page: 5.1.组件介绍">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="seed-format.html" class="navigation navigation-next " aria-label="Next page: 5.8.配置格式">
+                <a href="use-hsa.html" class="navigation navigation-next " aria-label="Next page: 5.3.使用HSA">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1083,7 +1234,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"5.7.批量导入数据","level":"1.5.7","depth":2,"next":{"title":"5.8.配置格式","level":"1.5.8","depth":2,"path":"security/seed-format.md","ref":"security/seed-format.md","articles":[]},"previous":{"title":"5.6.修改密码","level":"1.5.6","depth":2,"path":"security/seed-reset.md","ref":"security/seed-reset.md","articles":[]},"dir":"ltr"},"config":{"plugins":["language-picker"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":1},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"jadepool","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jadepool Docs","language":"zh-hans","gitbook":"*"},"file":{"path":"security/seed-batch.md","mtime":"2021-09-28T03:08:55.306Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-09-28T03:11:15.379Z"},"basePath":"..","book":{"language":"zh-hans"}});
+            gitbook.page.hasChanged({"page":{"title":"5.2.使用Seed Vault","level":"1.5.2","depth":2,"next":{"title":"5.3.使用HSA","level":"1.5.3","depth":2,"path":"security/use-hsa.md","ref":"security/use-hsa.md","articles":[]},"previous":{"title":"5.1.组件介绍","level":"1.5.1","depth":2,"path":"security/intro.md","ref":"security/intro.md","articles":[]},"dir":"ltr"},"config":{"plugins":["language-picker"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":1},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"jadepool","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jadepool Docs","language":"zh-hans","gitbook":"*"},"file":{"path":"security/use-sv.md","mtime":"2021-09-29T07:18:18.499Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-09-29T07:19:37.174Z"},"basePath":"..","book":{"language":"zh-hans"}});
         });
     </script>
 </div>

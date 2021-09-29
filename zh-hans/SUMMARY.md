@@ -18,7 +18,6 @@
    * [3.1.充值业务](service/deposit.md)
    * [3.2.提现业务](service/withdraw.md)
    * [3.3.冷存储业务](service/sweep.md)
-<!--    * [3.4.抵押业务](staking.md) -->
 
 * 4.服务组件
    * [4.1.统计](module/statistics.md)
@@ -26,15 +25,10 @@
    * [4.3.告警](module/warning-service.md)
 
 * 5.私钥安全 
-   * [5.1.Seed Vault](security/seed.md)
-   * [5.2.初始化](security/seed-init.md)
-   * [5.3.备份](security/seed-backup.md)
-   * [5.4.设置数据](security/seed-data.md)
-   * [5.5.访问权限](security/seed-permission.md)
-   * [5.6.修改密码](security/seed-reset.md)
-   * [5.7.批量导入数据](security/seed-batch.md)
-   * [5.8.配置格式](security/seed-format.md)
-   <!-- * [Amazon Cloud HSM](cloudhsm.md)   -->
+   * [5.1.组件介绍](security/intro.md)
+   * [5.2.使用Seed Vault](security/use-sv.md)
+   * [5.3.使用HSA](security/use-hsa.md)
+   * [5.4.备份与恢复](security/backup-recovery.md)
 
 * 6.AML混币安全托管
    * [6.1.简介](aml-duo/aml-safe.md)
@@ -54,6 +48,8 @@
       * [8.2.2.禁用区块链](admin/disable-chain.md)
       * [8.2.3.上架代币](admin/enable-token.md)
       * [8.2.4.下架代币](admin/disable-token.md)
+      * [8.2.5.设置钱包资产策略](admin/asset-strategy.md)
+      * [8.2.6.设置接收邮件](admin/email-settings.md)
 
 * 9.常见问题
    * [9.1.运营相关](faq/general-faq.md)
@@ -71,7 +67,7 @@
    * [10.5.进程分类](devops/process.md)
    * [10.6.服务架构](devops/infrastructure.md)
    * [10.7.软件模块](devops/module.md)
-   * [10.8.使用HSA](tutorial/hsa.md)
+
    <!-- * [10.5.使用测试链钱包](其他教程/wallet.md) -->
    <!-- * [10.6.测试链水龙头](其他教程/faucet.md) -->
    <!-- * [10.7.区块链浏览器](其他教程/explorer.md) -->
