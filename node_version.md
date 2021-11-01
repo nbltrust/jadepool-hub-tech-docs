@@ -28,7 +28,7 @@
 | Tron        | v4.0.1 | V0.16.4 |     	       |  |
 | BlockStack  | v21.0.0.2 | V0.16.4 |     	       |  |
 | PlatonAlaya      | v0.14.0   | V0.16.4 |   |    |
-| Binance     | |V0.16.4 | |V0.16.4
+| Binance     | |V0.15.5| |
 | Filecoin     |v1.5.0 |V0.16.4 | |
 | Filecash     |v0.9.0 |V0.16.4 | |
 | Conflux     |v1.1.1 |V0.16.4 | |
