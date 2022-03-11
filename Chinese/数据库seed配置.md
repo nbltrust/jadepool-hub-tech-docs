@@ -1,7 +1,7 @@
 ### data
 ```bash
 key = MONGO_CFG
-value = default/config/admin
+value = default/config/sweep
 
 key = MONGO_CFG:config
 value = mongodb://jadepool:pwd@127.0.0.1/jadepool-cfg-prod
@@ -9,8 +9,9 @@ value = mongodb://jadepool:pwd@127.0.0.1/jadepool-cfg-prod
 key = MONGO_CFG:default
 value = mongodb://jadepool:pwd@127.0.0.1/jadepool-BN-prod
 
-key = MONGO_CFG:admin
-value = mongodb://jadepool:pwd@127.0.0.1/jadepool-BN-prod
+#记录每次热转冷数据，开启该功能后如不单独配置则会记录到default配置的库中
+key = MONGO_CFG:sweep
+value = mongodb://jadepool:pwd@127.0.0.1/jadepool-sweep-prod
 
 key = REDIS_CFG
 value = default
