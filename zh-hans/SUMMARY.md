@@ -67,6 +67,7 @@
    * [10.5.进程分类](devops/process.md)
    * [10.6.服务架构](devops/infrastructure.md)
    * [10.7.软件模块](devops/module.md)
+   * [10.8.BLS-keygen](tutorial/bls-keygen-tutorial.md)
 
    <!-- * [10.5.使用测试链钱包](其他教程/wallet.md) -->
    <!-- * [10.6.测试链水龙头](其他教程/faucet.md) -->
