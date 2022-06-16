@@ -67,24 +67,4 @@
    * [10.5.进程分类](devops/process.md)
    * [10.6.服务架构](devops/infrastructure.md)
    * [10.7.软件模块](devops/module.md)
-   * [10.8.BLS-keygen](tutorial/bls-keygen-tutorial.md)
-
-   <!-- * [10.5.使用测试链钱包](其他教程/wallet.md) -->
-   <!-- * [10.6.测试链水龙头](其他教程/faucet.md) -->
-   <!-- * [10.7.区块链浏览器](其他教程/explorer.md) -->
-   <!-- * [10.6.使用BLS Keygen](tutorial/bls-keygen-tutorial.md) -->
-   <!-- * [10.7.使用DS](tutorial/ds.md) -->
-
-<!-- * 9.单用户全托管+离线冷签名
-   * [9.1.简介](offline-sign-mode.md)
-   * [9.2.准备工作](preparation.md)
-   * [9.3.批处理使用教程](batch-tutorial.md)
-   * [9.4.离线签名程序使用教程](cold-signer-tutorial.md) -->
-
-<!-- * 6.运维
-   * [6.1.服务架构](运维/infrastructure.md)
-   * [6.2.进程分类](运维/process.md)
-   * [6.3.软件模块](运维/module.md) -->
-
-<!-- * 7.区块链使用须知
-   * [7.1.Blockstack](区块链使用须知/blockstack.md) -->
+   * [10.8.使用BLS Keygen](tutorial/bls-keygen-tutorial.md)
