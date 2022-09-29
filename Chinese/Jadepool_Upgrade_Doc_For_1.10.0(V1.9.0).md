@@ -1,4 +1,4 @@
-**V1.7.0** to **V1.8.0**
+**V1.9.0** to **V1.10.0**
 
 ## 测试环境升级步骤：
 
@@ -48,7 +48,7 @@
 
 6. 恢复jadepool-hub/lib和jadepool-hub/lib/seed-loader和jadepool-hub/lib/data-loader下的配置（go-node-ffi.so/server.data) 
 
-7. 在启动脚本中添加jadepool-checker服务，NODE_ENV请根据具体环境配置，与其他服务一样
+7. 在启动脚本中添加jadepool-recon服务，NODE_ENV请根据具体环境配置，与其他服务一样
 
    ```
      - cwd: ./jadepool-hub
