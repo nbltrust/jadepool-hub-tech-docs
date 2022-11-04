@@ -39,6 +39,7 @@
 * 7.离线HSM冷钱包
    * [7.1.简介](hsm-cold/intro.md)
    * [7.2.CSA备份和恢复](hsm-cold/csa-tutorial.md)
+   * [7.3.冷转热流程教学](hsm-cold/video-tutorial.md)
 
 * 8.Admin后台管理
    * [8.1.常用术语](admin/admin-terms.md)

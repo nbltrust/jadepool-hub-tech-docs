@@ -1,0 +1,1074 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>7.3.冷转热流程教学 · Jadepool Docs</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="jadepool">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-local-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="csa-tutorial.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <span>
+            
+                    
+                    1.简介
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    1.1.Jadepool Hub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../intro/product-security.html">
+            
+                <a href="../intro/product-security.html">
+            
+                    
+                    1.2.安全性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../intro/api.html">
+            
+                <a href="../intro/api.html">
+            
+                    
+                    1.3.API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="../intro/quick-start.html">
+            
+                <a href="../intro/quick-start.html">
+            
+                    
+                    1.4.快速上手
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    2.术语
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../term/jade-terms.html">
+            
+                <a href="../term/jade-terms.html">
+            
+                    
+                    2.1.产品术语
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../term/hot-wallet.html">
+            
+                <a href="../term/hot-wallet.html">
+            
+                    
+                    2.1.1.热钱包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../term/order.html">
+            
+                <a href="../term/order.html">
+            
+                    
+                    2.1.2.订单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../term/address-pattern.html">
+            
+                <a href="../term/address-pattern.html">
+            
+                    
+                    2.1.3.充值地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../term/transfer-pattern.html">
+            
+                <a href="../term/transfer-pattern.html">
+            
+                    
+                    2.1.4.出账
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../term/chain-terms.html">
+            
+                <a href="../term/chain-terms.html">
+            
+                    
+                    2.2.区块链术语
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    3.主要业务
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../service/deposit.html">
+            
+                <a href="../service/deposit.html">
+            
+                    
+                    3.1.充值业务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../service/withdraw.html">
+            
+                <a href="../service/withdraw.html">
+            
+                    
+                    3.2.提现业务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../service/sweep.html">
+            
+                <a href="../service/sweep.html">
+            
+                    
+                    3.3.冷存储业务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    4.服务组件
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../module/statistics.html">
+            
+                <a href="../module/statistics.html">
+            
+                    
+                    4.1.统计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../module/audit.html">
+            
+                <a href="../module/audit.html">
+            
+                    
+                    4.2.审计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../module/warning-service.html">
+            
+                <a href="../module/warning-service.html">
+            
+                    
+                    4.3.告警
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    5.私钥安全
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../security/intro.html">
+            
+                <a href="../security/intro.html">
+            
+                    
+                    5.1.组件介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../security/use-sv.html">
+            
+                <a href="../security/use-sv.html">
+            
+                    
+                    5.2.使用Seed Vault
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../security/use-hsa.html">
+            
+                <a href="../security/use-hsa.html">
+            
+                    
+                    5.3.使用HSA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../security/backup-recovery.html">
+            
+                <a href="../security/backup-recovery.html">
+            
+                    
+                    5.4.备份与恢复
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    6.AML混币安全托管
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../aml-duo/aml-safe.html">
+            
+                <a href="../aml-duo/aml-safe.html">
+            
+                    
+                    6.1.简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../aml-duo/safe-preparation.html">
+            
+                <a href="../aml-duo/safe-preparation.html">
+            
+                    
+                    6.2.准备工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../aml-duo/biz-flow.html">
+            
+                <a href="../aml-duo/biz-flow.html">
+            
+                    
+                    6.3.订单附加流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../aml-duo/order-type.html">
+            
+                <a href="../aml-duo/order-type.html">
+            
+                    
+                    6.4.订单类型示意图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    7.离线HSM冷钱包
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="intro.html">
+            
+                <a href="intro.html">
+            
+                    
+                    7.1.简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="csa-tutorial.html">
+            
+                <a href="csa-tutorial.html">
+            
+                    
+                    7.2.CSA备份和恢复
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.3" data-path="video-tutorial.html">
+            
+                <a href="video-tutorial.html">
+            
+                    
+                    7.3.冷转热流程教学
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    8.Admin后台管理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../admin/admin-terms.html">
+            
+                <a href="../admin/admin-terms.html">
+            
+                    
+                    8.1.常用术语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../admin/admin-case.html">
+            
+                <a href="../admin/admin-case.html">
+            
+                    
+                    8.2.常见使用场景
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.2.1" data-path="../admin/enable-chain.html">
+            
+                <a href="../admin/enable-chain.html">
+            
+                    
+                    8.2.1.开启区块链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.2" data-path="../admin/disable-chain.html">
+            
+                <a href="../admin/disable-chain.html">
+            
+                    
+                    8.2.2.禁用区块链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.3" data-path="../admin/enable-token.html">
+            
+                <a href="../admin/enable-token.html">
+            
+                    
+                    8.2.3.上架代币
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.4" data-path="../admin/disable-token.html">
+            
+                <a href="../admin/disable-token.html">
+            
+                    
+                    8.2.4.下架代币
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.5" data-path="../admin/asset-strategy.html">
+            
+                <a href="../admin/asset-strategy.html">
+            
+                    
+                    8.2.5.设置钱包资产策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.6" data-path="../admin/email-settings.html">
+            
+                <a href="../admin/email-settings.html">
+            
+                    
+                    8.2.6.设置接收邮件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    9.常见问题
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../faq/general-faq.html">
+            
+                <a href="../faq/general-faq.html">
+            
+                    
+                    9.1.运营相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../faq/security-faq.html">
+            
+                <a href="../faq/security-faq.html">
+            
+                    
+                    9.2.安全相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../faq/dev-faq.html">
+            
+                <a href="../faq/dev-faq.html">
+            
+                    
+                    9.3.开发相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../faq/ops-faq.html">
+            
+                <a href="../faq/ops-faq.html">
+            
+                    
+                    9.4.运维相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../faq/init-reason.html">
+            
+                <a href="../faq/init-reason.html">
+            
+                    
+                    9.5.订单未处理原因
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../faq/holding-reason.html">
+            
+                <a href="../faq/holding-reason.html">
+            
+                    
+                    9.6.冻结订单原因
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    10.其他教程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../tutorial/deploy.html">
+            
+                <a href="../tutorial/deploy.html">
+            
+                    
+                    10.1.系统部署步骤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../tutorial/smart-contract.html">
+            
+                <a href="../tutorial/smart-contract.html">
+            
+                    
+                    10.2.以太坊测试链发布智能合约
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../tutorial/ecc-keypair.html">
+            
+                <a href="../tutorial/ecc-keypair.html">
+            
+                    
+                    10.3.生成ECC公私钥对
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../tutorial/ecc-sig.html">
+            
+                <a href="../tutorial/ecc-sig.html">
+            
+                    
+                    10.4.ECC签名和验签
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../devops/process.html">
+            
+                <a href="../devops/process.html">
+            
+                    
+                    10.5.进程分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../devops/infrastructure.html">
+            
+                <a href="../devops/infrastructure.html">
+            
+                    
+                    10.6.服务架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../devops/module.html">
+            
+                <a href="../devops/module.html">
+            
+                    
+                    10.7.软件模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../tutorial/bls-keygen-tutorial.html">
+            
+                <a href="../tutorial/bls-keygen-tutorial.html">
+            
+                    
+                    10.8.使用BLS Keygen
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >7.3.冷转热流程教学</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div width1="600px" style="width=500px;">
+  <video id="my-video" class="video-js" controls preload="auto" width="100%" data-setup="{&quot;aspectRatio&quot;:&quot;24:16&quot;}">
+    <source src="image/Jadepool&#x51B7;&#x8F6C;&#x70ED;&#x6D41;&#x7A0B;&#x6559;&#x5B66;.mp4" type="video/mp4">
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+  </video>
+</div>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="csa-tutorial.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 7.2.CSA备份和恢复">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"7.3.冷转热流程教学","level":"1.7.3","depth":2,"next":{"title":"8.Admin后台管理","level":"1.8","depth":1,"ref":"","articles":[{"title":"8.1.常用术语","level":"1.8.1","depth":2,"path":"admin/admin-terms.md","ref":"admin/admin-terms.md","articles":[]},{"title":"8.2.常见使用场景","level":"1.8.2","depth":2,"path":"admin/admin-case.md","ref":"admin/admin-case.md","articles":[{"title":"8.2.1.开启区块链","level":"1.8.2.1","depth":3,"path":"admin/enable-chain.md","ref":"admin/enable-chain.md","articles":[]},{"title":"8.2.2.禁用区块链","level":"1.8.2.2","depth":3,"path":"admin/disable-chain.md","ref":"admin/disable-chain.md","articles":[]},{"title":"8.2.3.上架代币","level":"1.8.2.3","depth":3,"path":"admin/enable-token.md","ref":"admin/enable-token.md","articles":[]},{"title":"8.2.4.下架代币","level":"1.8.2.4","depth":3,"path":"admin/disable-token.md","ref":"admin/disable-token.md","articles":[]},{"title":"8.2.5.设置钱包资产策略","level":"1.8.2.5","depth":3,"path":"admin/asset-strategy.md","ref":"admin/asset-strategy.md","articles":[]},{"title":"8.2.6.设置接收邮件","level":"1.8.2.6","depth":3,"path":"admin/email-settings.md","ref":"admin/email-settings.md","articles":[]}]}]},"previous":{"title":"7.2.CSA备份和恢复","level":"1.7.2","depth":2,"path":"hsm-cold/csa-tutorial.md","ref":"hsm-cold/csa-tutorial.md","articles":[]},"dir":"ltr"},"config":{"plugins":["language-picker","local-video"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":1},"local-video":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"jadepool","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jadepool Docs","language":"zh-hans","gitbook":"*"},"file":{"path":"hsm-cold/video-tutorial.md","mtime":"2022-07-29T11:03:00.330Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-11-04T04:16:54.141Z"},"basePath":"..","book":{"language":"zh-hans"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-local-video/video.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
