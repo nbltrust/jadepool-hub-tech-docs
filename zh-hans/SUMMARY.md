@@ -69,3 +69,4 @@
    * [10.6.服务架构](devops/infrastructure.md)
    * [10.7.软件模块](devops/module.md)
    * [10.8.使用BLS Keygen](tutorial/bls-keygen-tutorial.md)
+   * [10.9.对账讲解录音](tutorial/reconciliation-tutorial.md)
