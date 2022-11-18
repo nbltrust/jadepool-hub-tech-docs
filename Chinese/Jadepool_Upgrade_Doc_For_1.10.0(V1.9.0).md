@@ -55,7 +55,7 @@
        name: jadepool-recon
        script: bin/recon.js
        exec_mode: "cluster"
-       instances: 1
+       instances: 2
        watch: false
        merge_logs: true
        kill_timeout: 60000
