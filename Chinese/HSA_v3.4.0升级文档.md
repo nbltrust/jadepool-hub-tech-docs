@@ -20,6 +20,7 @@
 11. 启动瑶池
     
 12. 进入瑶池admin页面-高级管理-区块链配置-Ethereum页面-下载智能合约，点击HSA，下载智能合约配置文件20230110133473_Ethereum_export_contracts_for_HSA.json，将配置文件导入到HSA
+
 `./hsa --tokens  ~/20230110133473_Ethereum_export_contracts_for_HSA.json`
 
 1.  重启HSA，加载最新的智能合约配置
