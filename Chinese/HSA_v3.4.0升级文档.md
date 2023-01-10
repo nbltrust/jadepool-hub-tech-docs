@@ -23,9 +23,9 @@
 
 `./hsa --tokens  ~/20230110133473_Ethereum_export_contracts_for_HSA.json`
 
-1.  重启HSA，加载最新的智能合约配置
+13.  重启HSA，加载最新的智能合约配置
 
-2.  `./hsa white --list` dataloader审批完白名单后，可通过此命令查看白名单是否添加成功
+14.  `./hsa white --list` dataloader审批完白名单后，可通过此命令查看白名单是否添加成功
 
     
 
