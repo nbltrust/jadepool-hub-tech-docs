@@ -31,15 +31,17 @@ value = 127.0.0.1
 
 
 
-redis AWS TLS 配置方式
-
+## redis AWS TLS 配置方式
+```bash
 "rediss://:passwprd@host:port"
+
 
 "redis": {
     "default": {
       "host": "127.0.0.1",
-      "port": "9000",
+      "port": "6379",
       "password:"xxx",
       "tls":{}
     }
   }
+```
